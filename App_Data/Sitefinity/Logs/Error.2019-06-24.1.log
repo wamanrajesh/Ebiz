@@ -1,0 +1,1812 @@
+----------------------------------------
+Timestamp: 18-06-2019 06:34:16
+
+Message: HandlingInstanceID: e56d3eef-5703-48e7-a1b1-01c0a629b1d4
+An exception of type 'Telerik.Sitefinity.Pages.Model.DuplicatePageUrlException' occurred and was caught.
+--------------------------------------------------------------------------------------------------------
+06/18/2019 12:04:16
+Type : Telerik.Sitefinity.Pages.Model.DuplicatePageUrlException, Telerik.Sitefinity.Model, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : The specified URL already exists in page: Product Catalog > Find Product
+Source : Telerik.Sitefinity
+Help link : 
+Page : Telerik.Sitefinity.Pages.Model.PageNode
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CommitTransaction(System.String)
+HResult : -2146233088
+Stack Trace :    at Telerik.Sitefinity.Data.TransactionManager.CommitTransaction(String transactionName)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.PagesService.SavePageInternal(WcfPageContext pageContext, Boolean duplicate)
+   at SyncInvokeSavePage(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:34:16
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/PagesService.svc/00000000-0000-0000-0000-000000000000/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&providerName=&managerType=&provider=&workflowOperation=
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:24864
+
+Extended Properties: Url - Product Catalog > Find Product
+
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 06:34:36
+
+Message: HandlingInstanceID: 73be39e4-4c57-4171-ae71-f052b36cb4b7
+An exception of type 'System.IO.InvalidDataException' occurred and was caught.
+------------------------------------------------------------------------------
+06/18/2019 12:04:36
+Type : System.IO.InvalidDataException, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Block length does not match with its complement.
+Source : System
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean DecodeUncompressedBlock(Boolean ByRef)
+HResult : -2146233087
+Stack Trace :    at System.IO.Compression.Inflater.DecodeUncompressedBlock(Boolean& end_of_block)
+   at System.IO.Compression.Inflater.Decode()
+   at System.IO.Compression.Inflater.Inflate(Byte[] bytes, Int32 offset, Int32 length)
+   at System.IO.Compression.DeflateStream.Read(Byte[] array, Int32 offset, Int32 count)
+   at Microsoft.IdentityModel.Web.DeflateCookieTransform.Decode(Byte[] encoded)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:34:36
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ScriptResource.axd?d=D8FHxQlkW7f_96mKH7e278_3sA8mI_atZ7y0CGMT3Qk4b_yJStn83oGuuzpehmt77m_Cr_yIFYrW7XyKWyIWbGjVFY-TWviBYC_4oHyJ1pNnNtkiBov7aaGmqxNfBQzpq6yTzApuj3Vh2Vh5a-tp_H50YBGvr-TW0nk5JqIPIk01&t=2199babd
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15624
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 06:36:49
+
+Message: HandlingInstanceID: ae41c2de-df0a-4f3f-8a0f-aeb439ababad
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:06:49
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:36:49
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/c84c3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2248
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 06:36:49
+
+Message: HandlingInstanceID: fc6859c2-3bd5-4c6f-a00e-f55b1a050679
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:06:49
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:36:49
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/c84c3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2248
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:37:02 AM
+
+Message: HandlingInstanceID: 87cb3b7c-cccf-499a-9345-9cc2e325ff0f
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:07:02
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:37:02 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:18656
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 06:37:12
+
+Message: HandlingInstanceID: 67ad567b-b523-4124-b786-e87bec2b5d28
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:07:12
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:37:12
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/cb4c3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:24864
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:39:19 AM
+
+Message: HandlingInstanceID: 29356a39-22eb-44a8-948a-19fd596ae75b
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:09:19
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:39:19 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 06:46:37
+
+Message: HandlingInstanceID: e1a079af-b75c-47b1-8fb9-25c72ff23d09
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:16:37
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 06:46:37
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/cb4c3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:24864
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:46:43 AM
+
+Message: HandlingInstanceID: f210945b-d768-4c74-8fda-546e341dbe4c
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:16:43
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:46:43 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15624
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:46:55 AM
+
+Message: HandlingInstanceID: b181f8d2-97f0-4f46-bd3b-13f828411db0
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:16:55
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/ProductCatalog/FindProducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:46:55 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ProductCatalog/FindProducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:20160
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:47:29 AM
+
+Message: HandlingInstanceID: aa25b38c-cc70-4d74-a7f7-9900bbb6e64a
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:17:29
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:47:29 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16880
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:47:32 AM
+
+Message: HandlingInstanceID: d9315fab-1578-42a6-9bfc-bdfebad879cf
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:17:32
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:47:32 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17600
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:48:11 AM
+
+Message: HandlingInstanceID: 350148ee-4f99-424d-9549-36bc1ca8caf8
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:18:11
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:48:11 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:1520
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:48:13 AM
+
+Message: HandlingInstanceID: 8ea44bc6-55e3-44bb-b2a5-562f6a404d95
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:18:13
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:48:13 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6712
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:48:16 AM
+
+Message: HandlingInstanceID: eadf8a41-4e7e-4466-b480-b5d8dceebcf2
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:18:16
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:48:16 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17600
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:48:20 AM
+
+Message: HandlingInstanceID: 043fd3b1-2ef0-4bae-89aa-f3aa03c97875
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:18:20
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:48:20 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:20160
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:48:58 AM
+
+Message: HandlingInstanceID: 693fadd1-aea5-4e2d-8637-52b7cb1196bc
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:18:58
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:48:58 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6712
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:00 AM
+
+Message: HandlingInstanceID: d651428d-4634-4ea8-8c99-92a16a1e16b5
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:00
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:00 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7204
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:02 AM
+
+Message: HandlingInstanceID: c787093b-7a4f-407b-be67-556be67a26fb
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:02
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:02 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7204
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:02 AM
+
+Message: HandlingInstanceID: c93d979b-5831-42db-b465-5ef011a806c3
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:02
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:02 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:18656
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:02 AM
+
+Message: HandlingInstanceID: 96db942b-27d9-4a01-8cb4-a9fbdbe3e913
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:02
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:02 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17732
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:02 AM
+
+Message: HandlingInstanceID: 8c3f0213-953c-4d8d-9363-df338ea73b96
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:02
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:02 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:1520
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:03 AM
+
+Message: HandlingInstanceID: bc64eb93-c2fd-4789-9f4e-9c587d318df4
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:03
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/productcatalog/findproducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:03 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19272
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:05 AM
+
+Message: HandlingInstanceID: d66a7d34-4aaf-46f5-96f9-9e6075e67506
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:05
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:05 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:27092
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 6:49:07 AM
+
+Message: HandlingInstanceID: 85bf8813-9d05-4f0c-b2e1-a13ba193b25f
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/18/2019 12:19:07
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 6:49:07 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/ProductCatalog/ProductCatalog/FindProducts.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17296
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/18/2019 7:13:30 AM
+
+Message: HandlingInstanceID: 375bccab-f78a-4345-bc8b-9d883e1ef783
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:43:30
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/18/2019 7:13:30 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/productcatalog/findproducts/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:7204
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 18-06-2019 07:14:27
+
+Message: HandlingInstanceID: a6a03da1-c074-4ba5-9ed6-499ca6ddeaf1
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/18/2019 12:44:27
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 18-06-2019 07:14:27
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/cb4c3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132053116418926915
+
+ProcessId: 2544
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6972
+
+Extended Properties: 
+----------------------------------------

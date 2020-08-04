@@ -1,0 +1,1353 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebBoundControls
+</name>
+</assembly>
+<members>
+<member name="T:Aptify.Framework.Web.Common.WebGroupBox">
+	<summary>
+ Aptify Group Box Server Control for ASP.NET - Provides a Group Box User Interface
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebSliderInternal.OwnerControlClientID">
+	<summary>
+ This property must be set before the control is rendered and will allow.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSliderInternal.GetSliderImageURL">
+	<summary>
+ Returns the image URL for the slider
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSliderInternal.GetResourceURL">
+	<summary>
+ Returns the resource URL to use within the frame
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSliderInternal.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the IFRAME
+ </summary>
+	<param name="writer"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebSliderInternal">
+	<summary>
+ Implementation of the Aptify Web Slider control which is generated within
+ a frame. This control is designed to be used as a control that is contained
+ within the WebSlider control. This class is not designed to be used directly.s
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebDataControl.GECache">
+	<summary>
+ This method provides access to the GE Object Cache which is used to cache
+ GE objects (primarily for sub-types) in the ASP.NET Session object in XML 
+ form. This method is only avaialble after the WebDataControl has been added
+ to a page, prior to that, the method will throw an exception
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.Save">
+ -----------------------------------------------------------------------------
+ <summary>
+ Retrieves all of the data from the bound controls, passes it to the GE, and then calls the GE save.
+ </summary>
+	<returns>False is save did not occur. True if save did occur.</returns>
+	<history>
+ 	[joshuag]	3/8/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.RegisterSaveErrorMessage(System.String@)">
+	<summary>
+ This method is responsible for registering the script to display the error message
+ for saving a record, if one exists. If one does not exist, a generic message will be
+ shown.
+ </summary>
+	<remarks></remarks>
+	<History>2007/07/10 GCM Updated to use the sError passed to it</History>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.RegisterRecordDNEMessageAndCloseWindow(System.String)">
+	<summary>
+ This method will display an alert message to the user and close the window (this window)
+ automatically afterwards.
+ </summary>
+	<param name="Message"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.RegisterConfirmationUserMessageForRevert(System.String)">
+	<summary>
+ Shows the confirmation message to user. If user agree to revert, Record will be 
+ reverted back to last saved.
+ </summary>
+	<param name="Message"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.ConfigNewSubType(System.String,Aptify.Framework.DataServices.UserCredentials,System.Int64,System.Int64,System.Int64)">
+	<summary>
+ Used for opening a New SubType Record. This allows for the correct linking to parent Entity.
+ </summary>
+	<param name="EntityName"></param>
+	<param name="UserCredential"></param>
+	<param name="ID"></param>
+	<param name="ParentRecordID"></param>
+	<remarks>
+ NOTE: In order for a new SubType Record to be properly handled, this method MUST be used.
+ </remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.GetCorrespondingObject(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase,Aptify.Framework.Web.Common.GEObjectCache.Entry)">
+	<summary>
+ This method returns a corresponding object in the TopLevelGE's sub-type (any level of sub-type)
+ by going from the provided cache entry's GE object and building a direct path
+ to the object using the parent links. Once the path is built, the corresponding object
+ in the TopLevelGE is found and returned. If nothing is found that matches, then the value of Nothing/Null
+ is returned.
+ </summary>
+	<param name="TopLevelGE"></param>
+	<param name="CacheEntry"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.SendDialogCloseCommand">
+	<summary>
+ This method is called from the DoSubTypeSave() method in order to send
+ javascript to the client to tell it to close its window. In addition this
+ method will send the GE XML stream for the current object back to the
+ client so that it can be passed back to the calling window.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.GetImageURL(System.Web.UI.Page,Aptify.Framework.Web.Common.WebDataControl.ToolbarImages)">
+	<summary>
+ Returns a web URL for the 
+ </summary>
+	<param name="Page"></param>
+	<param name="Image"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the Callback functionality. 
+ Currently, this is being used for deleting records. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.GetCallbackResult">
+	<summary>
+ This method is required by ICallbackEventHandler. Result of the Callback 
+ gets sent back to the Client-side function by this method. The JavaScript
+ function can be modified to do whatever is necessary with the results.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.RaiseCallbackEvent(System.String)">
+	<summary>
+ This method is required by ICallbackEventHandler. This method is the server-side
+ of the asynchronous callback event. Here is where all the functionality is defined
+ for what to do on a Callback.  
+ </summary>
+	<param name="eventArgument">
+ eventArgument is a string defined on the JavaScript side. This string must be  
+ delimited by the '|' (pipe) character. The first parameter in this string should
+ be the identifier used to determine what action to take. For example, 'DELETE' 
+ is passed in as the first parameter in this string for entity record deletion.
+ </param>
+	<remarks>
+	</remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.TranslateStringToJava(System.String)">
+	<summary>
+ Transform a regular string to one that will run in a javascript.
+ </summary>
+	<param name="sMessage">Normal String which may containg single or double quotes.</param>
+	<returns>Returns a string that has been translated to a java-friendly string</returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataControl.GetChangesSinceLastSaveMessage(System.Boolean)">
+	<summary>
+ Get the Changes made since last save to the record and return the appropriate message string.
+ If BlnRevertToSavedRecord is set true, function will message for the RevertToSaved functionality.
+ </summary>
+	<param name="BlnRevertToSavedRecord"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDataControl">
+	<summary>
+ Aptify Web Server Data Control for ASP.NET
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebComboBox.PopulateComboBox">
+	<summary>
+ This method populates the combo box with values from the Aptify meta-data
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataComboBox.PopulateComboBox">
+	<summary>
+ This method populates the internal combo box
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebDataComboBox.AutoPostBack">
+	<summary>
+ Sets combo box internal control AutoPostBack property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataComboBox.m_oComboBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+	<summary>
+ Sets WebDataFieldFormComponentBase value field to the selected item value.
+ This raises the value changed event. Event only fires when AutoPostBack is true.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDataComboBox">
+	<summary>
+ Aptify Web DataComboBox Bound Control
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebDivPanel.InnerText">
+	<summary>
+ This method provides an easy mechanism to add text to the inside of the control during the rendering phase, and is designed to output very simple text only. For anything complex, add elements to the controls colleciton
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDivPanel">
+	<summary>
+ The purpose of this class is to provide a generic, composite control based server control
+ that uses "div" tags instead of "span" tags that are used by default in the 
+ Panel class
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebHTMLTextBox.GetResourceURL">
+	<summary>
+ Returns the resource URL to use within the frame
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebHTMLTextBox">
+	<summary>
+ Implementation of the Aptify HTML Text Box control which is generated within
+ a frame. This control is not designed to be used directly, rather it is used from within
+ the WebHTMLEditor class.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebCultureLabel">
+	<summary>
+ Aptify Culture Label Server Control for ASP.NET - Culture Aware Labels
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachments.RefreshCategories(System.Int64)">
+	<summary>
+ This method loads up the attachment categories that are avaialble for the current entity and displays
+ them in the tree in the left side of the control
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachments.RefreshAttachments">
+	<summary>
+ This method loads up the attachments currently linked to the record and displays them in the control
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachments.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the client-side event handlers.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachments.OnUploadClick(System.Object,System.EventArgs)">
+	<summary>
+ This method is responsible for handling the server-side upload process. The method can be overloaded in sub-classes
+ if desired to alter the standard processing logic. The base class saves the file in a temporary
+ location determined by the System environment TEMP variable and then moves the file into
+ the Aptify Attachments database location, subsequently then deleting the temporary file.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachments.KillFile(System.String)">
+	<summary>
+ This method wraps the System.IO.File.Delete() method with exception handling in the
+ event that the method fails. The method returns True if the file was deleted succesfully,
+ and False if either the file didn't exist, or another exception occured during processing.
+ </summary>
+	<param name="Path"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebAttachments">
+	<summary>
+ Aptify Attachments Control for ASP.NET - Provides a User Interface on the web for attachment viewing/uploading
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebTextBox.Value">
+	<summary>
+ Sets or Gets the value displayed in the textbox.
+ </summary>
+	<value>The Value to set into the textbox.</value>
+	<returns>Returns the Value in the textbox.</returns>
+	<remarks>Set: If the Extended Type is Password, then the 
+ textbox = PASSWORDDISPLAY, and for DataTime, the text is 
+ formatted appropriately."</remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.SetupURLButton">
+	<summary>
+ This method creates a new WebActiveButton for a URL Link. This method
+ is called from the SetupExtendedType for WebURL extended types.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.SetupEmailButton">
+	<summary>
+ This method creates a new WebActiveButton for a Email Link. This method
+ is called from the SetupExtendedType for Email extended types.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.GetURLLaunchScript(System.String,System.String,System.String)">
+	<summary>
+ This method generates client-side JavaScript that handles the launch for the specified control
+ </summary>
+	<param name="FunctionName"></param>
+	<param name="ControlName"></param>
+	<param name="URLPrefix"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.SetupDateTimeButton">
+	<summary>
+ This method creates a new WebActiveButton for a Date Time field. This method
+ is called from the SetupExtendedType for Date/Time extended types.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.SetupCalendarControls">
+	<summary>
+ This method is responsible for setting up the properties of the calendar controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.ConfigureExtenderButton(System.String,System.String)">
+	<summary>
+ This method configures the Extender button within the Extender Cell of the base class table
+ and also registers the script if provided. This method does NOT add the extender button
+ to the ExtenderCell of the base class - that is the responsibility of the calling method.
+ </summary>
+	<param name="ScriptFunctionName"></param>
+	<param name="ScriptText"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTextBox.SetupExtendedType">
+	<summary>
+ This method handles the setup for the extended type button on the field
+ based on the ExtendedType attribute.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebTextBox">
+	<summary>
+ Aptify Web TextBox Bound Control
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebMultiLineTextBox.OwnerControlClientID">
+	<summary>
+ This property must be set before the control is rendered and will allow.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebMultiLineTextBox.GetResourceURL">
+	<summary>
+ Returns the resource URL to use within the frame
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebMultiLineTextBox.Render(System.Web.UI.HtmlTextWriter)">
+	<summary>
+ Renders the IFRAME
+ </summary>
+	<param name="writer"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebMultiLineTextBox">
+	<summary>
+ Implementation of the Aptify MultiLine Text Box control which is generated within
+ a frame. This control is not designed to be used directly, rather it is used from within
+ the WebTextBox class when the MultiLine property of that control is set to True.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.SetupControlCellPadding">
+	<summary>
+ This method is responsible for setting up padding for the control cell within the 
+ Data Field Control so that the internal control is not clipped.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.GetStandardWidthMargin">
+	<summary>
+ Returns the standard calculation result for the width margin to use on controls that are set to fill the parent's width. Override this method
+ to adjust the width margins for specific controls.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.SetupInternalControlSizing">
+	<summary>
+ This method handles the general setup of internal control component sizing and can be overriden as required by subclasses to handle specialized sizing/layout requirements.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.OnPreRender(System.EventArgs)">
+	<summary>
+ Overriden version of OnPreRender(), calls base OnPreRender() and calls <see cref="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.SetupInternalControlSizing">SetupInternalControlSizing()</see>
+ to ensure controls are sized properly.
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.GetNextPixelParent(System.Web.UI.Control,System.Web.UI.WebControls.Unit@,System.Web.UI.WebControls.Unit@)">
+	<summary>
+ This method attempts to go up the control hierarchy until the next parent control is found that has a pixel-based width/height.
+ 
+ </summary>
+	<param name="Control"></param>
+	<param name="TheWidth"></param>
+	<param name="TheHeight"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.MaxHeight">
+	<summary>
+ This property is overridable by each control to set its maximum height for resizing
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase.SetupLabelText(System.String)">
+	<summary>
+ This method internally sets the label caption. If a value of Nothing/Null or
+ a blank string is provided to this method, the internal meta-data for the field
+ is used instead. In addition, this method will automatically map a field's culture
+ in order to change the display name based on the culture of the field if necessary, but
+ that is only done if the LabelCaption parameter exactly matches the DisplayName of the
+ field. Override this method to change the base functionality.
+ </summary>
+	<param name="LabelCaption"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase">
+	<summary>
+ Base Aptify ASP.NET Server Control for display and edit of a single Data Field
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebToolbar.ToolbarItem(System.String)">
+	<summary>
+ Returns the toolbar item that matches the specified ID.
+ </summary>
+	<param name="ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebToolbar">
+	<summary>
+ Aptify Web Toolbar - ASP.NET 2+ Server Control
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.CloneFailed">
+	<summary>
+  Looks up a localized string similar to Error Cloning Record ID:.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ConfigGE">
+	<summary>
+  Looks up a localized string similar to Unable to create and configure the Entity Data Object (GE) for .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ContactSysAdmin">
+	<summary>
+  Looks up a localized string similar to .  Contact your system administrator for assistance..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.CreatePermission">
+	<summary>
+  Looks up a localized string similar to You do not have permissions to create a record of this type..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DataBrowser">
+	<summary>
+  Looks up a localized string similar to Aptify Data Browser.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteCheck">
+	<summary>
+  Looks up a localized string similar to Are you sure you want to delete this record from the database?.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteCheckCaption">
+	<summary>
+  Looks up a localized string similar to {0} Delete Confirmation.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteErrorLogRequest">
+	<summary>
+  Looks up a localized string similar to There were errors deleing the record.  Would you like to see the error log?.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteFailed">
+	<summary>
+  Looks up a localized string similar to {0} Record ID {1} was not deleted.
+
+Error: {2}.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteFailedCaption">
+	<summary>
+  Looks up a localized string similar to Delete Failure.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteFailedWithDependencies">
+	<summary>
+  Looks up a localized string similar to {0} Record ID {1} could not be deleted because other records are linked to it. 
+
+Would you like to view the list of records that are linked to it?.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteReason">
+	<summary>
+  Looks up a localized string similar to  could not be deleted because other records are linked to it..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteRecordID">
+	<summary>
+  Looks up a localized string similar to  Record ID: .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.DeleteResponseRequest">
+	<summary>
+  Looks up a localized string similar to Click Yes if you would like to view a list of records that are linked to it.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordLineFour">
+	<summary>
+  Looks up a localized string similar to Click Cancel to not close the record.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordLineOne">
+	<summary>
+  Looks up a localized string similar to You have made changes since last saving this record. Do you want to save the record?.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordLineThree">
+	<summary>
+  Looks up a localized string similar to Click No to not save the record and close it.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordLineTwo">
+	<summary>
+  Looks up a localized string similar to Click Yes to save the changes before closing the record.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordTitlePostRecordID">
+	<summary>
+  Looks up a localized string similar to  - Aptify Data Browser.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ExistingRecordTitlePreRecordID">
+	<summary>
+  Looks up a localized string similar to  ID: .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.FindDialogHideAdvanced">
+	<summary>
+  Looks up a localized string similar to &amp;Hide.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.FindDialogShowAdvanced">
+	<summary>
+  Looks up a localized string similar to &amp;Show.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.InitializeObject">
+	<summary>
+  Looks up a localized string similar to Data control must be constructed at run time with a user credential and entity information..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.MenuShowChangeChanges">
+	<summary>
+  Looks up a localized string similar to Changes Made to this record since last saved: .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.MenuShowChangeNoChange">
+	<summary>
+  Looks up a localized string similar to No changes have been made to this record since it was last saved.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordCaption">
+	<summary>
+  Looks up a localized string similar to New .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordLineFour">
+	<summary>
+  Looks up a localized string similar to Click Cancel to not close the record.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordLineOne">
+	<summary>
+  Looks up a localized string similar to You have not saved this record. Do you want to save it?.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordLineThree">
+	<summary>
+  Looks up a localized string similar to Click No to not save the record and close it.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordLineTwo">
+	<summary>
+  Looks up a localized string similar to Click Yes to save the changes before closing the record.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordTitlePostEnttiyName">
+	<summary>
+  Looks up a localized string similar to  Record - Aptify Data Browser.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.NewRecordTitlePreEnttiyName">
+	<summary>
+  Looks up a localized string similar to New .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.ReadPermission">
+	<summary>
+  Looks up a localized string similar to You are trying to open a record that you do not have permissions to view..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RecordCaption">
+	<summary>
+  Looks up a localized string similar to  Record.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RecordHistoryAfterSave">
+	<summary>
+  Looks up a localized string similar to Record History is only available after the record is saved.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RecordIDLabel">
+	<summary>
+  Looks up a localized string similar to  ID: .
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RecordNoLongerExists">
+	<summary>
+  Looks up a localized string similar to The record no longer exists in the database.  A new record will be loaded..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RevertRecordChanges">
+	<summary>
+  Looks up a localized string similar to The following changes were made since it was last saved..
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.DataControlStrings.RevertRecordQuestion">
+	<summary>
+  Looks up a localized string similar to Are you sure you want to reload the last saved version of this record? .
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.DataControlStrings">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinkBox.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the client-side event handlers.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebLinkBox">
+	<summary>
+ Aptify ASP.NET Web Link Box Implementation
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebSubTypeControl.Toolbar">
+	<summary>
+ WebToolbar contains the Add and Delete Icons
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebSubTypeControl.SubTypeName">
+	<summary>
+ Name of sub-type that is currently being displayed in the sub-type control
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.BuildGrid">
+	<summary>
+ This method is responsible for building the grid data source and binding to it based
+ on the information inside the sub-type that this sub-type control is bound to
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.CreateChildControls">
+	<summary>
+ All controls are created and defined in this Subroutine.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.GetImageURL(System.Web.UI.Page,System.String)">
+	<summary>
+ Returns a web URL for the image specified. This image file must be defined as a WebResource
+ for the Aptify.Framework.Web.Common Namespace.
+ </summary>
+	<param name="Page"></param>
+	<param name="Image">Image filename including extension</param>
+	<returns>URL reference to a the server-side resource file.</returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.InitializeGridProperties">
+	<summary>
+ This method is called when the grid's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the Callback functionality.
+ Currently, this is being used for deleting SubType records. The
+ Result and Error JavaScript functions are defined in WebSubType.js, while
+ the Callback and Delete button's click event are setup below.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.GetCallbackResult">
+	<summary>
+ This method is required by ICallbackEventHandler. Result of the Callback
+ gets sent back to the Client-side function by this method. The JavaScript
+ function can be modified to do whatever is necessary with the results.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebSubTypeControl.RaiseCallbackEvent(System.String)">
+	<summary>
+ This method is required by ICallbackEventHandler. This method is the server-side
+ of the asynchronous callback event. Here is where all the functionality is defined
+ for what to do on a Callback.
+ </summary>
+	<param name="eventArgument">
+ eventArgument is a string defined on the JavaScript side. This string must be
+ delimited by the '|' (pipe) character. The first parameter in this string should
+ be the identifier used to determine what action to take. For example, 'DELETE'
+ is passed in as the first parameter in this string for SubType record deletion.
+ </param>
+	<remarks>
+ Currently, the Callback is only setup to handle SubType record deletion.
+ This method maintains a session variable of all the records that are to be
+ deleted when the TopLevel entity is saved. WebDataControl has been modified
+ to check this session variable on Save. The RaiseCallbackEvent can be further
+ extended to handle other callbacks.
+ </remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebSubTypeControl">
+	<summary>
+ Aptify Sub-Type ASP.NET Server Control. The current version of this control only supports reading sub-type data
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebHTMLEditor">
+	<summary>
+ Aptify HTML Editor Server Control for ASP.NET
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebActiveButton">
+	<summary>
+ Provides an "Active Button" Style web button for use in toolbars, and anywhere else where the style is required
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebLinkBoxHandler.UserCredentials">
+	<summary>
+ If calling the ProcessRequest method from the IHttpHandler interface, this
+ UserCredentials property must be set BEFORE the ProcessRequest method is called
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinkBoxHandler.ProcessRequest(System.Web.HttpContext)">
+	<summary>
+ This method supports the following assumed Request parameters: EntityID, EntityName and ParentID. 
+ Either EntityID or EntityName should be specified, EntityID takes precedence if both are specified. Lastly,
+ ParentID specifies the Parent Topic Code ID to use for filtering, if not specified, assumed to be top level topic
+ codes only
+ </summary>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinkBoxHandler.WriteParentParentInfo(System.Web.HttpContext,Aptify.Framework.DataServices.DataAction,System.Int64)">
+	<summary>
+ Writes the Parent Topic Code information attributes (ParentParentID, ParentParentName) for a given topic code
+ </summary>
+	<param name="TopicCodeID"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebLinkBoxHandler">
+	<summary>
+ This class provides base functionality for returning XML to the client for the record lookup
+ functionality of the Link Box control. Uses the EntityID and a Lookup value.  This functionality 
+ is used by the client-side JavaScript XML in the Web Link Box control to dynamically retrieve 
+ the Record ID or to indicate that the Find dialog needs to be displayed.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebLinkLabel.ImageWidth">
+	<summary>
+ Default is zero, if left at zero, nothing will be provided to the IMG tag
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebLinkLabel.ImageHeight">
+	<summary>
+ Default is zero, if left at zero, nothing will be provided to the IMG tag
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebLinkLabel">
+	<summary>
+ Link Label that supports link clicks on the client as well as tool tips and images
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebSlider">
+	<summary>
+ Aptify Web Slider Bound Control
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormComponentBase.GetUserCredentialsFromSession">
+	<summary>
+ Returns a User Credentials object from the Session State, if available. This is used when ViewState is
+ not yet recreated, or during Callback when ViewState is unavailable
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormComponentBase.GetClientCulture">
+	<summary>
+ Returns the culture for the client browser based on the first language in the Request.UserLanguages() array
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormComponentBase.GetClientDateFormat">
+	<summary>
+ Returns a string showing the preferred date format for the connected user.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormComponentBase.GetClientTimeFormat">
+	<summary>
+ Returns a string showing the preferred time format for the connected user.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.FillWidth">
+	<summary>
+ Determines if the control will fill the parent container's width at run time on the
+ client-side (done via client-side Java Script). Maps to the fillWidth run-time
+ HTML element attribute.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.FillHeightMargin">
+	<summary>
+ This property is only used if FillHeight is set to True. If FillHeight is set to True, this property
+ determines the margin to use on the bottom side of the control when filling the container's height. This
+ property specifies the number of pixels of space to be left on the bottom side of the control between
+ the control's edge and the container's edge.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.FillWidthMargin">
+	<summary>
+ This property is only used if FillWidth is set to True. If FillWidth is set to True, this property
+ determines the margin to use on the right side of the control when filling the container's width. This
+ property specifies the number of pixels of space to be left on the right side of the control between
+ the control's edge and the container's edge.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.FillHeight">
+	<summary>
+ Determines if the control will fill the parent container's height at run time on the
+ client-side (done via client-side Java Script). Maps to the fillHeight run-time
+ HTML element attribute.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.FillIgnoreChildren">
+	<summary>
+ Determines if the control's children will be evaluated for resizing or not. The
+ default value for this property is True, which results in the children of the
+ control NOT being evaluated for resizing. Sub-classes can override this as required,
+ as can individual instances of the class being used at run-time or design-time. It
+ is important to leave this property set to True as much as possible as it reduces
+ run-time resizing overhead.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.ErrorLabel">
+	<summary>
+ This label is an internal feature of the base class that can be
+ used by sub-classes to display error messages to the user when 
+ required. Set the ErrorLabel.Visible = True first, and then
+ set the ErrorLabel.Text to the appropriate message for the user.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.DataControl">
+ -----------------------------------------------------------------------------
+ <summary>
+ Adds a reference to the object for the data control. In the case of it being added, the reference to the bound control base object is added to the data controls collection.
+ </summary>
+	<history>
+ 	[joshuag]	3/9/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.Application">
+	<summary>
+ Returns an instance of the AptifyApplication object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormComponentBase.DataAction">
+	<summary>
+ Returns an instance of the Aptify DataAction object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebLinksControl.SubTypeName">
+	<summary>
+ Name of sub-type that is currently being displayed in the sub-type control
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.CreateChildControls">
+	<summary>
+ All controls are created and defined in this Subroutine.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.BuildGrid">
+	<summary>
+ This method is responsible for building the grid data source and binding to it based
+ on the information inside the sub-type that this sub-type control is bound to
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetImageURL(System.Web.UI.Page,System.String)">
+	<summary>
+ Returns a web URL for the image specified. This image file must be defined as a WebResource
+ for the Aptify.Framework.Web.Common Namespace.
+ </summary>
+	<param name="Page"></param>
+	<param name="Image">Image filename including extension</param>
+	<returns>URL reference to a the server-side resource file.</returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.InitializeGridProperties">
+	<summary>
+ This method is called when the grid's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.BuindGridColumns">
+	<summary>
+ Format the each and every columns of the Grid. Specified and set the column datatype, 
+ its visibility, datafield, etc.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the Callback functionality.
+ Currently, this is being used for deleting Weblinks records. The
+ Result and Error JavaScript functions are defined in WebLinksControl.js, while
+ the Callback and Delete button's click event are setup below.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetCallbackResult">
+	<summary>
+ This method is required by ICallbackEventHandler. Result of the Callback
+ gets sent back to the Client-side function by this method. The JavaScript
+ function can be modified to do whatever is necessary with the results.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.RaiseCallbackEvent(System.String)">
+	<summary>
+ This method is required by ICallbackEventHandler. This method is the server-side
+ of the asynchronous callback event. Here is where all the functionality is defined
+ for what to do on a Callback.
+ </summary>
+	<param name="eventArgument">
+ eventArgument is a string defined on the JavaScript side. This string must be
+ delimited by the '|' (pipe) character. The first parameter in this string should
+ be the identifier used to determine what action to take. For example, 'DELETE'
+ is passed in as the first parameter in this string for SubType record deletion.
+ </param>
+	<remarks>
+ Currently, the Callback is only setup to handle SubType record deletion and addition also.
+ This method maintains a session variable of all the records that are to be
+ deleted/added when the TopLevel entity is saved. WebDataControl has been modified
+ to check this session variable on Save. The RaiseCallbackEvent can be further
+ extended to handle other callbacks.
+ </remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetRecordName(System.Int64,System.Int64)">
+	<summary>
+ Get the Record Name to be displayed in the Grid object.
+ If Record is related to Persons or Companies or Employees entity, Record name is being 
+ formatted to show the Email address and Phone number.
+ </summary>
+	<param name="EntityID"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetRecordNamePersons(System.Int64,System.String@)">
+	<summary>
+ Updates RecordName parameter with the Record Name that will be displayed in the 
+ Links control for Persons records.  Current format is:
+ Entity Record Name [New Line] Phone: [Person's Phone Number] [New Line] E-mail:  [Person's E-mail]
+ </summary>
+	<param name="PersonID"></param>
+	<param name="RecordName"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.FormatPhoneNumber(System.Object,System.Object,System.Object,System.Object,System.String)">
+	<summary>
+ Given the components of a Phone Number produce and return a formatted phone number as a single string. If no phone number is provided, return "Phone:  Not Provided"
+ </summary>
+	<param name="CountryCode"></param>
+	<param name="AreaCode"></param>
+	<param name="PhoneNumber"></param>
+	<param name="Extension"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.FormatEmail(System.Object,System.String)">
+	<summary>
+ Format the e-mail address and return it as a string.  If no e-mail address is provided, return Label + " " + "Not Provided"
+ Otherwise, return Label + " " + Email
+ </summary>
+	<param name="Email"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetRecordNameCompanies(System.Int64,System.String@)">
+	<summary>
+ Updates RecordName parameter with the Record Name that will be displayed in the 
+ Links control for Companies records.  Current format is:
+ Entity Record Name [New Line] Account Manager: [Company's Main Account Manager] [New Line] Phone: [Company's Main Phone Number] [New Line] E-mail:  [Company's Main E-mail]
+ </summary>
+	<param name="CompanyID"></param>
+	<param name="RecordName"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebLinksControl.GetRecordNameEmployees(System.Int64,System.String@)">
+	<summary>
+ Updates RecordName parameter with the Record Name that will be displayed in the 
+ Links control for Employees records.  Current format is:
+ Entity Record Name [New Line] Phone: [Employee's Phone Number] [New Line] E-mail:  [Employee's Main E-mail]
+ </summary>
+	<param name="EmployeeID"></param>
+	<param name="RecordName"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebLinksControl">
+	<summary>
+ Aptify Web Links ASP.NET Server Control. 
+ Issue 5464, Maulik Patel, 09/28/2007
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.RootVariable">
+	<summary>
+ This method tracks the variable name for the "root" entry into the Session
+ object's dictionary, all entries by this object will have this variable as their root
+ entry into the session.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.GetChildGEObjects(System.String,System.Int64)">
+	<summary>
+ This method will create a list of Aptify GE objects that are directly or indirectly child objects of the 
+ provided RootEntity/RootRecordID record.
+ </summary>
+	<param name="RootEntity"></param>
+	<param name="RootRecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.GetRootEntityRecordID(Aptify.Framework.Web.Common.GEObjectCache.Entry)">
+	<summary>
+ Returns the root entity record ID for the provided entity name and record ID combination
+ </summary>
+	<param name="oEntry"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.GetRootEntityRecordID(System.String,System.Int64)">
+	<summary>
+ Returns the root entity record ID for the provided entity name and record ID combination
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.GetParentEntityRecordID(System.String,System.Int64)">
+	<summary>
+ Returns the parent entity record Id the provided sub-type record is part of
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.GetEntityRecordField(System.String,System.Int64,System.String)">
+	<summary>
+ Returns the value of a single field in a single entity record
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<param name="FieldName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.ClearChildGEObjects(System.String,System.Int64)">
+	<summary>
+ This method clears objects from the cache that are child Sub-types (directly or multiple levels down)
+ for the provided Root Entity RecordID as provided by the parameters.
+ </summary>
+	<param name="RootEntity"></param>
+	<param name="RootRecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.SaveToSession(System.Web.SessionState.HttpSessionState)">
+	<summary>
+ This method will save the entire cache to the provided ASP.NET Session object
+ </summary>
+	<param name="Session"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.LoadFromSession(System.Web.SessionState.HttpSessionState)">
+	<summary>
+ This method will load the cache from the provided ASP.NET Session object
+ </summary>
+	<param name="Session"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Cache">
+	<summary>
+ Override this member in sub-classes to alter the internal cache structure
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.AddEntry(System.String,System.Int64,Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This method returns an Entry object based on the provided parameters. If the
+ specified Entry object already existed (based on the Entity name and RecordID)
+ then it will be replaced by the newly provided GE object
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<param name="GE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.AddNewSubTypeEntry(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase,System.Int64)">
+	<summary>
+ This function should only be used to add a brand new SubType record. 
+ This function will not update or overwrite existing Cache entries, but 
+ will instead decrement the RecordID until a unique key is found in the Cache.
+ For example, if a new entry already exists in the Cache with a RecordID of -1, 
+ this new entry will be assigned a RecordID of -2.
+ </summary>
+	<param name="GE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.FindEntry(System.String,System.Int64)">
+	<summary>
+ This method will return an Entry object from the cache, if one exists, otherwise
+ it will return Null/Nothing
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.FindEntry(System.String,System.Int64,System.Int64)">
+	<summary>
+ This method will return an Entry object from the cache with matching ParentRecordID, if one exists, otherwise
+ it will return Null/Nothing
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<param name="ParentRecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.AddEntry(Aptify.Framework.Web.Common.GEObjectCache.Entry)">
+	<summary>
+ Adds the specified entry to the cache, if the entry's key value already 
+ existed in the internal cache, then the entry is updated to hold the provided
+ Entry object, otherwise
+ the Entry object is added to the cache.
+ </summary>
+	<param name="Entry"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.AddEntry(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ Adds the specified GE to the cache, if the entry's key value already 
+ existed in the internal cache, then the entry is updated to hold the provided
+ GE object, otherwise
+ the GE object is added to the cache.
+ </summary>
+	<param name="GE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.DisableParentUpdates">
+	<summary>
+ This is an internal variable used to determine if parent link updates
+ should be disabled. This is typically done during the LoadFromSession
+ operation
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.UpdateParent(Aptify.Framework.Web.Common.GEObjectCache.Entry)">
+	<summary>
+ This method is responsible for finding and updating the parent GE in the 
+ cache, if it is in the cache, and updating the GE sub-type object.
+ </summary>
+	<param name="thisEntry"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.GEObject">
+	<summary>
+ Reference to the internal GE instance
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.AptifyApplication">
+	<summary>
+ returns a reference to the AptifyApplication within this class
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.DataAction">
+	<summary>
+ Returns a reference to an instance of the Aptify DataAction class
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.SaveToSession(System.String,System.Web.SessionState.HttpSessionState)">
+	<summary>
+ This method is responsible for saving session state from the object into
+ the ASP.NET Session object. Must provied SessionKey parameter to provide 
+ the object with the needed information to store its value in the session
+ </summary>
+	<param name="Session"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.#ctor(Aptify.Framework.Application.AptifyApplication,System.String,System.Int64,System.Int64)">
+	<summary>
+ This is required for new SubType records to link to their Parent correctly
+ </summary>
+	<param name="AptifyApplication"></param>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<param name="ParentRecordID"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.#ctor(Aptify.Framework.Application.AptifyApplication,System.String,System.Int64,System.Int64,System.Int64,System.String,System.Boolean)">
+	<summary>
+ This is required for new SubType records to link to their Parent correctly
+ and maintain a Custom Key, since the key is usually based on RecordID, but 
+ multiple new records will each have a RecordID of -1.
+ Used specifically for GEObjectCache.LoadFromSession()
+ </summary>
+	<param name="AptifyApplication"></param>
+	<param name="Entity"></param>
+	<param name="RecordID">Actual recordID</param>
+	<param name="ParentRecordID">Record's ParentEntityRecordID</param>
+	<param name="KeyID">Custom Key - used to maintain uniqueness for multiple new
+ SubType records, since they all have a RecordID of -1.</param>
+	<param name="XMLData"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.Entity">
+	<summary>
+ Returns the entity name for the current GE object, only works after the 
+ GEObject property is set.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.RootEntityRecordID">
+	<summary>
+ Record ID in the root entity that this sub-type is related to, only is functional for
+ sub-types
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.GetRootEntityRecordID(System.String,System.Int64)">
+	<summary>
+ Returns the root entity record ID for the provided entity name and record ID combination
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.GetParentEntityRecordID(System.String,System.Int64)">
+	<summary>
+ Returns the parent entity record Id the provided sub-type record is part of
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.GetEntityRecordField(System.String,System.Int64,System.String)">
+	<summary>
+ Returns the value of a single field in a single entity record
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<param name="FieldName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.KeyID">
+	<summary>
+ This property will override the Key Property by explicitly defining the Entry's Key.
+ This property was created to support multiple New SubType Records within the Cache.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.RecordID">
+	<summary>
+ Returns the RecordID for the current GE object, only works after the 
+ GEObject property is set.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.Saved">
+	<summary>
+ The Saved Property maintains the state of the entry. If an entry represents a record that
+ has not yet been saved, Saved is False. Once the record for this entry has been saved,
+ this value is set to True. This is used to determine if an entry should be kept or tossed. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.GEObjectCache.Entry.Key">
+	<summary>
+ Returns the cache key for the current record.
+ If a custom KeyID has been defined for this Entry, this will be returned.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.GEObjectCache.Entry.GetKey(System.String,System.Int64)">
+	<summary>
+ Static/Shared method to generate a key based on a provided Entity Name
+ and Record ID pair.
+ </summary>
+	<param name="Entity"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.GEObjectCache.Entry">
+	<summary>
+ This class is used for managing a single cached GE instance and is capable
+ of storing the XML data in its internal cache.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.GEObjectCache">
+	<summary>
+ This class is responsible for doing server-side XML caching for GE objects. The 
+ cache is capable of storing and retrieving any number of cache entries based upon
+ the provided methods. The GEObjectCache stores GEObjectCache.Entry objects within
+ its internal data structure.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebNoControl">
+	<summary>
+ This class is used to display a label whenever a registered 
+ Form Component is not found for a Form Template Part
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachmentsIframe.GetAttachmentHTML">
+	<summary>
+ Returns the IFRAME object that loads the Attachment.aspx page into.
+ Attachment.aspx page loads the original WebAttachment object inside it.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachmentsIframe.GetAttachmentURL">
+	<summary>
+ This method is responsible for getting the attachment URL for the attachment tab.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebAttachmentsIframe.FormComponentConfig(Aptify.Framework.Web.Common.AptifyFormTemplateContext)">
+	<summary>
+ Overrides the Sub FormComponentConfig and also save the FormTemplateContext into the session.
+ This session variable is used to pass the FormTemplateContext into the original WebAttachment
+ object when this object is loaded into the attachment.aspx page.
+ </summary>
+	<param name="FormTemplateContext"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebAttachmentsIframe">
+	<summary>
+ Aptify Attachments Control for ASP.NET - Provides a User Interface on the web for attachment viewing/uploading
+ To solve issue 5419, Maulik Patel, 09/14/2007
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebLineSeparator">
+	<summary>
+ Draws a horizontal or vertical line. Optional Input Property "SeparatorSize"
+ can be used to specify size of separator. If not specified, value of 1 is used.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyPersonSocialNetworkMismatchesLayout
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Applications.Persons.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Applications.Persons.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Applications.Persons.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Aptify.Applications.Persons.PersonSocialNetworkMismatchesLayout.BindControl(Aptify.Framework.WindowsControls.IAptifyDataFieldControlBase@,System.String)">
+	<summary>
+ This method handles binding a control reference to a specific field name
+ using the GetFormComponent() method of the base class. The method only attempts
+ to bind the control reference if the control reference is Nothing or its
+ inner control is disposed.
+ </summary>
+	<param name="control"></param>
+	<param name="FieldName"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Applications.Persons.PersonSocialNetworkMismatchesLayout.FindGeneralControls">
+	<summary>
+ This method is responsible for binding general controls. In particular,
+ it sets the visibility for resolution options based on current settings.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Applications.Persons.PersonSocialNetworkMismatchesLayout.OnFormTemplateLoaded(Aptify.Framework.WindowsControls.FormTemplateLayout.FormTemplateLoadedEventArgs)">
+	<summary>
+ Contains logic to setup Event handlers for controls on the FormTemplate Layout.
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Applications.Persons.PersonSocialNetworkMismatchesLayout.VerifyRecordExists">
+	<summary>
+ function to verify the record still exists after applying action since virtual entity filters out the data 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Applications.Persons.PersonSocialNetworkMismatchesLayout">
+	<summary>
+ Provides presentation layer logic used to reconcile database records with information from a Social Network
+ </summary>
+</member>
+</members>
+</doc>

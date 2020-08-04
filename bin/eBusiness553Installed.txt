@@ -1,0 +1,4 @@
+This file was added by the Aptify e-Business 5.5.3 Full Installer or 
+the e-Business 5.5.3 Database Upgrader.
+ This means that this server has the e-Business 5.5.3 server components 
+installed.

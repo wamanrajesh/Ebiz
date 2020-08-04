@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebEmailControl
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Framework.Web.Common.WebEmailControl.FormComponentConfig(Aptify.Framework.Web.Common.AptifyFormTemplateContext)">
+	<summary>
+ In addition to base class functionality, this method will setup the email controls
+ for the form. This class will create a text box for each control and place the
+ list of email fields on the left side of the text box
+ </summary>
+	<param name="FormTemplateContext"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebEmailControl.AutoFindEmailFields">
+	<summary>
+ Tells the Contol to disregard the FieldString and interrogate the Entity for Email Fields.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebEmailControl.EmailFieldListWidth">
+	<summary>
+ Controls the Width of the Email Field Drop Down.
+ </summary>
+	<value></value>
+	<remarks>The Text Box will will the remainder of the Control.</remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebEmailControl.FieldString">
+	<summary>
+ Gets/Sets a | delimited string of field names.
+ </summary>
+	<value></value>
+	<remarks><example>EmailControl.FieldString="Email1|WorkEmail|SpecialEmail"</example>
+	</remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebEmailControl">
+	<summary>
+ Aptify Web Email Control for ASP.NET 2.x+ - displays one or more email addresses based on the number
+ of email fields that exist within a given entity definition. Scans the entity
+ definition when configured and automatically pulls in all of the email addresses
+ based on the ExtendedType attributes of the top-level entity fields. Alternatively,
+ the <see cref="P:Aptify.Framework.Web.Common.WebEmailControl.AutoFindEmailFields">AutoFindEmailFields</see> property can be set to False, and the fields that should
+ be displayed can be set via the FieldString Input Property of the form component.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

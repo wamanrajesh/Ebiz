@@ -1,0 +1,156 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebFind
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.WebFind.FindScriptURL(System.Web.UI.Page)">
+	<summary>
+ This property will return a URL that contains the resource containing
+ the JavaScript file for the Web Find Dialog. This method
+ is provided as a utility.
+ </summary>
+	<param name="Page"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.AddFindScriptToPage(System.Web.UI.Page)">
+	<summary>
+ This method will add a script include tag to the page specified for
+ the WebFind.js script file, which includes functionality that will
+ allow for showing find dialog and find items dialogs. 
+ </summary>
+	<param name="Page"></param>
+	<remarks></remarks>
+</member><member name="F:Aptify.Framework.Web.Common.WebFind.FindFilter.Operator">
+	<summary>
+ FindTextOperator, FindNumericOperator or FindDateOperator depending on data type of Field
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.CreateFieldsTab(Aptify.Framework.Web.Common.TabControl.TabItem@)">
+	<summary>
+ Following sub add the Field tab in the WebTabControl with the list of fields of the entity.
+ </summary>
+	<param name="Tab"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.SetupFilter(Aptify.Framework.Web.Common.WebFind.FindFilter)">
+	<summary>
+ This routine is responsible for setting up the filter provided into the first combo box
+ </summary>
+	<param name="Filter"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.SetOperator(System.Web.UI.WebControls.DropDownList,System.Web.UI.WebControls.DropDownList)">
+	<summary>
+ This routine populates the provided operator box based on the field selected in the Field drop down list parameter
+ </summary>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.SetupClientScripts">
+	<summary>
+ This routine is responsible for setting up client-side scripts for the controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.SetupControlAppearances">
+	<summary>
+ This method is called when child controls are being created to set the appearance of the various controls
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.SetupFieldCombos">
+	<summary>
+ This method is responsible for populating all of the combo boxes with field information
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetFilterSQL(System.String,System.String,System.String)">
+	<summary>
+ Returns the SQL String for the WHERE clause for this particular Field/Operator/Value combination
+ </summary>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetTextFilterSQL(System.String,System.String,System.String)">
+	<summary>
+ Returns the Filter SQL for a text field type
+ </summary>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetNumericFilterSQL(System.String,System.String,System.String)">
+	<summary>
+ Returns the Filter SQL for a numeric type
+ </summary>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetDateFilterSQL(System.String,System.String,System.String)">
+	<summary>
+ Returns the Filter SQL for a numeric type
+ </summary>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<param name="Value"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetFilterInfo(System.Xml.XmlNode,System.String@,System.String@,System.String@)">
+	<summary>
+ This method is responsible for extracting the field, operator and value information from the XML node
+ </summary>
+	<param name="Node"></param>
+	<param name="Field"></param>
+	<param name="Operator"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFind.GetFindFields(System.String@,System.Int32@)">
+	<summary>
+ This method will return a List of Strings containing the field names
+ for all of the fields that should be displayed in the find results (based on the ShowInFind BIT field in the Entity Field meta-data)
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebFind">
+	<summary>
+ Aptify Web Find Dialog Server Control Class for ASP.NET 2.0+
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFindHandler.ProcessRequest(System.Web.HttpContext)">
+	<summary>
+ This method takes in parameters of EntityID, or EntityName as well as the required
+ parameter of FindParams. Find Params should be an XML formatted string that has the following
+ format. Note that in the below findItem tag, fieldName is an optional attribute, if not
+ specified the entity's NAME attribute is searched.
+ 
+ <example>
+			<findParams><findItem fieldName="Name" value="A"/></findParams></example>
+	</summary>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebFindHandler">
+	<summary>
+ ASP.NET Handler class that handles server requests for a lookup functions. The ProcessRequest() method
+ handles input parameters for 'Entity' as well as 'FindParams'
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

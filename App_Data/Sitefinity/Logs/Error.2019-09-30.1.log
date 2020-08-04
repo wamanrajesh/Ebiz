@@ -1,0 +1,413 @@
+----------------------------------------
+Timestamp: 7/3/2019 9:58:33 AM
+
+Message: HandlingInstanceID: a2d9e1c5-cb82-48f9-a3a6-378149be6581
+An exception of type 'Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException' occurred and was caught.
+--------------------------------------------------------------------------------------------------------------------
+07/03/2019 15:28:33
+Type : Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException, Telerik.Sitefinity, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+Source : Telerik.Sitefinity
+Help link : 
+StatusCode : InternalServerError
+StatusDescription : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+IsDetailXhtml : False
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowExceptionIfLocked(System.Guid, Telerik.Sitefinity.Modules.Pages.DesignMediaType, System.String, Boolean)
+HResult : -2146233087
+detailWriterInstance : Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException+DataContractDetailWriter
+Stack Trace :    at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorValidationExtensions.ThrowExceptionIfLocked(Guid pageId, DesignMediaType mediaType, String operationName, Boolean checkLive)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorOperationValidationAttribute.BeforeCall(String operationName, Object[] inputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InspectInputsCore(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 9:58:33 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/224f3849-b781-60ed-9ead-ff0000bbe4eb/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:13556
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/3/2019 9:59:04 AM
+
+Message: HandlingInstanceID: 4940895f-8a09-4000-87af-80b731f240a0
+An exception of type 'Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException' occurred and was caught.
+--------------------------------------------------------------------------------------------------------------------
+07/03/2019 15:29:04
+Type : Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException, Telerik.Sitefinity, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+Source : Telerik.Sitefinity
+Help link : 
+StatusCode : InternalServerError
+StatusDescription : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+IsDetailXhtml : False
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowExceptionIfLocked(System.Guid, Telerik.Sitefinity.Modules.Pages.DesignMediaType, System.String, Boolean)
+HResult : -2146233087
+detailWriterInstance : Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException+DataContractDetailWriter
+Stack Trace :    at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorValidationExtensions.ThrowExceptionIfLocked(Guid pageId, DesignMediaType mediaType, String operationName, Boolean checkLive)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorOperationValidationAttribute.BeforeCall(String operationName, Object[] inputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InspectInputsCore(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 9:59:04 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/884f3849-b781-60ed-9ead-ff0000bbe4eb/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:23408
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/3/2019 9:59:47 AM
+
+Message: HandlingInstanceID: 730b79ec-0716-42d9-a33f-6ae2b6374455
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+07/03/2019 15:29:47
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Join__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 9:59:47 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:20224
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/3/2019 10:00:25 AM
+
+Message: HandlingInstanceID: 0a257c04-e487-484b-aa6c-eda77e6deae3
+An exception of type 'Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException' occurred and was caught.
+--------------------------------------------------------------------------------------------------------------------
+07/03/2019 15:30:25
+Type : Telerik.Sitefinity.Modules.Pages.Web.Services.ContentLockedException, Telerik.Sitefinity, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+Message : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+Source : Telerik.Sitefinity
+Help link : 
+StatusCode : InternalServerError
+StatusDescription : Deleted: 00000000-0000-0000-0000-000000000000:DiscardPageDraft
+IsDetailXhtml : False
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowExceptionIfLocked(System.Guid, Telerik.Sitefinity.Modules.Pages.DesignMediaType, System.String, Boolean)
+HResult : -2146233087
+detailWriterInstance : Telerik.Sitefinity.Utilities.MS.ServiceModel.Web.WebProtocolException+DataContractDetailWriter
+Stack Trace :    at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorValidationExtensions.ThrowExceptionIfLocked(Guid pageId, DesignMediaType mediaType, String operationName, Boolean checkLive)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorOperationValidationAttribute.BeforeCall(String operationName, Object[] inputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InspectInputsCore(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 10:00:25 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/964f3849-b781-60ed-9ead-ff0000bbe4eb/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:20224
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/3/2019 10:02:33 AM
+
+Message: HandlingInstanceID: 2f47c700-a503-4af3-8224-cd1259afc9fd
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+07/03/2019 15:32:33
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 10:02:33 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/a74f3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17012
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 7/3/2019 10:02:33 AM
+
+Message: HandlingInstanceID: 97c334cc-0b9d-42ea-9a7f-5b2b5e16312e
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+07/03/2019 15:32:33
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 7/3/2019 10:02:33 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/a74f3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132066209718658516
+
+ProcessId: 6860
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17012
+
+Extended Properties: 
+----------------------------------------

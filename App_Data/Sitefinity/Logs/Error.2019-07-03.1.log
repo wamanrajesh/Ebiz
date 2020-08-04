@@ -1,0 +1,3613 @@
+----------------------------------------
+Timestamp: 6/25/2019 7:02:11 AM
+
+Message: HandlingInstanceID: 9e081ac6-a501-4172-b511-ebbf658ee1c5
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 12:32:11
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:02:11 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:34772
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:02:14 AM
+
+Message: HandlingInstanceID: aa98713a-9939-4245-b517-0bd5b7d93373
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:32:14
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:02:14 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/c74d3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:34416
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:02:14 AM
+
+Message: HandlingInstanceID: 4237597b-6452-4ad8-a966-10c0192ee122
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:32:14
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:02:14 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/c74d3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:34416
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:05:16 AM
+
+Message: HandlingInstanceID: 68a16a2b-4923-4410-b0c2-059ab4e7e2ec
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 12:35:16
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:05:16 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:11412
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:05:55 AM
+
+Message: HandlingInstanceID: 3e13bcca-a2f2-4c76-b189-9c9fd3cd089d
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:35:55
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:05:55 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:33012
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:05:56 AM
+
+Message: HandlingInstanceID: bce466b7-f523-473c-88d0-80f586e564aa
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 12:35:56
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.DesignTimeControl.CreateChildControls()
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:05:56 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:33012
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:07:50 AM
+
+Message: HandlingInstanceID: d1de754d-824c-41ec-ae18-15f182dd47e8
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 12:37:50
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:07:50 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:34436
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:07:57 AM
+
+Message: HandlingInstanceID: 657b626e-4c50-4f24-8a2b-0aca6be2cd58
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:37:57
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:07:57 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/104e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:8096
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:07:57 AM
+
+Message: HandlingInstanceID: b4e46828-7bd5-46e2-8fdf-b4012f033d7a
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:37:57
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:07:57 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/104e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:8096
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:09:16 AM
+
+Message: HandlingInstanceID: 6f9e7e4b-b463-445c-b90a-06b41705d821
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 12:39:16
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:09:16 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:28620
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:09:19 AM
+
+Message: HandlingInstanceID: b38ae344-5b31-42c5-be9e-d8a0f3cfc614
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:39:19
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:09:19 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/314e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2576
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:09:19 AM
+
+Message: HandlingInstanceID: 1b958d09-6136-4c9e-b219-56793d641289
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 12:39:19
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:09:19 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/314e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2576
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:09:38 AM
+
+Message: HandlingInstanceID: 915f0446-79e0-4d87-8be1-86f17a1d3b3b
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 12:39:38
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:09:38 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059194155845304
+
+ProcessId: 11484
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19524
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:31:42 AM
+
+Message: HandlingInstanceID: a39671d5-55ec-4726-8634-c454f2e7386f
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 13:01:42
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:31:42 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+
+ProcessId: 22548
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:13888
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:32:08 AM
+
+Message: HandlingInstanceID: acee2000-2d2a-4ef0-a4b7-1c5131eed599
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 13:02:08
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:32:08 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+
+ProcessId: 22548
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:21292
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:32:15 AM
+
+Message: HandlingInstanceID: db6bf47a-9d68-437d-b2cb-29e6d91097d8
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 13:02:15
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:32:15 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+
+ProcessId: 22548
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:12828
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 7:37:00 AM
+
+Message: HandlingInstanceID: c8a1d10a-a065-4a68-b8eb-71e7f582ae77
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 13:07:00
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 7:37:00 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059214771913027
+
+ProcessId: 22548
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:24860
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:44:01 AM
+
+Message: HandlingInstanceID: 1996fb78-24df-4c5a-aed4-03fbfdf0cd08
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:14:01
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:44:01 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:33988
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:48:20 AM
+
+Message: HandlingInstanceID: e65febee-5c12-4e0e-a62e-2f50b01ba4f1
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:18:20
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:48:20 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:30400
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:48:47 AM
+
+Message: HandlingInstanceID: 6c7c5286-0755-4044-bbde-bfb34e6ea872
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:18:47
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:48:47 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/orderhistory/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16344
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:48:52 AM
+
+Message: HandlingInstanceID: 536ca242-85c0-4d28-9a62-b3e0d12ce9f8
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:18:52
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:48:52 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/f91b3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:12912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:49:15 AM
+
+Message: HandlingInstanceID: 993bc01e-6d61-4f0f-a804-7168eedc60a2
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:19:15
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:49:15 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/UnlockPage/941b3849-b781-60ed-9ead-ff0000bbe4eb/?unv_tstmp_prm=1561456155183
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:12912
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:50:31 AM
+
+Message: HandlingInstanceID: 8a6dc4d7-4055-43f1-b38f-8b633ea4601c
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 15:20:31
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:50:31 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32920
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 9:51:22 AM
+
+Message: HandlingInstanceID: 0c46e444-18c7-4c42-8667-c11a68ffcb12
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 15:21:22
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 9:51:22 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:27052
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:00:51 AM
+
+Message: HandlingInstanceID: 92afbd4f-0bb4-4a49-bda9-ffd2620e4d3b
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:30:51
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:00:51 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/634e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:9652
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:00:51 AM
+
+Message: HandlingInstanceID: 06fbedc5-1c37-4075-b9c7-4eb86292d5b0
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:30:51
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:00:51 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/634e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:9652
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:01:13 AM
+
+Message: HandlingInstanceID: 8da393da-e15a-4095-a41c-3715a9050e8f
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:31:13
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:01:13 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:13572
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:01:30 AM
+
+Message: HandlingInstanceID: f242db28-d35b-4e7e-9324-6f83adc447b4
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:31:30
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:01:30 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:13572
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:02:06 AM
+
+Message: HandlingInstanceID: ef1420ca-c175-460b-99b9-656f88a00d27
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:32:06
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:02:06 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:1456
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:02:58 AM
+
+Message: HandlingInstanceID: 45eb9d3d-6233-4492-b716-7837710df5b3
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 15:32:58
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:02:58 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19084
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:03:12 AM
+
+Message: HandlingInstanceID: 7992afad-d961-4fc1-99ad-bc155a112805
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/25/2019 15:33:12
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:03:12 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19084
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:03:15 AM
+
+Message: HandlingInstanceID: 5527d845-6e7d-4b89-aeb9-f7c9d8d12826
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:33:15
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:03:15 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/a64e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3512
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:03:15 AM
+
+Message: HandlingInstanceID: c983730e-115a-472a-a550-a9434ff1f841
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:33:15
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:03:15 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/a64e3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3512
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:03:26 AM
+
+Message: HandlingInstanceID: dcecf84e-a93c-4f77-a928-0637f4d03ebe
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:33:26
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:03:26 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:17336
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:18:05 AM
+
+Message: HandlingInstanceID: 54c6df55-c3ff-4ec6-bed9-7619866eb409
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:48:05
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:18:05 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3316
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:18:06 AM
+
+Message: HandlingInstanceID: 148a3166-8495-4c15-9776-30ef78b11171
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:48:06
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.DesignTimeControl.CreateChildControls()
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:18:06 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3316
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:18:59 AM
+
+Message: HandlingInstanceID: aee9b951-ec9f-46c7-8c4e-2e01c9964e02
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:48:59
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.DesignTimeControl.CreateChildControls()
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:18:59 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:21580
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:19:00 AM
+
+Message: HandlingInstanceID: d88ee62a-f062-468f-9d57-618616cf7832
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/25/2019 15:49:00
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:19:00 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/a94e3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:30196
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 10:19:00 AM
+
+Message: HandlingInstanceID: 85823e3d-5b68-4598-9454-3d3abfa72595
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/25/2019 15:49:00
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 10:19:00 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059291264738712
+
+ProcessId: 28208
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:3316
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:09:58 AM
+
+Message: HandlingInstanceID: 5b2780b9-f0fb-4cd1-a24e-9b31d74a184b
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/26/2019 11:39:58
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/CustomerService/profile__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:09:58 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+
+ProcessId: 33252
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:35384
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:10:37 AM
+
+Message: HandlingInstanceID: 4debf4b9-9fa9-461e-a471-7e5371c38479
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/26/2019 11:40:37
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/CustomerService/Profile__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:10:37 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+
+ProcessId: 33252
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:26588
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:13:37 AM
+
+Message: HandlingInstanceID: 55f1b96f-46f4-41fc-bbad-4baf5283d2b2
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/26/2019 11:43:37
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/CustomerService/Profile__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:13:37 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060024813318344
+
+ProcessId: 33252
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:26588
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:21 AM
+
+Message: HandlingInstanceID: 4a633200-deaa-4138-995d-e546f2ace6f8
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+06/26/2019 12:08:21
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:13212
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:21 AM
+
+Message: HandlingInstanceID: 4d573094-3822-49e8-b0c1-b3f49e652d37
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+06/26/2019 12:08:21
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16072
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:21 AM
+
+Message: HandlingInstanceID: b207b7f2-7b63-4d04-b2c1-b40512f1de1f
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+06/26/2019 12:08:21
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6688
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:21 AM
+
+Message: HandlingInstanceID: 22ae5949-02b2-45e3-890c-18aef0bbd32d
+An exception of type 'System.Security.Cryptography.CryptographicException' occurred and was caught.
+---------------------------------------------------------------------------------------------------
+06/26/2019 12:08:21
+Type : System.Security.Cryptography.CryptographicException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Bad Data.
+
+Source : mscorlib
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ThrowCryptographicException(Int32)
+HResult : -2146893819
+Stack Trace :    at System.Security.Cryptography.CryptographicException.ThrowCryptographicException(Int32 hr)
+   at System.Security.Cryptography.Utils._DecryptData(SafeKeyHandle hKey, Byte[] data, Int32 ib, Int32 cb, Byte[]& outputBuffer, Int32 outputOffset, PaddingMode PaddingMode, Boolean fDone)
+   at System.Security.Cryptography.CryptoAPITransform.TransformFinalBlock(Byte[] inputBuffer, Int32 inputOffset, Int32 inputCount)
+   at System.Security.Cryptography.CryptoStream.FlushFinalBlock()
+   at System.Security.Cryptography.CryptoStream.Dispose(Boolean disposing)
+   at System.IO.Stream.Close()
+   at Telerik.Sitefinity.Security.SecurityManager.DecryptData(Byte[] data)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ApplyTransforms(Byte[] cookie, Boolean outbound)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(XmlReader reader, SecurityTokenResolver tokenResolver)
+   at Microsoft.IdentityModel.Tokens.SessionSecurityTokenHandler.ReadToken(Byte[] token, SecurityTokenResolver tokenResolver)
+   at Telerik.Sitefinity.Security.Claims.SitefinitySessionAuthenticationModule.ReadToken(Byte[] sessionCookie)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:21 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:30360
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:22 AM
+
+Message: HandlingInstanceID: 7c582f02-fadf-49f8-aa23-ec2782dc9696
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/26/2019 12:08:22
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/CustomerService/Profile__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:22 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:16072
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:38:22 AM
+
+Message: HandlingInstanceID: d72dffe4-7568-4c1b-902d-560eb48a1d25
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/26/2019 12:08:22
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/CustomerService/Profile__c.aspx' does not exist.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   at System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   at System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:38:22 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/CustomerService/Profile__c.aspx
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:30360
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:41:51 AM
+
+Message: HandlingInstanceID: d998f204-db61-4692-8a77-8532282d7869
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/26/2019 12:11:51
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:41:51 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6400
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/26/2019 6:44:42 AM
+
+Message: HandlingInstanceID: 5045fb72-cabf-42f3-aefd-e26631e2f9a4
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/26/2019 12:14:42
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/26/2019 6:44:42 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/a94e3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.NullReferenceException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Object reference not set to an instance of an object.
+	Source : Telerik.Web.Device.Detection
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Telerik.Web.Device.Detection.DeviceModelData GetDeviceModelData(System.String)
+	HResult : -2147467261
+	Stack Trace :    at Telerik.Web.Device.Detection.Detector.GetDeviceModelData(String userAgent)
+	   at Telerik.Web.Device.Detection.Detector.FindDeviceScreenSize(String userAgent, ScreenRanges screenRanges)
+	   at Aptify.Framework.Web.eBusiness.NavBar.Page_Init(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnInit(EventArgs e)
+	   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+	   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.AddControlToPlaceholder(Int32 index, Guid controlId, Control ctrl, Control placeHolder, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.PageHelperImplementation.CreateChildControls(IList`1 controls, Page page, Boolean ignoreCultures, Boolean addControlIdScript)
+	   at Telerik.Sitefinity.Modules.Pages.StaticPageData.CreateChildControls(Page page, Boolean isFrontEndPage)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132060046735073736
+
+ProcessId: 33220
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19552
+
+Extended Properties: 
+----------------------------------------

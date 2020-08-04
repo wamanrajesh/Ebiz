@@ -1,0 +1,219 @@
+
+#page
+{
+    width: 1000px;    
+    margin: 0px auto 0px auto;min-height:100%;
+}
+#page-inner
+{
+    min-height:100%;
+}
+#home #header
+{
+    background: url(../../App_Themes/ICE/_img/header-bg.png) #d2d4d5 repeat-x;
+}
+#home #header-inner
+{
+    background: url(../../App_Themes/ICE/_img/header-inner-left.png) no-repeat;
+    background-size:100%;  height:98px;
+}
+#home #content
+{
+    background: url(../../App_Themes/ICE/_img/page-home-bg.png) #fff top repeat-x ;
+    width: 98%;    
+    padding:1%;     
+    min-height:100%;     
+}
+
+
+#footer
+{
+    width: 98%;
+    margin:0 1% 0 1%;       
+}
+#footer ul
+{
+    list-style: none;
+    display: inline;
+    float: left;
+}
+#footer ul li
+{
+    list-style: none;
+    display: inline;
+}
+#footer ul li a
+{
+    display: block;
+    float: left;
+    text-decoration: none;
+    padding: 0px 8px 0px 0px;
+    margin: 0px 8px 0px 0px;
+    border-right: 1px solid #666666;
+    color: #7A582D;
+}
+#footer ul li.last a
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-right: none;
+}
+
+#footer ul li a:hover
+{
+    text-decoration: underline;
+}
+
+#footer p
+{
+    float: right;   
+    text-align: right;    
+}
+
+#footer hr
+{
+    color: #d9c6a6;
+    height: 1px;   
+}
+
+.clearfix:after
+{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.page-title 
+{ 
+color: #f48f0b; background: #f5e3ca;padding-top:5px;padding-left:1%;padding-right:1%;padding-bottom:5px; 
+} 
+.margin-BT
+{
+    margin:5px 0px 5px 0px;
+}
+.margin-B
+{
+    margin-bottom:10px;
+}
+
+.CustomHeader
+{
+    font-weight: bold !important;  
+}
+@media screen and (max-width: 1000px) 
+{
+    #page
+    {
+        width:99%;margin:auto;
+    }
+}
+@media screen and (max-width:650px)   
+{
+    #Page
+    {
+        /*width:320px;   max-width:480px;     */
+    }
+    #home #content
+    {
+        /*padding: 5px;
+        width: 310px;max-width:470px;*/
+    }
+    #home #header-inner
+    {
+      /*background: transparent url(../../App_Themes/ICE/_img/header-inner-left.png) center center no-repeat;  */
+      background:transparent url(../../App_Themes/ICE/_img/Mobile-ICE-Header.png) center center no-repeat; 
+      background-size:100%;width:100%; height:100%;
+    }
+    
+}
+@media screen and (min-width:321px) and (max-width:650px)   
+{
+    #Page
+    {
+        /*width:320px;   max-width:480px;     */
+    }
+    #home #content
+    {
+        /*padding: 5px;
+        width: 310px;max-width:470px;*/
+    }
+    #home #header-inner
+    {
+      /*background: transparent url(../../App_Themes/ICE/_img/header-inner-left.png) center center no-repeat;  */
+      background:transparent url(../../App_Themes/ICE/_img/mobile-ice.png) center center no-repeat; 
+      background-size:100%;width:100%; height:100%;
+      border-bottom :solid 5px #875220;  
+      border-Top :solid 5px #875220;  
+    }
+     .social-link-div 
+    { 
+        padding:10px 0px 0px 0px;text-align:right;
+    }
+    .header-search-div 
+    { 
+        text-align:right;padding:28px 0px 0px 0px;
+    }
+}
+/* Added for Header Image Display on IPhone */
+   @media screen  and (max-width : 320px)
+{
+     html {
+    -webkit-text-size-adjust: 100%;
+    }
+      #home #header-inner
+    {
+      background:none;
+      background: url(../../App_Themes/ICE/_img/Mobile-ICE-Header.png) center no-repeat;  
+      
+      background-size:100%;width:100%;  height:99px !important;
+          
+    }
+    .social-link-div 
+    { 
+        padding:10px 0px 0px 0px;text-align:right;
+    }
+    .header-search-div 
+    { 
+        text-align:right;padding:28px 0px 0px 0px;
+    }
+    #home #header
+    {
+        background: #875220;
+    }
+}
+
+@media  (max-width:650px)  and  (orientation: landscape)
+{
+ html {
+    -webkit-text-size-adjust: 100%;
+    }
+  #home #header-inner
+    {
+      background:none;
+      background: url(../../App_Themes/ICE/_img/mobile-ice.png) center no-repeat;  
+    
+         background-size:100%;width:100%;  height:98px !important;
+         border-bottom :solid 10px #875220;  
+         border-Top :solid 10px #875220;   
+         overflow: none;
+    }
+     .social-link-div 
+    { 
+        padding:10px 0px 0px 0px;text-align:right;
+    }
+    .header-search-div 
+    { 
+        text-align:right;padding:28px 0px 0px 0px;
+    }
+    #home #header
+    {
+        background: #875220;
+    }
+}
+
+
+
+
+
+

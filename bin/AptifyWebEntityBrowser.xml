@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebEntityBrowser
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.WebEntityBrowser.FolderList">
+	<summary>
+ This is an optional property that must be set before calling Config()
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityBrowser.LoadEntityBrowser(Aptify.Framework.DataServices.UserCredentials,System.Int64,System.Int64)">
+	<summary>
+ Loads up the entity browser for the specific entity(and optionally view category) provided in the parameters.
+ </summary>
+	<param name="UserCredentials"></param>
+	<param name="EntityID"></param>
+	<param name="ViewCategoryID"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebEntityBrowser">
+	<summary>
+ Aptify Entity Browser - ASP.Net Server Control - Displays Views and View Categories for a given entity
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

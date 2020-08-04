@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyEBusinessUser
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.RefreshTopicCodes">
+	<summary>
+ Refresh the topic code information for the currently logged in user
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.LoadValuesFromSessionObject(System.Web.SessionState.HttpSessionState)">
+	<summary>
+ Load the user's variables from the page session object
+ </summary>
+	<param name="Session"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.SaveValuesToSessionObject(System.Web.SessionState.HttpSessionState)">
+	<summary>
+ Save the user values to the session object
+ </summary>
+	<param name="Session"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.InternalSave(System.Web.SessionState.HttpSessionState@)">
+	<summary>
+ Responsible for persisting the internal state of this object to the provided SessionState object.
+ </summary>
+	<param name="oTemp"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.Save">
+	<summary>
+ Saves the changes previously made through the SetValue function calls are committed to the database in both the Web Users and the Pesrons entities as needed. Returns True if successful, otherwise returns false
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.AddDefaultGroupsToUser(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase,Aptify.Framework.Application.AptifyApplication)">
+	<summary>
+ This method adds the groups to the user GE. The default implementation uses the AutoAddToNewUser BIT
+ field in the Web Groups entity.
+ </summary>
+	<param name="WebUserGE"></param>
+	<param name="Application"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.FindCreateCompany(System.String)">
+	<summary>
+ This function will attempt to find the company referenced by the 
+ user who is registering/updating information on the web site using
+ a simple search on the company name specified. If the company
+ name is not found, then this method will create a new company, using the company name 
+ provided along with the address information provided by the person.
+ </summary>
+	<param name="CompanyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.User.FindCreatePerson(System.String)">
+	<summary>
+ This function will attempt to find the person referenced by the 
+ user who is registering/updating information on the web site.  The base class implementation of this method 
+ is a simple search on the person name specified.  If the  
+ name is not found, then the method will create a new person, using the company ID of the current
+ user provided along with the address information provided by the for that company.  
+ </summary>
+	<param name="FullName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.User">
+	<summary>
+ Automatically saves and loads user-level information that is needed by Aptify e-Business Applications
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.IUser">
+	<summary>
+ Interface class for read-only access to current user in Aptify e-Business
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

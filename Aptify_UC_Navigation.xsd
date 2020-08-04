@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xsi:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+  <xs:element name="Aptify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Global">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="securityErrorPage" type="xs:string" />
+              <xs:element name="loginPage" type="xs:string" />
+              <xs:element name="useVirtualPath" type="xs:boolean" />
+              <xs:element name="maxLoginTries" type="xs:unsignedByte" />
+              <xs:element name="minPwdLength" type="xs:unsignedByte" />
+              <xs:element name="minPwdUpperCase" type="xs:unsignedByte" />
+              <xs:element name="minPwdLowerCase" type="xs:unsignedByte" />
+              <xs:element name="minPwdNumbers" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="UserControls">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="UserControl">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="properties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="property">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="value" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="links">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element maxOccurs="unbounded" name="link">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="value" type="xs:string" use="required" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="type" type="xs:string" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xsi:schema>

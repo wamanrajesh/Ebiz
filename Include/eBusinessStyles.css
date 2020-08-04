@@ -1,0 +1,422 @@
+/* CSS Stylesheet for Aptify eBusiness Suite Sample Site */
+
+body	{
+	MARGIN: 0px;
+    BACKGROUND-COLOR: white;
+     FONT-FAMILY: Segoe UI, Arial, Helvetica;
+    FONT-SIZE: .8em;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    WORD-SPACING: normal;
+	COLOR: black;
+}
+
+P	{
+    FONT-FAMILY: Segoe UI, Arial, Helvetica;
+    FONT-SIZE: .8em;
+    FONT-WEIGHT: normal;
+    LETTER-SPACING: normal;
+    TEXT-TRANSFORM: none;
+    WORD-SPACING: normal;
+	COLOR: black;
+}
+
+H1	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	2em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H2	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	1.75em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H3	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	1.58em;
+	font-weight:	500;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H4	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	1.33em;
+	font-weight:	500;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H5, DT	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	1em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+H6	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:	.8em;
+	font-weight:	700;
+	font-style:	normal;
+	text-decoration:	none;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	}	
+		
+TFOOT, THEAD	{	
+	font-size:	1em;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	}	
+		
+TH	{	
+	vertical-align:	baseline;
+	font-size:	1em;
+	font-weight:	bold;
+	word-spacing:	normal;
+	letter-spacing:	normal;
+	text-transform:	none;
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	}	
+
+
+
+A:link	{	
+	text-decoration:	none;
+	color:	Blue
+}	
+		
+A:visited	{	
+	text-decoration:	none;
+	color:	Blue
+}	
+		
+A:active	{	
+	text-decoration:	none;
+	color:	#647cd6
+}	
+		
+A:hover	{	
+	text-decoration:	underline;
+	color:	red
+}
+
+TABLE#NavBarTable
+{
+	border-style: solid;
+	border-color: #D2D7DF;
+	border-width: 1px;
+	background-color: #EDEEF1;
+	padding: 0px;
+	margin: 0px;
+	border-width: 0px;
+	border-collapse: collapse;
+	width: 100%;
+	height: 34px;
+	border-bottom: solid 3px #3f4d68;
+}
+
+TABLE#NavBarContainingTable TD
+{
+	padding: 0px;
+}
+
+DIV#Header
+{
+	BACKGROUND-IMAGE: url(../images/ebiz-H-tile.gif);
+	BACKGROUND-REPEAT: repeat-x;
+}
+
+/* sets up the table for the main eBusiness entry page */
+TABLE#DefaultMainTable
+{ 
+	width: 600px;
+	padding: 0px;
+	margin: 0px;
+	border-style: none;
+	border-collapse: collapse;
+}
+
+/* used to indent content in the main areas of the page */
+TD.Indent
+{
+	padding: 10px;
+}
+
+TABLE#HeaderTable
+{
+	margin: 0px;
+	padding: 0px;
+	width: 800px;
+	border-width: 0px;
+	border-collapse: collapse;
+}
+
+TABLE#HeaderTable TD
+{
+	padding: 0px;
+}
+
+
+HoverClass
+{
+	color: Blue;
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+}
+
+.NavBar
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+    FONT-SIZE: 10px;
+    FONT-WEIGHT:normal;
+    color: Black;
+    text-decoration: none
+}
+.NavBar a:link
+{
+	color: Navy;
+	text-decoration: none
+}
+.NavBar a:visited
+{
+	color: Navy
+} 
+.NavBar A:hover
+{
+	color:Maroon;
+	font-weight: bold;
+	text-decoration: underline
+}
+
+.detailheader
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	Font-size: 11px;
+	color: black;
+	font-weight: bold
+	}
+.detaillabel	
+{
+	font-size:11;
+
+}
+.cartlabel 
+{
+	font-size:10;
+	background-color:#bac0c9
+	
+	}
+.cartinfo	
+{
+	font-size:10;
+	background-color: #EAEAEA
+	}
+
+
+.newslink
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size: 10px
+}	
+.prodheader	
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size: 10;
+	color: white
+}
+.prodacartlink	
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size: 10
+	}
+.proddetails
+{
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	font-size:11;
+	color: #0B3357
+}
+
+
+BLOCKQUOTE, PRE	{	
+	FONT-FAMILY: Segoe UI, Arial, Helvetica;
+	}	
+	
+
+UL LI	{	
+	list-style-type:	square ;
+	}	
+
+UL LI LI	{	
+	list-style-type:	disc;
+	}	
+
+UL LI LI LI	{	
+	list-style-type:	circle;
+	}	
+	
+OL LI	{	
+	list-style-type:	decimal;
+	}	
+
+OL OL LI	{	
+	list-style-type:	lower-alpha;
+	}	
+
+OL OL OL LI	{	
+	list-style-type:	lower-roman;
+	}	
+
+SMALL	{	
+	font-size:	.7em;
+	}	
+
+BIG	{	
+	font-size:	1.17em;
+	}	
+.tiny { FONT-FAMILY: Segoe UI, Arial, Helvetica; font-size: xx-small; }
+
+DIV.ContentArea
+{
+	padding: 5px;
+}
+
+/*Style items for the navbar*/
+
+.TopGroup
+{
+  background-color:#757495; 
+  background-image: url(../images/top_groupBg.gif); 
+  border:1px solid #696885; 
+  border-bottom-color: #57566F; 
+  border-right-color: #57566F; 
+  cursor:default; 
+}
+
+.MenuGroup
+{
+  background-color:#F5F5F5;
+  border:1px #4E5358 solid; 
+  border-style:solid;
+  cursor:default; 
+}
+
+.TopMenuItem
+{
+  color:white; 
+  font-family:tahoma; 
+  font-size:12px; 
+  font-weight: bold;
+  padding:20px;
+  cursor:default; 
+}
+
+.TopMenuItemHover 
+{
+  color:white; 
+  background-image: url(../images/top_itemHoverBg.gif);
+  background-color:#757495; 
+  font-family:tahoma; 
+  font-size:12px; 
+  font-weight: bold;
+  cursor:default; 
+}
+
+.MenuItem
+{
+  border: 1px solid #F5F5F5; 
+  color:#00025C;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuItemHover 
+{
+  background-color:#FFEEC2; 
+  color: #333333;
+  border: 1px solid #57566F; 
+  border-top-color: #9190AC; 
+  border-left-color: #9190AC;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuItemExpanded
+{
+  background-color:#FFEEC2; 
+  color: #333333;
+  border: 1px solid #9190AC; 
+  border-top-color: #57566F; 
+  border-left-color: #57566F;
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuItemActive
+{
+  color: #333333;
+  background-color:#FBE694; 
+  border: 1px solid #BB5503; 
+  font-family:tahoma; 
+  font-size:11px; 
+  cursor:default; 
+}
+
+.MenuBreak
+{
+  background-color: silver; 
+  width:100%;
+  height:2px;
+}
+
+.ScrollItem
+{
+  background-color:#F5F5F5; 
+  border: 1px solid #757495; 
+  text-align:center;
+  cursor:default;
+}
+
+.ScrollItemH
+{
+  background-color:#FFEEC2; 
+  border: 1px solid #757495; 
+  text-align:center;
+  cursor:default;
+}
+
+.ScrollItemA
+{
+  background-color:#FBE694; 
+  border: 1px solid #BB5503; 
+  text-align:center;
+  cursor:default;
+}

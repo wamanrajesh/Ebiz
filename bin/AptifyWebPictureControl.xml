@@ -1,0 +1,108 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebPictureControl
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.FileExtensions">
+	<summary>
+ List of File Extensions to Check. Defaults to JPG, JPEG, BMP, GIF, PNG, WMF. The associated control property is implemented as a generic list of strings, the associated Form Component Input Property (FileExtensions) is a comma delimited string.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.Images">
+	<summary>
+ Gets a list of the images that are being displayed, does not support updates.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.CurrentImageIndex">
+	<summary>
+ Sets/Gets the currently displayed image index
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.AttachmentCategory">
+	<summary>
+ Name of the attachment category to use for the files. This defaults to blank. This category of attachments is used for viewing/storage of picture attachments associated with the record. If not specified, attachments associated with NO category are used.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.AttachmentCategoryID">
+	<summary>
+ Returns the ID for the Attachment Category record associated with the AttachmentCategory property 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.ScaleImage">
+	<summary>
+ Defaults to True - if set to True, this will result in images automatically being sized to fit the display area available in the control, otherwise, the image is displayed in its native size and scroll bars are shown if necessary
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.ShowToolbar">
+	<summary>
+ Defaults to True 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPictureViewer.MaintainAspectRatio">
+	<summary>
+ Defaults to True - This property is ONLY used if ScaleImage = True - if set to True, this property will ensure that the ratio of height/width on the image is maintained as it is sized to fit the container.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebPictureViewer.RefreshImageInfo">
+	<summary>
+ This method is responsible for refreshing the data in the Images list with data from the 
+ Attachments service.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebPictureViewer.ImageInfo">
+	<summary>
+ ImageInfo class is used to contain information about an image being displayed including the image itself as well as
+ Attachment information.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebPictureViewer">
+	<summary>
+ Web Picture Viewer Control - ASP.NET 2.x+ Server Control. Automatically displays pictures attached to a record.
+ The following Form Component Input Properties are available for this control and are also
+ available as properties on the control.
+ 
+ <list>
+			<item>FileExtensions: Comma-Delimited List of File Extensions to Check. If left blank, defaults to JPG, BMP, GIF, PNG. Set to the value * to allow all file types. The associated control property is implemented as a generic list of strings, the Form Component Input Property is a comma delimited string.</item>
+			<item>AttachmentCategory: Name of the attachment category to use for the files. This defaults to blank. This category of attachments is used for viewing/storage of picture attachments associated with the record. If not specified, attachments associated with NO category are used.</item>
+			<item>ScaleImage: Defaults to True - if set to True, this will result in images automatically being sized to fit the display area available in the control, otherwise, the image is displayed in its native size and scroll bars are shown if necessary</item>
+			<item>MaintainAspectRatio: Defaults to True - This property is ONLY used if ScaleImage = True - if set to True, this property will ensure that the ratio of height/width on the image is maintained as it is sized to fit the container.</item>
+			<item>BorderStyle: Defaults to Fixed3D - Options are None, Fixed3D, and FixedSingle - corresponds to the standard UserControl BorderStyle property</item>
+			<item>ShowToolbar: Defaults to True</item>
+		</list>
+	</summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

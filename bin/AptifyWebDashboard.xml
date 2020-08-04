@@ -1,0 +1,317 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebDashboard
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.GetProperty(System.String,System.String)">
+	<summary>
+ This method returns a string property if it is exists, and returns the default value if it doesn't exist
+ </summary>
+	<param name="PropertyName"></param>
+	<param name="DefaultValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.GetPropertyDefaultValue(System.String)">
+	<summary>
+ This method returns the default value for a property in the current dashboard component.
+ </summary>
+	<param name="PropertyName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.GetProperty(System.String,System.Object)">
+	<summary>
+ This method returns a property if it is exists, and returns the default value if it doesn't exist
+ </summary>
+	<param name="PropertyName"></param>
+	<param name="DefaultValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.GetProperty(System.String,System.Drawing.Color)">
+	<summary>
+ This overload returns a color property from the input map
+ </summary>
+	<param name="PropertyName"></param>
+	<param name="DefaultValue"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.Config(System.Int64)">
+	<summary>
+ This base method will configure the part and load up the meta-data for the part as required
+ </summary>
+	<param name="PartID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentBase.LoadInputMap">
+	<summary>
+ This method will load up the input map for the given part into the AptifyProperties collection
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentBase">
+	<summary>
+ Aptify Base Class Server Control for Web Dashboard Components
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardLayout.AddStyleSheetToPage">
+	<summary>
+ This method is responsible for adding the dashboard style-sheet to the page. Override this method in a sub-class
+ to alter the inclusion of the style sheet.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardLayout.GetDashboardIDFromApplicationID(System.Int64)">
+	<summary>
+ This function will return a Dashboard ID that is to be used for the current user for the Application ID
+ ID specified
+ </summary>
+	<param name="ApplicationID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardLayout.LoadDashboardAreas(Aptify.Framework.DigitalDashboard.DashboardMetadata)">
+	<summary>
+ This method will load up all of the areas for the specified dashboard
+ </summary>
+	<param name="Dashboard"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardLayout.getArea(System.Int32)">
+	<summary>
+ Added by Maulik Patel, issue 4591, 07/09/2007
+ Get the area object from the m_oDashAreas object collections.
+ </summary>
+	<param name="ID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardLayout.LoadArea(Aptify.Framework.Web.Common.WebDashboardAreaInstance,ComponentArt.Web.UI.SplitterPaneGroup@,System.Boolean)">
+	<summary>
+ Added by Maulik Patel, issue 4591, 07/09/2007
+ This function is used to load area of dashboard. It starts loading areas, first area will be which has left and top position set to "0".
+ </summary>
+	<param name="Area"></param>
+	<param name="CurrentPaneGroup"></param>
+	<param name="IsFirstTime"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardLayout">
+	<summary>
+ Aptify Dashboard Layout Server Control for ASP.NET 2+
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardControlWrapper">
+	<summary>
+ Aptify Dashboard Control Wrapper - used to provide a wrapper for the title bar, min/max buttons, etc that exist on a dashboard
+ so that the internal controls do not have to implement these features directly. All dashboard components are instantiated
+ within this dashboard wrapper class
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardAreaInstance.LoadParts(Aptify.Framework.Application.AptifyApplication,ComponentArt.Web.UI.Splitter)">
+	<summary>
+ This method is responsible for loading up all of the parts for a given dashboard area
+ - assumes that the Panel and MetaData properties have already been set before this method 
+ called.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardAreaInstance.LoadPart(Aptify.Framework.Application.AptifyApplication,ComponentArt.Web.UI.Splitter,Aptify.Framework.DigitalDashboard.DashboardPartMetadata,ComponentArt.Web.UI.SplitterPane@,System.Int32,System.Int32)">
+	<summary>
+ This method is responsible for loading up a single dashboard part into
+ a WebPartZone as specified.
+ </summary>
+	<param name="Part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardAreaInstance.GetAdjustedProportion(Aptify.Framework.DigitalDashboard.DashboardPartMetadata)">
+	<summary>
+ This method is responsible for adjusting the proportion value for the specified part based on the 
+ total proportion in the area to make sure the sum of all proportions in an area are not &gt; 100
+ </summary>
+	<param name="Part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardAreaInstance.GetAreaTotalProportion(Aptify.Framework.DigitalDashboard.DashboardAreaMetadata)">
+	<summary>
+ Returns the sum of the proportion field of all parts in the provided area
+ </summary>
+	<param name="Area"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardAreaInstance.LoadDashboardComponent(Aptify.Framework.DigitalDashboard.DashboardPartMetadata)">
+	<summary>
+ This method will create a new control that is deriven from WebDashboardComponentBase for the specified
+ Part based on the meta-data associated with the part's underlying dashboard component.
+ </summary>
+	<param name="Part"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardAreaInstance">
+	<summary>
+ Aptify ASP.NET Dashboard MetaData instance wrapper and part loading functionality
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.ConvertBackColorToStyle(System.Drawing.Color)">
+	<summary>
+ This method will convert the Color structure into a string
+ </summary>
+	<param name="Color"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.Config(System.Int64)">
+	<summary>
+ Configures the Most Recently Used component for use.
+ </summary>
+	<param name="PartID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.LoadMRU">
+	<summary>
+ This method is called from Config() when it is required to load the MRU from the database
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.EntityRecordExists(System.String,System.Int64)">
+	<summary>
+ This method does checks to see if the specified record ID exists in the entity defined by the EntityName
+ parameter. If it does, returns True, otherwise, returns False
+ </summary>
+	<param name="EntityName"></param>
+	<param name="RecordID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.GetEntityIconURL(System.String)">
+	<summary>
+ This method is responsible for returning an icon repository object name
+ and return it as a URL using the AptifyRepositoryObjectHandler HttpHandler
+ class. Alternatively, if no icon is defined for a given entity this method
+ returns the URL to a default icon (which is an embedded resource)
+ </summary>
+	<param name="EntityName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentMRU.DefaultEntityIconURL">
+	<summary>
+ Returns the URL for a default icon for the MRU for an entity record
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentMRU">
+	<summary>
+ Aptify Most Recently Used Records Dashboard Component
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOutlookViewHTML">
+	<summary>
+ This method is responsible for returning the "Outlook HTML" which is basically
+ an IFRAME that points to the outlook URL. The Outlook URL is determined by accessing
+ two properties from the DashboardPart. The first is called "Folder" which is used
+ by both the windows version of this part and the web version. Folder can either be
+ a simple folder name like Calendar or Inbox or Tasks, or it can be a fully qualified
+ path such as \\Mailbox - User Name\Inbox\SubFolder. In the latter case, the path is 
+ converted to an Outlook Web Access compatible path which strips the first segment 
+ of the path containing \\Mailbox - UserName, leaving the Inbox\SubFolder and converts
+ back-slashes to forward slashes. 
+ 
+ The other property required for this to work is the OWABaseURL which is
+ a property that points to the base URL for the web server running Outlook Web Access.
+ This server is typically in the form of something like https://mailbox.democompany.com/exchange
+ 
+ The OWA URL is then in a form of:
+ BaseURL + UserName + Folder + Command String
+ 
+ Command String is determined by calling the GetOWACommandString protected method
+ 
+ An example of a complete OWA URL is below
+ 
+ https://mailbox.democompany.com/exchange/UserName/Inbox/SubFolder/?Cmd=contents
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOutlookURL">
+	<summary>
+ This method calls the GetFolderPath, GetOWABaseURL and GetOWACommandString methods and creates a combined
+ URL for the OWA resource to be displayed
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOWAUserName">
+	<summary>
+ This method is responsible for generating the OWA User Name. 
+ This method has two modes of operation. First, if the user account is linked to an EMPLOYEE
+ record then the Employee Email address is used. If not (or no email address is in the employee), then 
+ this method uses the Integrated security domain information which
+ can have one of two formats and parses it to get the information needed. 
+ In the case where the Integrated security domain login info
+ is in the format of username@domain.com then the entire string is 
+ passed back. In the case where the integrated security domain login 
+ info is in the format of DOMAIN\UserName, then just the UserName portion is returned.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetEmployeeEmailAddress">
+	<summary>
+ This method uses the User Entity Relations information to determine if there is an Employees
+ entity record linked to the current user and returns the email address if there is one. Override
+ this member in a sub-class to change the methodology for retrieving the email address for the 
+ current user.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetFolderPath">
+	<summary>
+ This method is responsible for getting the folder path in OWA format, as per the description
+ in the <see cref="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOutlookViewHTML">GetOutlookViewHTML</see> method.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOWACommandString">
+	<summary>
+ This method is responsible for getting the command string OWA format, as per the description
+ in the <see cref="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOutlookViewHTML">GetOutlookViewHTML</see> method. This method checks the OWACommandString
+ property, and if it exists, uses it, otherwise, uses the Cmd=contents default string.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOWABaseURL">
+	<summary>
+ This method is responsible for getting the base URL (OWABaseURL property) for the OWA server as per the description
+ in the <see cref="M:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView.GetOutlookViewHTML">GetOutlookViewHTML</see> method.  
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentOutlookView">
+	<summary>
+ This class provides a web-based user experience for the Outlook components by
+ using the Outlook Web Access components.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentViewIframe.GetEntityListViewURL">
+	<summary>
+ This method is responsible for getting the view URL for the ELV.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentViewIframe">
+	<summary>
+ This class provides a web-based user experience for the Entity List View components.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebDashboardComponentButtonBar.LoadButtonBar">
+	<summary>
+ Loads up the button bar data and controls, called from Config()
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentButtonBar">
+	<summary>
+ Aptify ASP.NET Server Control for dashboards rendering a button bar to the user.  
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebDashboardComponentView">
+	<summary>
+ Aptify ASP.NET Server Control for dashboards rendering a view to the user. Internally uses the 
+ <see cref="T:Aptify.Framework.Web.Common.WebViewContainer">WebViewContainer</see> class.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

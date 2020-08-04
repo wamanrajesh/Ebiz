@@ -1,0 +1,97 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebChartView
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Framework.Web.Common.ChartUtility.RowExists(System.Data.DataTable,System.String,System.Int32@,System.Int32)">
+	<summary>
+ Tests to see if the specified value exists in any of the rows in the table in the first column
+ </summary>
+	<param name="DataTable"></param>
+	<param name="Value"></param>
+	<param name="Row"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.ChartUtility.GetChartTypeMaxGroups(System.Int64)">
+	<summary>
+ This method determines the maximum number of groups for the given chart type, based on the meta-data
+ in the Chart View Types entity.
+ </summary>
+	<param name="ChartTypeID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.ChartUtility.GetSingleGroupBy(System.String,System.String,System.String)">
+	<summary>
+ This method is responsible for returning the SQL associated with a single group-by element for a chart. This overload
+ incorporates the provided AliasName parameter into the returned SQL to alias the output as the provided AliasName.
+ </summary>
+	<param name="Field">Name of field</param>
+	<param name="FunctionName">Name of function</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.ChartUtility.GetSingleGroupBy(System.String,System.String)">
+	<summary>
+ This method is responsible for returning the SQL associated with a single group-by element for a chart.
+ </summary>
+	<param name="Field">Name of field</param>
+	<param name="FunctionName">Name of function</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.ChartUtility.SetAxisProperties(Infragistics.UltraChart.Resources.Appearance.ChartGridAppearance,Infragistics.UltraChart.Resources.Appearance.DataAppearance,System.Data.DataTable,System.Data.DataTable,System.String)">
+	<summary>
+ This method is responsible for setting axis properties in the provided ChartAxis object and ChartData object
+ based on the meta-data in the Aptify Chart Views record passed in via the DataTable parameter.
+ </summary>
+	<param name="ChartAxis"></param>
+	<param name="ChartData"></param>
+	<param name="DataTable"></param>
+	<param name="PivotData"></param>
+	<param name="PivotColumn"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.ChartUtility">
+	<summary>
+ Web Version of Chart Utility class for Aptify Chart views  
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebChartView.InitializeToolbar">
+	<summary>
+ This method is called when the toolbar's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebChartView">
+	<summary>
+ Aptify Web-based Chart View implementation for ASP.NET 2+
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.WebChartView.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.WebChartView.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.WebChartView">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

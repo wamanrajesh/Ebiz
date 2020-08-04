@@ -1,0 +1,102 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EBusinessHierarchyTree
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.WebUserActivityDesigner">
+	<summary>
+ Web Menu Control Design Time Interface
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.HiddenFilter">
+	<summary>
+ This property can be used to filter the results 
+ shown in the tree. This property can be set to
+ any valid SQL Expression, and the expression will
+ automatically be wrapped in parenthesis and added to 
+ the end of each query as the tree is loaded
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.Entity">
+	<summary>
+ Set/Get the Entity to load information from
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.DisplayField">
+	<summary>
+ Set/Get the Field within the entity that will be displayed in the tree to the user
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.KeyField">
+	<summary>
+ Set/Get the field within the entity that contains the primary key of the entity (usually ID)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.ParentField">
+	<summary>
+ Set/Get the field within the entity that provides the linkage to the parent level in the hierarchy (usually ParentID)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.RootID">
+	<summary>
+ Set/Get the Root ID in the tree to display. If left at the default of -1, the entire entity contents are displayed
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.OrderBy">
+	<summary>
+ Set the Order By clause to sort the tree display. If no value is provided then it will sort on isName field of the Entity (Please Provide only  coma seperated Field Name(s)).
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.HoverNodeCursor">
+	<summary>
+ Set the mouse pointer used when hovered over a node.
+ </summary>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree.GetEntityInfo(System.String,System.String@,System.String@)">
+	<summary>
+ Utility method that returns (via OUT parameters) the Base Database and Base View for a
+ given entity
+ </summary>
+	<param name="Entity"></param>
+	<param name="BaseDatabase"></param>
+	<param name="BaseView"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.AptifyHierarchyTree">
+	<summary>
+ Aptify Hierarchy Display Tree
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

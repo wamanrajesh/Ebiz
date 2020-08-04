@@ -1,0 +1,130 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebTab
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.TabControl.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.TabControl.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="E:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.LoadTabContent">
+	<summary>
+ This event is raised whenever a tab needs to be loaded dynamically. During this
+ event, the user of this control should populate the ContentPane of the tab in question
+ and those controls will be rendered and sent back to the client via the callback.
+ </summary>
+	<param name="TabIndex"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.ContentLoadMode">
+	<summary>
+ This property determines if the content is to be loaded dynamically via callbacks
+ or if it is to be loaded via static mode when a page is first loaded. If set
+ to load with the DynamicCallback setting, the LoadTabContent event is raised
+ by the control when required. This event is only raised once per tab when a tab
+ is first shown.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.TabsPerRow">
+	<summary>
+ Number of tabs per row. If this property is set, it will automatically redistribute the tabs that already exist across the 
+ number of rows that are required for the number of tabs in place. When new tabs are added, they will automatically be added
+ to a new row, when requird, based on the TabsPerRow property.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.AutoFitTabRows">
+	<summary>
+ Automatically wrap tabs into new rows (on the client) based on the size of the tab control. This property defaults
+ to False, but when set to True will cause the tab control to ignore the TabsPerRow property and instead automatically
+ add/remove rows as required based on the number of tabs that can fit on each row based on the width of the tab control
+ at run time.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.DistributeTabs">
+	<summary>
+ This method is responsible for distributing tabs across rows based on the TabsPerRow property. This method
+ will override any specialized row allocation that was previously done and is called by TabsPerRow property
+ when the value changes.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.AddRow">
+	<summary>
+ Creates a new row and returns it
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.SetupCallback">
+	<summary>
+ This method is responsible for setting up the call back functionality and is called from CreateChildControls only
+ when the ContentLoadMode=DynamicCallback
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TabControl.AptifyWebTab.TabAddedToRow(Aptify.Framework.Web.Common.TabControl.TabItem)">
+	<summary>
+ Called by Row
+ </summary>
+	<param name="Tab"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.AptifyWebTab">
+	<summary>
+ Aptify Web Tab Control - ASP.Net Server Control
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.TabContentPane">
+	<summary>
+ Aptify Tab Control Content Pane - Holds Child Controls for a Tab
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TabControl.TabRow.AddTab(System.String,System.String,System.String)">
+	<summary>
+ This method will add a new tab to the row
+ </summary>
+	<param name="Text"></param>
+	<param name="ToolTip"></param>
+	<param name="ImageURL"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.TabRow">
+	<summary>
+ Represents an individual row in the server-based web tab control
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.TabBase">
+	<summary>
+ Abstract base class used by other Web Tab components, implements DIV based
+ components instead of SPAN based components.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.TabControl.TabItem.ClientClickHandler">
+	<summary>
+ JavaScript code that will be executed on the client side when this tab is clicked. This attribute is stored in
+ the clientClickHandler client-side attribute
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabControl.TabItem">
+	<summary>
+ Aptify Tab Control Individual Tab Item
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

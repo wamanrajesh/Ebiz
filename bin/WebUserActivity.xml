@@ -1,0 +1,52 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+WebUserActivity
+</name>
+</assembly>
+<members>
+<member name="T:Aptify.Framework.Web.eBusiness.WebUserActivityDesigner">
+	<summary>
+ Web User Activity Control Design Time Interface
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.WebUserActivity.WebModule">
+	<summary>
+ Name of the Aptify e-Business Web Module the page is a part of.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.WebUserActivity.LogUserActivity(Aptify.Framework.Application.AptifyApplication,Aptify.Framework.DataServices.DataAction,Aptify.Framework.Web.eBusiness.User,System.String,System.String)">
+	<summary>
+ This utility method can be used to log web user activity from any other class and is used 
+ internally within this object to handle logging of user activity.
+ </summary>
+	<param name="AptifyApplication"></param>
+	<param name="DataAction"></param>
+	<param name="User"></param>
+	<param name="ModuleName">Aptify e-Business Web module Name</param>
+	<param name="URL">Full Raw URL</param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.WebUserActivity">
+	<summary>
+ When this control is added to a page, it automatically logs page hits at the user level.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
