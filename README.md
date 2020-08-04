@@ -1,2 +1,0 @@
-# Ebiz
-This Ebiz Repository
