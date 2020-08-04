@@ -1,0 +1,219 @@
+/*-------------PROFILE CONTROL start---------------*/
+.profile-main-div
+{
+    width: 100%;
+}
+.required-text-div
+{
+   color:#f00;font-size:11px;text-align:right;
+}
+
+.profile-info-data
+{
+    margin:0 1% 0 1%;width:98%; word-wrap: break-word;
+}
+
+.profile-image
+{
+    margin-bottom:10px;
+}
+.profile-social-div
+{
+   margin-bottom:10px;
+}
+.profile-joinICE-img-div
+{
+   margin-bottom:10px;
+}
+.profile-title-bg
+{
+     background:#957140;padding:2px 1% 2px 1%;width:98%;margin-bottom:10px;
+}
+.edit-lnk-btn
+{
+    color:orange; margin-top: 4px;display: inline-block;
+}
+
+/*--PERSONAL INFO start--*/
+.personal-info-title
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    background: url(../../App_Themes/ICE/_img/personal-icon.png) 1% 50% #957140;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    color: White;      
+    vertical-align: middle;
+    padding:5px 0px 5px 35px;     
+}
+.personal-info-container
+{
+    border:1px solid #E7D2B6; margin-bottom:10px;width:99.9%;
+}
+.personal-info-container input[type="text"]
+{
+    width:70%;
+}
+/*--PERSONAL INFO end--*/
+
+
+/*--WEBACCOUNT INFO start--*/
+.webAccount-info-title
+{
+     font-family:Segoe UI, Arial, Helvetica; 
+    background:url(../../App_Themes/ICE/_img/web-icon.png) 1% 50% #957140;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    color:White;    
+    vertical-align: middle;
+      padding:5px 0px 5px 35px;        
+}
+.webAccount-info-container
+{
+    border:1px solid #E7D2B6; margin-bottom:10px;width:99.9%;
+}
+.webAccount-info-container input[type="text"], .webAccount-info-container input[type="password"] 
+{
+    width:38.5%;
+}
+.webAccount-info-container select
+{
+    width:40%;
+}
+/*--WEBACCOUNT INFO end--*/
+
+/*--CONTACT INFO start--*/
+.contact-info-container
+{
+    border:1px solid #E7D2B6; margin-bottom:10px;width:99.9%;
+}
+.contact-info-title
+{
+     font-family:Segoe UI, Arial, Helvetica; 
+    background:url(../../App_Themes/ICE/_img/contact-icon.png) 1% 50% #957140;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    color:White;  
+    vertical-align: middle;
+     padding:5px 0px 5px 35px;     
+}
+
+.contact-info-container input[type="text"]
+{
+    width:96%;
+}
+.contact-info-container select
+{
+    width:99%;
+    height: 20px;
+}
+/*--CONTACT INFO start--*/
+
+/*--MEMBERSHIP INFO start--*/
+.membership-info-container
+{
+    border:1px solid #E7D2B6; margin-bottom:10px;width:99.9%;
+}
+.membership-info-title
+{
+     font-family:Segoe UI, Arial, Helvetica; 
+    background:url(../../App_Themes/ICE/_img/Member_Info.png) 1% 50% #957140;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    color:White;  
+    vertical-align: middle;
+     padding:5px 0px 5px 35px;      
+}
+
+.membership-info-container input[type="text"]
+{
+    width:100%;
+}
+.membership-info-container select
+{
+    width:99%;
+}
+/*--MEMBERSHIP INFO start--*/
+
+/*--TOPICINTERSET INFO start--*/
+.topicofInterest-info-container
+{
+    border:1px solid #E7D2B6; margin-bottom:10px;width:99.9%;
+}
+.topicofInterest-info-title
+{
+     font-family:Segoe UI, Arial, Helvetica; 
+    background:url(../../App_Themes/ICE/_img/topic-of-int.png) 1% 50% #957140;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    font-weight: bold;
+    color:White;  
+    vertical-align: middle;
+    padding:5px 0px 5px 35px;   
+}
+/******Customer_Services/AdminEditProfile Start ******/
+.membership-info-title
+{
+	font-family: Segoe UI, Arial, Helvetica;
+	background: url("../../App_Themes/ICE/_img/Member_Info.png") 1% 50% #957140;
+	background-repeat: no-repeat;
+	font-size: 12px;
+	font-weight: bold;
+	color: White;
+	vertical-align: middle;
+	padding: 5px 0px 5px 37px;	
+}
+.personal-info-panel
+{
+	padding-left: 10px;
+	padding-right: 45px;
+	padding-top: 10px;
+	background-color: #f4f3f1;
+	height: 90%;
+}
+.topicintrest-panel
+{
+	width: 90%;
+	background-color: #f4f3f1;
+	height: 98%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+}
+.contact-panel
+{
+	background-color: #f4f3f1;
+	height: 91%;
+	width: 95%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+/******Customer_Services/AdminEditProfile End ******/
+.topic-list-div
+{
+  padding:0 1% 0 1%;  width:98%; word-wrap: break-word;
+}
+.topic-list-div table
+{
+  width:100%;  
+}
+input[type="checkbox"]
+{
+    margin-right:5px;vertical-align:middle;
+}
+input[type="radio"]
+{
+    margin-right:5px;vertical-align:middle;
+}
+/*--TOPICINTERSET INFO end--*/
+
+
+
+
+
+
+/*-------------PROFILE CONTROL end---------------*/
+

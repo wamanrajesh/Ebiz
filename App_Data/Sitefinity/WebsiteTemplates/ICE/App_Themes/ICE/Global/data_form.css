@@ -1,0 +1,3002 @@
+/*-----------Default CSS Start---------------*/
+
+body
+{
+    background-color: #dcd3c6;
+    font-family: Segoe UI, Arial, Helvetica;
+    font-size: 12px;
+    color: #333;
+    height:100%;
+}
+a {
+       outline-style:none;
+       outline-width:medium;
+       -moz-outline: none;
+       color: #7A582D;
+       text-decoration:none;      
+       cursor:pointer;
+       font-size:12px;
+}
+a:hover
+{
+    text-decoration:underline;
+}
+h1,h2,h3,h4,h5,h6
+{
+    padding:0;margin:0;color: #f48f0b;padding-bottom: 5px;
+}
+h1
+{
+    font-size:18px;margin-bottom:5px;
+}
+h2
+{
+    font-size:16px;font-weight:normal;
+}
+h3
+{
+    font-size:14px;font-weight:normal;
+}
+h4
+{
+    font-size:12px;font-weight:normal;
+}
+h5
+{
+    font-size:10px;font-weight:normal;
+}
+h6
+{
+    font-size:10px;font-weight:normal;
+}
+hr
+{
+    background:#9a9a9a;height:1px;margin-top:10px;border-style:solid;border: none;
+}
+p
+{
+    margin:0;line-height:18px;
+}
+ul
+{
+    padding:0;margin:0;list-style:none;
+}
+ul li
+{
+    padding:0;margin:0;list-style:none;
+}
+input, textarea
+{
+    /*padding-left:1%;padding-right:1%;padding-bottom:2px;padding-top:2px;*/
+    padding-left:0.5%;padding-right:0.5%;margin-top:0;margin-left:0;
+}
+select
+{
+    margin:0px;
+}
+#MainContentAreaPlaceHolder_ViewClass_lblTitle
+{
+   font-weight: bold;
+}
+#MainContentAreaPlaceHolder_Curriculum_cmbCurriculum
+{
+    width:auto ! important;
+}
+#MainContentAreaPlaceHolder_Curriculum_cmbCategory
+{
+    width:auto ! important;
+}
+/*----------------Default CSS End--------------*/
+
+/*------------New style sheet------------*/
+.table-div
+{
+    width: 100%;
+}
+.row-div
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.table-div table, .row-div table
+{
+    width:100%;
+}
+.row-div1
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    width: 100%;
+}
+.row-div-bottom-line
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin: 5px 0px 10px 0px;
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+    border-bottom: #e7d2b6 solid 1px;
+}
+.row-div-bottom-dotted-line
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin: 5px 0px 5px 0px;
+    width: 100%;
+    padding: 0px 0px 10px 0px;
+    border-bottom: #e7d2b6 dotted 1px;line-height:24px;
+}
+
+.row-div textarea
+{
+    height: 100px; 
+}
+.left-container
+{
+    float: left;
+    margin-right: 2%;
+}
+.middle-container
+{
+    float: left;
+    margin-right: 2%;
+}
+.right-container
+{
+    float: right;
+}
+.label-div
+{
+    float: left;
+    text-align: right;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.label-div1
+{
+    float: left;
+    text-align: right;
+    margin-left: 1%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.padding-top
+{
+    padding-top:5px; 
+}
+.field-div1
+{
+    float: left;
+}
+.field-div2
+{
+    float: left;
+    margin: 0 0 0 1%;
+}
+.submit-Btn, input[type="submit"]
+{   
+    background: url(../../App_Themes/ICE/_img/submitbtn-bg.png) left top repeat-x;
+    margin: 0;
+    padding:4px 8px 4px 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+.border-color
+{
+    border: 1px solid #E7D2B6;
+}
+.header-title-Head-border
+{
+    border-bottom: #666 solid 1px;
+    padding: 5px 0 0 0;
+}
+.border-all
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin: 5px 0px 10px 0px;
+    padding: 0px 0px 5px 0px;
+    border: black solid 1px;
+}
+.header-title-bottom-border
+{
+    border-bottom: #666 solid 1px;
+    padding: 0 0 5px 0;
+}
+.left-border
+{
+    border-left: #666 solid 1px;
+    padding: 0 0 0 1%;
+}
+legend
+{
+    text-transform:uppercase;font-weight:bold;
+}
+.pt3
+{
+    padding-top:3px;
+}
+.w1
+{
+    width: 1%;
+}
+.w2
+{
+    width: 2%;
+}
+.w4
+{
+    width: 4%;
+}
+.w5
+{
+    width: 5%;
+}
+.w8
+{
+    width: 8%;
+}
+
+.w10
+{
+    width: 10%;
+}
+.w12
+{
+    width: 12%;
+}
+.w12-5
+{
+    width: 12.5%;
+}
+.w13
+{
+    width: 13%;
+}
+.w15
+{
+    width: 15%;
+}
+.w18
+{
+    width: 18%;
+}
+.w17
+{
+    width: 17%;
+}
+.w19
+{
+    width: 19%;
+}
+.w20
+{
+    width: 20%;
+}
+.w22
+{
+    width: 22%;
+}
+.w25
+{
+    width: 25%;
+}
+.w28
+{
+    width: 28%;
+}
+.w29
+{
+    width: 29%;
+}
+.w30
+{
+    width: 30%;
+}
+.w31
+{
+    width: 31%;
+}
+.w32
+{
+    width: 32%;
+}
+.w33-3
+{
+    width: 33.3%;
+}
+.w34
+{
+    width: 34%;
+}
+.w40
+{
+    width: 40%;
+}
+.w45
+{
+    width: 45%;
+}
+.w47
+{
+    width: 47%;
+}
+.w48
+{
+    width: 48%;
+}
+.w49
+{
+    width: 49%;
+}
+.w50
+{
+    width: 50%;
+}
+.w52
+{
+    width: 52%;
+}
+.w53
+{
+    width: 53%;
+}
+.w54
+{
+    width: 54%;
+}
+.w57
+{
+    width: 57%;
+}
+.w58
+{
+    width: 58%;
+}
+.w60
+{
+    width: 60%;
+}
+.w63
+{
+    width: 63%;
+}
+.w64
+{
+    width: 64%;
+}
+
+.w66
+{
+    width: 66%;
+}
+.w68
+{
+    width: 68%;
+}
+.w70
+{
+    width: 70%;
+}
+.w71
+{
+    width: 71%;
+}
+.w73
+{
+    width: 73%;
+}
+.w74
+{
+    width: 74%;
+}
+.w78
+{
+    width: 78%;
+}
+.w76
+{
+    width: 76%;
+}
+.w79
+{
+    width: 79%;
+}
+.w80
+{
+    width: 80%;
+}
+.w81
+{
+    width: 81%;
+}
+.w83
+{
+    width: 83%;
+}
+.w84
+{
+    width: 84%;
+}
+.w85
+{
+    width: 85%;
+}
+.w88
+{
+    width: 88%;
+}
+.w90
+{
+    width: 90%;
+}
+.w98
+{
+    width: 98%;
+}
+.w99
+{
+    width: 99%;
+}
+
+.w100
+{
+    width: 100%;
+}
+.note
+{
+   color: #C00000; 
+}
+.brown-txt
+{
+    color: #7A582D;
+}
+.border-color-gray
+{
+    border: 1px solid gray;
+}
+.error-msg-label
+{
+    color:Red;
+}
+.errormsg-div
+{
+    margin: 5px 0 5px 0;
+    color: #C00000;
+    font-size: 9pt;
+}
+.float-left
+{
+    float: left;
+}
+.float-right
+{
+    float: right;
+}
+.img-float
+{
+    float:left;margin:0 2% 1% 0;
+}
+.clear
+{
+    clear: both;
+    height: 0px;
+    line-height: 0px;
+    font-size: 0px;
+}
+.align-center
+{
+    text-align: center;
+}
+.align-right
+{
+    text-align:right;
+}
+.align-left
+{
+    text-align:left;
+}
+.padding-all
+{
+    padding: 1%;
+}
+.padding-left-right
+{
+    padding-left:1%;
+    padding-right:1%;
+}
+.right-margin
+{
+    margin-right: 1%;
+}
+.right-margin5
+{
+    margin-right: 5%;
+}
+.left-margin13
+{
+    margin-left: 13%;
+}
+.left-margin25
+{
+    margin-left: 25%;
+}
+.left-margin37
+{
+    margin-left: 37%;
+}
+.top-margin
+{
+    margin-top: 10px;
+}
+.bottom-margin
+{
+    margin-bottom: 10px;
+}
+.total-amount-right-margin1
+{
+   margin-right: 1.4%;
+}
+.total-amount-right-margin
+{
+    margin-right: 0.4%;
+}
+.sfsearchTxt 
+{   
+    width: auto! important;
+}
+/*----Product Start---*/
+.product-container-div
+{
+    width:100%;
+}
+.product-left-container{float:left;margin-right:2%;width:15%;}
+.product-middle-container{float:left;width:66%;margin-right:2%;}
+ .product-right-container{float:left;width:15%;}
+.find-product-div
+{
+    background-color: #ede0ca;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+.product-image-div
+{
+    float: left;
+    text-align: left;
+    margin-right: 2%;
+    font-weight: bold;
+    font-size: 12px;
+}
+.product-detail-div
+{
+    float: left;
+    text-align: left;
+}
+.product-detail-div1
+{
+    text-align: left;
+}
+.product-featured-title-div
+{
+    padding-bottom: 10px;
+    padding-top: 15px;
+}
+.billing-detail-div
+{
+    /*border: 1px solid #E7D2B6;*/
+}
+.billing-title
+{
+    background: #74573B;
+    color: #fff;
+    font-weight: bold;
+    padding: 1%;
+}
+.billing-data-div
+{
+    padding: 1%;
+}
+
+.shipping-detail-div
+{
+    /*border: 1px solid #E7D2B6;*/
+}
+.shipping-title
+{
+    background: #74573B;
+    color: #fff;
+    font-weight: bold;
+    padding: 1%;
+}
+.shipping-data-div
+{
+    padding: 1%;
+}
+
+.payment-information-div
+{
+    /*border: 1px solid #E7D2B6;*/
+}
+.payment-title
+{
+    background: #74573B;
+    color: #fff;
+    font-weight: bold;
+    padding: 1%;
+}
+.payment-data-div
+{
+    padding: 1%;
+}
+.order-summary-div
+{
+    /*border: 1px solid #E7D2B6;*/
+}
+.order-summary-title
+{
+    background: #74573B;
+    color: #fff;
+    font-weight: bold;
+    padding: 1%;
+}
+.order-summary-data-div
+{
+    padding: 1%;
+}
+.product-name
+{
+    color: #F48F0B;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px !important;
+}
+
+.top-label
+{
+    color: #855724;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+}
+.edit-address input[type="text"]
+{
+    width:45.2%;
+}
+.edit-address select
+{
+    width:46.5%;
+}
+.edit-address .csz input[type="text"]
+{
+    width:17.3%;
+}
+.edit-address .csz select
+{
+    width:8%;
+}
+.expo-registration input[type="text"]
+{
+    width:37%;
+}
+.expo-registration select
+{
+    width:38%;
+}
+
+/*----Product End---*/
+
+/*-----------Group Admin Start-----------*/
+.chart-title
+{
+    background-color: #E0E0E0;
+    font-size: 12px;
+    padding: 5px;
+}
+.chart-container-div
+{
+    border: 1px solid #E0E0E0;
+}
+.chart-container-div select
+{
+    margin: 1%;
+}
+.chart-container-div .chart-duration-div
+{
+    background-color: #fafafa;
+}
+
+.chart-data-div
+{
+    background-color: #fafafa;
+}
+.chart-data-div .RadChart
+{
+    width:100% !important;
+    height:auto !important;
+}
+.chart-data-div .RadChart img
+{
+    width:100% !important;
+    height:auto !important;
+}
+.chart-orange-mark
+{
+    width: 8px;
+    height: 8px;
+    border: 1px solid orange;
+    float: left;
+    background-color: orange;
+    margin: 3px 3px 0 0;
+}
+.chart-green-mark
+{
+    width: 8px;
+    height: 8px;
+    border: 1px solid Green;
+    float: left;
+    background-color: Green;
+    margin: 3px 3px 0 0;
+}
+.chart-red-mark
+{
+    width: 8px;
+    height: 8px;
+    border: 1px solid red;
+    float: left;
+    background-color: red;
+    margin: 3px 3px 0 0;
+}
+.event-chart-container-div
+{
+    border: 1px solid #E0E0E0;
+    background-color: #F9F9F9;
+}
+.event-chart-container-div select
+{
+    margin: 1%;
+}
+.calendar-msg-txt
+{
+    padding-right: 3px;    
+    text-align: left;
+    color: #333333;
+    font-size: 8pt;
+    width: 100%;
+}
+.calendar-msg-txt1
+{
+    color: #F27D3E;
+    text-align: right;
+}
+.calendar-msg-txt2
+{    
+    text-align: left;
+    color: #f27d3e;
+    font-size: 11pt;
+}
+#ctl00_MainContentAreaPlaceHolder_GroupAdminDashBoard_UpcomingEventsRegistrationChart1_radChart
+{
+    width: 100% !important;
+    height: 100% !important;
+    padding-top: 10px;
+}
+#ctl00_MainContentAreaPlaceHolder_GroupAdminDashBoard_UpcomingEventsRegistrationChart1_radChart img
+{
+    width: 100% !important;
+}
+.header-title-bg
+{
+    background: #957140;
+    padding-bottom: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.submission-complete-div
+{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.meeting-reg-main-div
+{
+    width: 100%;
+}
+.meeting-reg-main-div input[type="text"]
+{
+    width: 80%;
+}
+.meeting-reg-main-div textarea
+{
+    width: 80%;
+}
+.meeting-reg-main-div select
+{
+    width: 80%;
+}
+.meeting-reg
+{
+    background-color: #f4f3f1;
+}
+.name-link
+{
+    font-size: 12px;
+    color: #986a3e;
+    font-weight: bold;
+}
+.email-style
+{
+    color: #875420;
+}
+.processing
+{
+    font-size:large;
+    background-position:center;
+    background-repeat:no-repeat;
+    alpha(opacity=100) !important; /* For IE8 and earlier */
+    opacity: 1 !important;
+    font-weight:bold; 
+    z-index:10000;
+    text-align:center;
+    vertical-align: middle;  
+    height: 100% !important;
+    top: 50%;
+    left:50%;
+    position:absolute;
+    
+}   
+.processing-div
+{  
+    
+    height:100%;
+    width: 100%;
+    background-color: #CCCCCC;
+    z-index: 999999; 
+    text-align: center; 
+    alpha(opacity=70); /* For IE8 and earlier */
+    position: fixed;
+    vertical-align:middle;
+    top: 0; right: 0; left: 0;
+    opacity: 0.70; 
+}
+.grd-title 
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: #7A582D;
+}
+.payment-information-popup
+{
+    width:360px !important;
+    height:350px!important;
+}
+.wizard-div
+{
+    width:100%;
+}
+.admin-wizard-sidebar 
+{ 
+    padding: 1%; 
+    margin-top: 10px; 
+    background-color: #ede0ca; 
+    border: #87663b solid 1px; 
+    line-height: 25px; 
+    width: 20%; 
+} 
+
+.wizard-data-margin 
+{ 
+    margin-left: 2%; 
+    width: 98%; 
+} 
+.submission-complete-div 
+{ 
+    text-align: center; 
+    margin: 10px 0 10px 0; 
+} 
+.admin-wizard-sidebar ~ td
+{
+    vertical-align:top;
+}
+.success-msg
+{
+    color:green;
+}
+.selected-tab-container
+{
+    /*border:#82745F solid 1px;border-top:none;*/padding:1%;background:#fff;
+}
+.RadTabStrip .rtsLI .rtsLink
+{
+    padding-left:1px !important;
+}
+.purchasemembership-main-div
+{
+    width:100%
+}
+.purchasemembership-main-div input[type="text"]
+{
+    width: 87%;
+}
+.purchasemembership-main-div textarea
+{
+    width: 87%;
+}
+.purchasemembership-main-div select
+{
+    width: 87%;
+}
+.popup-rad-confirm
+{
+    width:400px !important;
+    height:120px !important;
+    background-color:#f4f3f1 !important;
+}
+
+.popup-company-topic
+{
+    width:450px!important;
+   
+}
+.popup-company-address
+{
+    width:600px !important; height:450px !important; 
+    z-index:8008 !important;
+}
+.popup-review-comments
+{
+   width:400px!important;
+   height:280px!important;
+   z-index:8008 !important;
+}
+.popup-customerservice-savepaymentmethod
+    {
+        width:400px !important;
+        height:280px !important;
+    }
+    .popup-badge-information
+    {
+        height:200px !important;
+        width:300px !important;
+    }
+.legend-div
+{
+    height:55px; overflow-y:auto;
+}
+/*-----------Group Admin End-----------*/
+/*------- Profile  and admin profile Starts------------------*/
+.popup-contact-info-container
+{
+    width:100%;
+}
+.popup-contact-info-container input[type="text"]
+{
+    width:96%;
+}
+.popup-contact-info-container select
+{
+    width:99%;
+    height:20px;
+}
+.popup-win-adminedit-personalInfo
+{
+    width:350px!Important;
+    height:200px!Important;
+}
+.popup-win-adminedit-Contactinfo
+{
+    height:400px!Important;
+    width:620px!Important;
+    z-index:8008 !important;
+}
+.popup-win-adminedit-topicinterest
+{
+    width:500px!Important;
+    height:300px!Important;
+}
+.popup-win-adminedit-ProfileImage
+{
+    width:590px!Important;
+    height:600px! Important;
+}
+.popup-win-profile-changepassword
+{
+    width:350px!Important;
+    height:200px!Important;
+}
+ .popup-win-profile-DuplicateUser
+    {
+        Width:650px!Important;
+         Height:120px!Important;
+    }
+     .popup-win-profile-profileImage
+    {
+         Width:500px!Important;
+         Height:600px!Important;
+         z-index:8008 !important;
+    }
+    
+   .RadImageEditor_Sunset .rieContentArea
+    {
+        width:400px!Important;
+        height:320px!Important;
+    }
+  
+ /*--------Profile and admin profile Ends---------------------*/
+ 
+/*--------Meeting Control Starts---------------------------------*/
+ .popup-meeting-meetingregistration
+    {
+        height:180px! Important;
+        width:300px! Important;
+    }
+    .payment-information-popup
+    {
+        width:360px !important;
+        height:350px!important;
+    }
+/*--------Meeting Control Ends ----------------------------------*/
+
+/*---------Login Control Start----*/
+.login-header
+{
+    color: #b37719;
+    font-size: 16px;
+}
+.login-header img
+{
+    vertical-align: top;
+    margin-right: 5px;
+}
+.login-container-home
+{
+    padding: 5px 2% 5px 2%;
+    width: 96%;
+    background-color: #DAC7A7;
+}
+.login-container-home input[type="text"]
+{
+    width: 80%;
+}
+.login-container-home input[type="password"]
+{
+    width: 80%;
+}
+.between-div
+{
+    height: 1px;
+    border-top: 1px solid #CEB68C;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    margin: 15px 0 15px 0;
+}
+.between-span
+{
+    top: -0.8em;
+    background-color: #DAC7A7;
+    position: absolute;
+}
+.generic-login-div
+{
+    width:34%;
+}
+/*----------Login Control End------------*/
+
+/*------Absratct Control Start----------*/
+.abstract-container-div
+{
+}
+.abstract-container-div input[type="text"]
+{
+    width: 80%;
+}
+.abstract-container-div textarea
+{
+    width: 80%;
+}
+.abstract-container-div select
+{
+    width: 80%;
+}
+
+/*------Absratct Control End----------*/
+
+
+/*-----HomeCurrent Disscussion Start------*/
+.disscussion-header-title
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #7A582D;
+    background: #E7D2B6;
+    padding: 5px;
+}
+.disscussion-header-title img
+{
+    vertical-align:middle;
+}
+.gray-font
+{
+    font-weight: normal;
+    color: #666666;
+    font-size: 11px;
+}
+/*-----HomeCurrent Disscussion End------*/
+
+/*-------Change Address Start------*/
+.address-div
+{
+}
+.address-div input[type="text"]
+{
+    width: 43%;
+}
+.address-div textarea
+{
+    width: 43%;
+}
+.address-div select
+{
+    width: 43%;
+}
+.address-div .common-input input[type="text"]
+{
+    width: 12%;
+}
+.address-div .common-input textarea
+{
+    width: 13%;
+}
+.address-div .common-input select
+{
+    width: 13%;
+}
+/*-------Change Address End------*/
+
+/*-----------Social network Terms And Condition------------*/
+/*.ScocialNetworkT&C-div
+{
+    align: center;
+    text-align: justify;
+    padding-left: 10px;
+}
+.ScocialNetworkT&C-Font
+{
+    font-family: segoe ui, arial, helvetica;
+    color: #333000;
+    font-size: 12px;
+    padding-right: 10px;
+}*/
+
+/*-----------Social network Terms And Condition End------------*/
+
+/*---------SocialNetworkConnectionOptionsSF4 Start----*/
+
+/*.Social-Connection-OPtion-Creational-div
+{
+    margin-left: 3%;
+}
+.Social-Connection-OPtion-BlankSpace-TwoRow
+{
+    margin-top: 2%;
+}
+
+.Social-Connection-OPtion-paddlabel
+{
+    padding-left: 5px;
+}
+.Social-Connection-OPtion-paddlabelremember
+{
+    padding-left: 7px;
+}*/
+/*-----------SocialNetworkConnectionOptionsSF4 End-----------*/
+
+/*-----------SubmissionComplete Start-----------*/
+.SubmissionComplete-div
+{
+    text-align: center;
+}
+
+/*-----------SubmissionComplete End-----------*/
+
+/*-----HomeUpcoming Event Start------*/
+.upcoming-header-title
+{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 12px;
+    color: #7A582D;
+    background: #E7D2B6;
+    padding: 5px;
+}
+.upcoming-meeting-title
+{
+    font-size: 14px;
+    color: #EC7B00;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.upcoming-meeting-dateplace
+{
+    font-weight: bold;
+    color: #666666;
+    font-size: 11px;
+}
+.upcoming-meeting-description
+{
+    font-weight: normal;
+    color: #666666;
+    font-size: 11px;
+    padding-bottom: 0px;
+    font-style: italic;
+    text-align: justify;
+    line-height: normal;
+    padding-bottom: 0px;
+}
+.upcoming-viewall-link
+{
+    background: url(../../App_Themes/ICE/_img/view-all-icon.png) no-repeat right;
+    width: 68px;    
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 11px;
+    color: #7A582D;
+    display:block;
+    text-align:right;    
+    padding-right:25px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+/*-----HomeUpcoming Event End------*/
+
+
+/*-----------Chapters start------------*/
+
+.control-title
+{
+    font-weight: bold;
+    font-size: 12pt;
+}
+.chaptermain-div
+{
+    width: 100%;
+}
+.chaptermain-div input[type="text"]
+{
+    width: 40%;
+}
+.chaptermain-div textarea
+{
+    width: 40%;
+}
+.chaptermain-div select
+{
+    width: 41.4%;
+}
+.chaptermain-div .dropdown select
+{
+    
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
+.chaptermain-div .common-input input[type="text"]
+{
+    width: 12.3%;
+}
+.chaptermain-div .common-input select
+{
+    width: 13%;
+}
+.search-chapter .common-input textarea
+{
+    width: 13%;
+}
+.chaptermain-div .editchapter input[type="text"]
+{
+    width: 16%;
+}
+.chaptermain-div .editchapter select
+{
+    width: 17.4%;
+}
+.chaptermain-div .textboxsize input[type="text"]
+{
+    width: 7%;
+}
+.txt-restrict-resize
+{
+    resize: none;
+}
+.required-label
+{
+    color: #f00;
+    font-size: 8pt;
+}
+.RequiredField
+{
+    color: #f00;
+    font-size: 8pt;
+}
+.lnk-chapter-report-viewer
+{
+    color: #7A582D;
+}
+.chapter-meeting-div
+{
+    width:30%;
+}
+/*-----------Chapters End------------*/
+
+/*-----------Meetings start------------*/
+.calendar-div 
+{ 
+    width:100%; 
+}
+.grid_height
+{
+    max-height:150px;
+    overflow:auto;
+    overflow-x:hidden;
+}
+.RadScheduler .rsWrap{ height:38px !important;}
+.RadScheduler .rsApt .rsAptOut{
+    height: 34px!important;
+}
+.RadScheduler .rsMonthView .rsWrap
+{
+    height:36px!important;
+}
+.rsHorizontalHeaderWrapper div{
+    z-index: 0;
+}
+.calendar-title
+{
+    background-color: #74573b;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #fff;
+    height: 28px;
+}
+.calendar-menu
+{
+    background: #fff;
+    border: 2px solid #D3D3D3;
+    font-size: 9pt;
+}
+.calendar-selected-day
+{
+    background: #333399;
+    color: #fff;
+}
+.calendar-today-day
+{
+    background: #DCDCDC !important;
+    border: 2px solid #800000 !important;
+    text-align: left !important;
+    vertical-align: top !important;
+}
+.calendar-align
+{
+    text-align: left !important;
+    vertical-align: top !important;
+    border: 1px solid #D3D3D3 !important;
+}
+.calendar-other-month-day
+{
+    color: #999999;
+}
+.calendar-day
+{
+    background: white !important;
+    border: 1px solid #D3D3D3 !important;
+    font-size: 7pt !important;
+}
+.calendar-next-prv a
+{
+    font-size: 8pt !important;
+    color: white !important;
+    font-weight: bold !important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.calendar-view-text
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+    float: right;
+}
+.meeting-grid-div
+{
+    /*width: 100%;*/
+}
+.RadRating,.RadRating_Default
+{
+    width:110px !important;height:100% !important;
+}
+.meeting-category-label
+{
+    font-weight: bold;
+    padding-right: 1%;
+}
+.meeting-textbox
+{
+    padding-right: 1%;
+}
+.meeting-detail-div
+{
+    /*width: 100%;*/
+    padding-top: 20px;
+}
+.meetingmain-div
+{
+    font-family: Segoe UI, Arial, Helvetica;
+    margin-bottom: 5px;    
+}
+
+.meeting-title-div
+{
+    font-weight: bold;
+    font-size: 18px;
+    color: #E97C00;
+    padding-top: 2%;
+}
+.meeting-web-description-div
+{
+    text-align: justify;
+}
+.meeting-sociallink
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: #7A582D;
+    padding-left: 2px;
+}
+.meeting-table-header-font
+{
+    font-weight: bold;
+    font-size: 12px;
+    color: #7A582D;
+    padding-left: 2px;
+}
+.meeting-speaker-detail-header
+{
+    background-image: url(../../App_Themes/ICE/_img/speaker-icon.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color: #6c573d;
+}
+.meeting-discussionforumheader
+{
+    background-color: #e7d2b6;
+    background: url(../../App_Themes/ICE/_img/discussion-icon.png) no-repeat #e7d2b6 5px 3px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top:7px;
+    font-weight: bold;
+    color: #6c573d;
+}
+.meeting-peopleheader
+{
+    font-weight: bold;
+    font-size: 12px;
+    height: 28px;
+    padding-left: 31px;
+    background: url(../../App_Themes/ICE/_img/people-icon.png) no-repeat #E7D2B6 5px 3px;
+    background-color: #e7d2b6;
+    color: #74573b;
+}
+.meeting-traveldiscountheader
+{
+    background: url(../../App_Themes/ICE/_img/travel-icon.png) no-repeat #E7D2B6 5px 3px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 28px;
+    padding-left: 31px;
+    background-color: #e7d2b6;
+    color: #74573b;
+}
+.meeting-rightpaneborder
+{
+    border: 1px solid #dcc9a9;
+    margin-bottom: 1em;
+    background-color: #ffffff;
+}
+.meeting-rightpanescrollborder
+{
+    border: 1px solid #dcc9a9;
+    margin-bottom: 1em;
+    overflow-y: auto;
+    height: 150px;
+    scrollbar-face-color: #c4aa81;
+    scrollbar-highlight-color: #c4aa81;
+    scrollbar-shadow-color: #c4aa81;
+    scrollbar-track-color: #f6f1ee;
+    scrollbar-darkshadow-color: #c4aa81;
+    scrollbar-base-color: #c4aa81;
+    scrollbar-arrow-color: #74573b;
+    scrollbar-3dlight-color: #c4aa81;
+    background-color: #ffffff;
+}
+.shedule-detail-header
+{
+    background-image: url(../../App_Themes/ICE/_img/schedule-icon.png);
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    padding-bottom: 12px;
+    font-weight: bold;
+    color: #6c573d;
+}
+.registration-info1
+{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Segoe UI;
+}
+.meeting-member-img
+{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.meeting-relatedeventsheader
+{
+    background: url(../../App_Themes/ICE/_img/event-icon.png) no-repeat no-repeat #E7D2B6 5px 3px;
+    font-weight: bold;
+    font-size: 12px;
+    height: 28px;
+    padding-left: 31px;
+    background-color: #e7d2b6;
+    color: #74573b;
+}
+.padding-left
+{
+    padding-left: 5px;
+}
+.ruFileWrap .ruStyled
+{
+    width:100%
+}
+.ruInputs
+{
+   width: 80% ! important;
+}
+.RadUpload .ruInputs 
+{
+    width:90% !important;
+}
+.RadGrid_Sunset 
+{
+    width:100% !important;
+}
+.RadGrid .rgHeader, .RadGrid th.rgResizeCol
+{
+font-weight: bold !important;
+}
+.RadTabStrip .rtsTxt, .RadTabStripVertical .rtsTxt
+{
+    font-weight: bold !important;
+}
+/*.RadUpload .ruFileWrap
+{
+width:150% ! important;
+}*/
+
+.popup-win-profile-VerifyAddress
+{
+/* Width:377px !Important;
+Height:250px !Important;*/
+/*Color:#BDA797 !Important; padding: 1%;
+background-color:#f4f3f1 !Important;*/
+z-index:8008 !Important; 
+
+}
+ .address-popup-data-container
+ {
+ 	 height:100px !Important;overflow-y:auto !Important; 	
+
+ 	  
+ }
+
+.rwContentRow div[id="ctl00_MainContentAreaPlaceHolder_Profile1_radAddressMessage_C"]{     
+      height:auto!important;
+      width: 340px !important;     
+ }
+  #RadWindowWrapper_ctl00_MainContentAreaPlaceHolder_Profile1_radAddressMessage table{
+     height:auto!important;     
+ }
+
+/************End******************************/
+
+.add-attendee-container select
+{
+    width:74%;
+}
+.edit-attendee-container select
+{
+    width:67%;
+}
+.edit-attendee-popup
+{
+     width:700px !important;
+     height:380px !important;background-color:#f4f3f1;
+}
+.edit-attendee-popup fieldset { 
+        margin-right: 0px; 
+    }
+.alert-popup
+{
+     width:650px !important;height:120px !important;background-color:#f4f3f1;
+}
+.popup-edit-list-session 
+{ 
+    width:850px!important; 
+    height:265px!important; 
+    background-color:#f4f3f1!important; 
+   
+} 
+.popup-meeting-session-count-info 
+{ 
+    width:350px!important; 
+    height:100px!important; 
+    background-color:#f4f3f1!important; 
+} 
+.popup-win-meeting-conflicts 
+{ 
+    width:400px!important; 
+    height:175px!important; 
+    background-color:#f4f3f1!important; 
+     
+} 
+.popup-change-email 
+{ 
+    width:220px!important; 
+    height:100px!important; 
+    background-color:#f4f3f1!important; 
+} 
+.popup-validate-grd-rec 
+{ 
+    width:650px!important; 
+    height:120px!important; 
+    background-color:#f4f3f1!important; 
+} 
+.popup-rad-similar-records 
+{ 
+    background-color:#f4f3f1!important; 
+} 
+
+
+
+/*-----------Meetings End------------*/
+
+/*-----------Meeting Directions Start------------*/
+
+.dir-title
+{
+    background-color: #b19463;
+    color: White;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 4px;
+    padding-top: 2px;
+}
+.dir-arrow
+{
+    vertical-align: middle;
+    background-image: url(../../App_Themes/ICE/_img/arrow.png);
+    min-width: 60px;
+    height: 31px;
+    background-repeat: no-repeat;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.div-googlemap
+{
+    border: 1px solid #c7baa6;
+    height: 500px;
+}
+.get-direction-button
+{
+    color: white;
+    font-weight: bold;
+    font-size: 11px;
+    height: 29px;
+    width: 104px;
+    border: none;
+    background: url(../../App_Themes/ICE/_img/get-dir-btn.png) no-repeat;
+    cursor: pointer;
+    text-align: center;
+}
+/*-----------Meeting Directions End------------*/
+
+/*-----------Marketplace start------------*/
+
+.marketplace-main-div
+{
+    width: 100%;
+}
+.marketplace-main-div .row-div input[type="text"]
+{
+    width: 30%;
+}
+.marketplace-main-div .row-div textarea
+{
+    width: 30%;
+}
+.marketplace-main-div .row-div .rcbReadOnly input[type="text"] {
+    width: 100%;
+}
+.marketplace-main-div .row-div select
+{
+    width: 30%;
+}
+.label
+{
+    font-weight: bold;
+}
+.label_underline
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.label-div-left-align
+{
+    float: left;
+    text-align: left;
+    margin-right: 1%;
+    font-weight: bold;
+    font-size: 12px;
+}
+/*-----------Marketplace End------------*/
+
+
+/*-----------Committees Start ------------*/
+.committees-main-div
+{
+    width: 100%;
+}
+.committees-main-div .dropdown select
+{
+    width: auto;
+    padding-right: 0.5%;
+    padding-left: 0.5%;
+}
+/*-----------Committees End------------*/
+
+/*-----------Directories Start ------------*/
+.directories-main-div
+{
+    width: 100%;
+}
+.directories-main-div .row-div input[type="text"]
+{
+    width: 95%;
+}
+/*-----------Directories End------------*/
+
+/*-----------Forum Create Messgae Start-----------*/
+.forum-createmsg-main-div
+{
+    width: 100%;
+}
+.forum-createmsg-main-div input[type="text"]
+{
+     width: 98%;
+}
+.forum-createmsg-main-div textarea
+{
+   width: 98%;
+}
+/*-----------Forum Create Messgae End-----------*/
+
+/*-----------Forum Start-----------*/
+.forum-main-div
+{
+    width: 100%;
+}
+.forum-main-div .row-div img
+{
+    vertical-align: top;
+}
+.tabForums table
+{
+    width: 100%;
+}
+.tabForums table tr td
+{
+    border-bottom: #ccc dotted 1px;
+    padding: 10px 0 5px 0;
+}
+a.forum:visited  { color: #f48f0b;}
+/*-----------Forum End-----------*/
+
+/*-----------Notification Start-------------*/
+.notification-container
+{
+    position:relative;
+    text-align: right;
+    
+}
+.notification-container > ul
+{
+    list-style: none;
+    border: 1px solid #d1d1d1;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background: #f2f2f2;
+   
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    float: right;
+    position: relative;
+}
+.notification-container ul li
+{
+    padding: 5px;
+    margin: 0;
+    list-style: none;
+}
+span.notification-bubble
+{
+    height: 18px;
+    width: 18px;
+    background: #f56c7e;
+    position: absolute;
+    right: 5px;
+    top: -10px;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+}
+span.notification-bubble:hover
+{
+    height: 18px;
+    width: 18px;
+    background: #f56c7e;
+    position: absolute;
+    right: 5px;
+    top: -14px;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+    -moz-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .17), 0 1px 1px rgba(0, 0, 0, .2);
+}
+span.notification-bubble span
+{
+    margin-top:2px;display:block
+}
+.notification-list-div
+{
+    min-height: 67px;
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #D0D0D0;
+}
+.notification-div
+{
+    padding: 5px;
+    margin: 10px 5px 5px 5px;
+   background-color: #CFCFCF; text-align:left;
+}
+
+.notification-div-position
+{
+    top: 27px;
+    right: 0px;
+    display: block;
+    opacity: 1;
+    position:absolute;
+    width:250px;   
+    z-index:10000;
+}
+
+.notification-label
+{
+    font-weight: bold;
+    font-size: 12px;
+}
+.close-notification
+{
+    right: 15px;
+    top: 0px;
+    position: absolute;
+}
+
+/*-----------Notification End----------------*/
+/*---------Become Member Control Start----*/
+.member-msg-font
+{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+/*---------Become Member Control End----*/
+
+/*---------General Email unsubscribe Start----*/
+.emailunsubscribe-main-div
+{
+    width: 100%;
+}
+.emailunsubscribe-main-div input[type="text"]
+{
+    width: 39.7%;
+}
+.emailunsubscribe-main-div textarea
+{
+    width: 40%;
+}
+.emailunsubscribe-main-div .row-div select
+{
+    width: 40%;
+}
+
+/*---------General Email unsubscribe End----*/
+
+/*---------Meeting Session start----*/
+
+.RadScheduler h2
+{
+    color: White !important;
+    background: none !important;
+}
+.RadScheduler .rsHeader
+{
+    z-index: 0 !important;
+}
+.rsContentScrollArea{
+    z-index:0;
+}
+.RadScheduler .rsHeader h2
+{
+    text-indent: 10px !important;
+}
+.rsHeaderDay
+{
+    display: none !important;
+}
+.rsToday
+{
+    display: none !important;
+}
+.RadScheduler .rsHeader .rsDatePickerCalendar
+{
+    display: none !important;
+}
+.RadScheduler_Sunset div.rsHeader .rsPrevDay
+{
+    display: none !important;
+}
+.RadScheduler_Sunset div.rsHeader .rsNextDay
+{
+    display: none !important;
+}
+a.rsDatePickerActivator
+{
+    display: none !important;
+}
+.RadScheduler_WebBlue div.rsHeader .rsPrevDay
+{
+    display: none !important;
+}
+.RadScheduler_WebBlue div.rsHeader .rsNextDay
+{
+    display: none !important;
+}
+
+/*---------Meeting Session End----*/
+
+/*---------Surveys start----*/
+.QuestionTreeListHeader
+{
+    background-color: #74573b;
+    font-weight: bold;
+    color: white;
+}
+.border-none
+{
+    border: none;
+    text-align: left;
+    padding-left: 2px;
+    padding:3px;
+}
+/*.QuestionControl .CenterDataCell td
+{
+    width:auto;
+    float:left;
+}*/
+.QuestionControl .CenterDataCell
+{
+        float:none;
+}
+.QuestionTreeControl .DataTable table {
+    width:auto !important;
+}
+.ButtonTableCell{
+   width:auto;
+   float:left;
+}
+.question 
+{
+    border-bottom:1px dotted lightgray;
+    padding-bottom:5px
+}
+/*---------Surveys End----*/
+
+/*---------WebServices start----*/
+.web-title {
+font-size:14pt;
+text-align:center;
+font-weight: bold;
+color: gray;
+}
+.web-title-p {
+font-size:10pt;
+color: gray;
+}
+/*---------WebServices End----*/
+
+/*-----Home News Updates Start------*/
+.news-header-title
+{
+    font-weight: bold;    
+    font-size: 12px;
+    color: #7A582D;
+    background: #E7D2B6;
+    padding: 1%;
+    width:98%;
+}
+.middle-img
+{
+    vertical-align:middle;
+}
+/*-----Home News Updates End------*/
+/*------------CEU Submission Start------------*/
+.ceu-submission-main-div
+{
+
+
+}
+.ceu-submission-main-div input[type="text"]
+{
+    width:50%
+}
+.ceu-submission-main-div select
+{
+    width:50%
+}
+.ceu-submission-main-div .RadUpload 
+{
+    /*width:225px !important;*/
+    float: left !important;
+    width: auto !important;
+
+}
+/*------------CEU Submission End------------*/
+/*------------Navigation Start-------------*/
+.nav-bar 
+{ 
+width: 100%; background-color: #f7e6d2; 
+}
+.nav-bar div
+{
+    width: 100%;
+}
+
+   .RadMenu .rmRootGroup
+{
+    /*width:1000px !important;*/
+    width:99.9%;
+}
+
+.RadMenu a.rmLink
+{
+    cursor:pointer !important;
+    font-weight:bold !important;
+    padding-left:5px;
+}
+.rmItem a.rmLink
+{
+    padding-left:5px !important;
+}
+#divcatmenu .RadMenu .rmRootGroup {
+
+    width:100%;
+}
+
+#divcatmenu .RadMenu a.rmLink
+{
+     cursor:pointer !important;
+    font-weight:bold !important;width:100% !important;clear:both;
+}
+.RadMenu_Sunset .rmBottomLeft, .RadMenu_Sunset .rmRoundedCorners .rmScrollWrapContainer, .RadMenu_Sunset_Context.rmRoundedCorners .rmScrollWrapContainer, .RadMenu_Sunset_Context.rmRoundedCorners ul.rmGroup, .RadMenu_Sunset .rmRoundedCorners ul.rmGroup, .RadMenu_Sunset .rmRoundedCorners .rmMultiColumn {
+    background-color: white !important;
+    background-image: url("/Ebusiness/WebResource.axd?d=yCZGQBOuyrTcZ-uFdTBUiM8q_nRGhdVJH-KJ9OrA7aRU0MRPNTfvnDsJzyF4lwranF6YyE_CmEJt13jUEezPaoQPqqbmE7yrI81Ghh05_6drSQ6hnh2zOZv9zsYaScDe8NkuB8wjCZdWp58Rd3XpRcxgzNTv6UQxKlOEBUrxPDkXg69WYC7dZROu1F8PrsiG0&t=634780453720000000");
+    background-repeat: no-repeat;
+    z-index:1 !important;
+}
+
+.RadMenu_Sunset, .RadMenu_Sunset a.rmLink
+{
+   z-index: 1 !important;
+}
+
+.RadMenu .rmLeftImage {
+    margin: 0px 0px 0 0px !important;
+    padding-bottom: 4px !important;
+    top:0px !important;
+}
+
+
+
+#content #divcatmenu ul
+{
+    padding:10px 0px 0px 0px !important;
+}
+
+.ProdNavBar {
+    background-color: #EDE0CA;    
+    float: left;    
+    overflow: inherit;
+    vertical-align: top;
+    width: 19%;
+
+}
+
+.browse-product {
+    color: white;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    padding-left:1%;
+    padding-right:1%;
+    padding-bottom:3px;
+    padding-top:5px;
+    background: url(../../App_Themes/ICE/_img/browse-bg.jpg) #FFA533 top repeat-x;    
+}
+
+#divcatmenu .RadMenu
+{  
+   width:100%;
+}
+#divcatmenu .RadMenu_Sunset
+{ 
+    width:100%;
+}
+#divcatmenu .rmSized
+{ 
+     width:100%;
+}
+#divcatmenu .RadMenu .rmItem
+{
+    float:none;
+}
+/*-------------------------Navigation End--------------*/
+
+/*-----------RadGrid DatePicker Control Start-------------*/
+.rcInputCell
+{
+    width:auto !important;
+}
+.riSingle,.RadInput,.RadInput_Sunset
+{
+   width:100% !important;
+}
+.riTextBox,.riEnabled
+{
+    width:100% !important;
+}
+.RadGrid .rgRow td, .RadGrid .rgAltRow td, .RadGrid .rgEditRow td, .RadGrid .rgFooter td, .RadGrid .rgFilterRow td, .RadGrid .rgHeader, .RadGrid .rgResizeCol, .RadGrid .rgGroupHeader td
+{
+    padding-left:3px !important;
+    padding-right:3px !important;
+}
+/*-----------RadGrid DatePicker Control End-------------*/
+
+
+
+
+/*-----------Rad Grid FilterBox Control Starts-----------*/
+.RadGrid .rgFilterBox
+{
+    width:70% ! important;
+}
+ .RadPicker td a 
+    {
+        z-index:0 !Important;
+    }
+/*-----------Rad Grid FilterBox Control Ends-----------*/
+
+/*-------------Header Start---------*/
+.status-div 
+{ 
+background-color: #dcd3c6; border: 2px solid #dcd3c6; width:100%;
+} 
+.social-link-div 
+{ 
+padding:15px 10px 0px 0px;text-align:right;
+} 
+.header-search-div 
+{ 
+text-align:right;padding:15px 10px 0px 0px;
+} 
+.header-search-div fieldset
+{
+    border:none;
+}
+.review
+{
+    width:100%;overflow-x:auto;overflow-y: hidden;height:100%;
+}
+
+.review table
+{
+   width:100%; 
+}
+.review table tr
+{
+    
+}
+.review table tr td
+{
+    
+}
+/*-------------Header End---------*/
+
+/*-----------Customer Service Start-------------*/ 
+
+.sync-profile-main-div {
+padding: 5px;
+background-color: #E2C8A7;
+overflow: auto;
+width:100%
+}
+/*-----------Customer Service End-------------*/
+
+/*-----------Fundraising Start-------------*/ 
+.fundraising-main-div
+{
+    width: 100%;
+}
+.fundraising-main-div input[type="text"]
+{
+    
+    width:23.5%;
+}
+.fundraising-main-div textarea
+{
+    width: 25%;
+}
+.fundraising-main-div select
+{
+    /*width: 25%;
+    width:29.5%;*/
+}
+.contribute-div
+{
+    background:#FBDFBA;padding:2%;line-height:22px;
+}
+
+/*-----------Fundraising End-------------*/
+
+/*-----------Grid View Start-----------*/
+.gridview-table
+{
+   width:100%; border:1px solid #CCCCCC;
+  
+}
+.grid-viewheader
+{
+   /* Old browsers */
+  background: #B94D0A  ;
+background: -moz-linear-gradient(top, #d15e37 0%, #d15e37 35%, #B94D0A 51%, #B94D0A 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d15e37), color-stop(50%,#d15e37), color-stop(51%,#B94D0A), color-stop(100%,#B94D0A)) !Important; /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #d15e37 0%,#d15e37 50%,#B94D0A 51%,#B94D0A 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #d15e37 0%,#d15e37 50%,#B94D0A 51%,#B94D0A 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #d15e37 0%,#d15e37 50%,#B94D0A 51%,#B94D0A 100%); /* IE10+ */
+background: linear-gradient(to bottom, #d15e37 0%,#d15e37 50%,#B94D0A 51%,#B94D0A 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B94D0A', endColorstr='#B94D0A',GradientType=0 ); 
+
+/* background: url("../../App_Themes/ICE/_img/Gradient.png") repeat-x !Important;*/
+
+    font-weight: bold;
+    color: White;
+    font-family: Segoe UI,Arial,Helvetica;
+    font-size: 12px;
+    height:28px;
+    text-align: left;
+    
+}
+.grid-viewheader th
+{
+    padding-left:5px;
+}
+.grid-footer
+{
+    background-color: #e1dac7  !Important;
+    font-weight: bold;
+   color: White;
+    font-family: Segoe UI,Arial,Helvetica;
+    font-size: 12px;
+    padding:10px  0px  10px 5px !Important;
+}
+.grid-item-style
+{
+  Padding: 10px 10px 10px 10px !Important; 
+  height:32px !Important; 
+  background:#e5e2dd;
+  text-align:left;
+}
+.grid-item-style td
+{
+    padding-left:5px;
+}
+.paging-style
+{
+    border:#f00 solid 1px;padding:5px;
+}
+/*-----------Grid View End-----------*/
+/*------Rad Upload Start---------*/
+/*.RadUpload
+{width: 100%;}*/
+.ruFileWrap input[type="text"]
+{
+width:50%;
+}
+.RadPicker td a 
+    {
+        z-index:0 !Important;
+    }
+.RadUpload {
+/*width: 75%;*/
+}
+.RadAsyncUpload
+{
+float:left;
+}
+
+/*-------------Credit Card Start ---------*/
+.cno-div input[type="text"]
+{
+    /*width:40% !important;*/
+}
+.secret-div input[type="text"]
+{
+    width:10% !important;
+}
+
+/*-------------Credit Card End---------*/
+
+/*----------View Cart Start----------*/
+.view-cart-price-div
+{
+    width:18%;
+}
+/*----------View Cart End----------*/
+
+/*------Rad Upload End--------*/
+
+@media screen and (max-width:1000px)
+{
+    #Page
+    {
+        width: 99%;margin:auto;
+    }
+    .profile-joinICE-img-div
+    {
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+
+    .product-container-div .left-container{float:left;margin-right:2%;width:20%; }
+    .product-container-div .middle-container{float:left;width:78%;margin-right:0;}
+    .product-container-div .right-container{float:none;display:none;visibility:hidden;}
+    
+    .agd-board .left-container{width:18%;}
+    .agd-board .middle-container{width:54%;}
+    .agd-board .right-container{width:24%;}
+    .fundraising-main-div input[type="text"] {
+    width: 28.5%;
+    }
+}
+@media screen and (max-width:650px)
+{   
+    html
+    {
+        overflow-x:hidden;margin:0;padding:0;
+    }
+     body { -webkit-text-size-adjust: none; } 
+    #Page
+    {
+        /*width:320px;   max-width:480px;     */
+    }
+    #home #content
+    {
+        /*padding: 5px;
+        width: 310px;max-width:470px;*/
+    }
+    .emptyspace{
+    display:none; 
+    }
+    .profile-joinICE-img-div
+    {
+        display:none;
+    }
+    
+    .left-container
+    {
+        width: auto;
+        float: none;margin-right:1%;
+    }
+    .middle-container
+    {
+        width: auto;
+        float: none;margin-right:0;
+    }
+    .right-container
+    {
+        width: auto;
+        float: none;
+    }
+    input[type="text"],textarea,input[type="password"]
+    {
+        width:96% !important;
+    }
+    select
+    {
+        width:97.8% !important;margin-bottom:3px;
+    }
+.ruFileWrap input[type="text"]
+{
+width:50% !important;
+}
+.credit-card input[type="text"]
+{
+    width:96% !important;
+}
+/*----------RadInput area code start----------*/
+.riSingle .riTextBox[type="text"]
+{
+    margin-bottom:5px;
+}
+/*----------RadInput area code End-----------*/
+    .label-div, .label-div1, .field-div1, .field-div2
+    {
+        float:none;width:auto;text-align:left;margin:0;
+    }
+.topic-list-div table tr td
+    {
+        text-align:center;display:inline-block;
+    }
+    .product-container-div .left-container
+    {
+        width: auto;
+        float: none;margin-right:1%;
+    }
+    .product-container-div .middle-container
+    {
+        width: auto;
+        float: none;margin-right:0;
+    }
+    .product-container-div .right-container
+    {
+        width: auto;
+        float: none;
+    }
+    .agd-board .left-container{width: auto;
+        float: none; }
+    .agd-board .middle-container{width: auto;
+        float: none;}
+    .agd-board .right-container{width: auto;
+        float: none;}
+    .float-right, .float-left
+    {
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+    .product-image-div
+    {
+        float: none;
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .product-detail-div
+    {
+        float: none;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .rmSlide
+    {
+        z-index: 10000 !important;
+        left: 0 !important;
+    }
+    .sf_2cols_1_67
+    {
+        float: none;
+        width: auto;
+    }
+    .sf_2cols_2_33
+    {
+        float: none;
+        width: 100%;
+    }
+    .nav-bar *
+    {
+        float: none !important;
+    }
+    .nav-bar li
+    {
+        
+    }
+    .nav-bar .RadMenu_Sunset .rmRootGroup, .RadMenu_Sunset a.rmLink, .RadMenu_Sunset .rmText
+    {
+        background-image: none !important;
+    }
+    .nav-bar .rmSlide
+    {
+        width:auto !important;
+    }
+    .nav-bar .rmSlide ul
+    {
+        padding-right: 2% !important;
+    }
+    .review
+    {
+        width:auto !important;overflow:auto;
+    }
+    .wizard-div
+    {
+        width:auto !important;overflow:auto;
+    }
+    .gridview-table
+    {
+        width:auto !important;overflow:auto;
+    }
+    input[type="submit"]
+    {
+       margin:auto; margin:5px 0px 5px 0px;
+    }
+    .generic-login-div
+    {
+        width:100%;
+    }
+    .chart-data-div .RadChart
+{
+    width:100% !important;
+    height:auto !important;
+}
+    .chart-data-div .RadChart img
+{
+    width:100% !important;
+    height:auto !important;
+}
+.calendar-div
+{
+    width:auto !important;overflow:auto;
+}
+.RadMenuPopup .rmToggle
+{
+    padding-top:0px !important;
+
+}
+.RadMenuPopup .rmSlide
+{
+    height :auto !important;
+ }
+}
+@media only screen and (max-width: 360px)
+{
+.RadMenuPopup {
+font-size: 14px;
+}
+}
+@media screen and (max-width:320px)
+{  
+    html, body
+    {
+       font-size:12px; -webkit-text-size-adjust: none;  overflow-x:hidden;margin:0;padding:0;
+    }  
+    
+    #Page
+    {
+       
+    }
+    #home #content
+    {
+        /*padding: 5px;
+        width: 310px;max-width:470px;*/
+    }
+     .emptyspace{
+    display:none; 
+    }
+    .left-container
+    {
+        width: auto;
+        float: none;margin-right:0;
+    }
+    .middle-container
+    {
+        width: auto;
+        float: none;margin-right:0;
+    }
+    .right-container
+    {
+        width: auto;
+        float: none;
+    }
+     input[type="text"],textarea,input[type="password"]
+    {
+        width:96% !important;margin-bottom:3px;
+    }
+    select
+    {
+        width:98.6% !important;margin-bottom:3px;
+    }
+    fieldset
+    {
+        width:91% !important;
+    }
+    .ruFileWrap input[type="text"]
+    {
+        width:50% ;
+    }
+.credit-card input[type="text"]
+{
+    width:96% !important;
+}
+ .label-div, .label-div1, .field-div1, .field-div2
+    {
+        float:none;width:auto;text-align:left;margin:0;
+    }
+.topic-list-div table tr td
+    {
+        text-align:center;
+    }
+    .float-right, .float-left
+    {
+        float: none;
+        width: auto;
+        text-align: left;
+    }
+    .product-image-div
+    {
+        float: none;
+        width: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .product-detail-div
+    {
+        float: none;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    .rmSlide
+    {
+        z-index: 10000 !important;
+        left: 0 !important;
+    }
+    .sf_2cols_1_67
+    {
+        float: none;
+        width: auto;
+    }
+    .sf_2cols_2_33
+    {
+        float: none;
+        width: 100%;
+    }
+    .sf_2cols_2_33 .sf_2cols_2in_33
+    {
+        margin:0;
+    }
+    .nav-bar *
+    {
+        float: none !important;
+    }
+    .nav-bar li
+    {
+    }
+    .nav-bar .RadMenu_Sunset .rmRootGroup, .RadMenu_Sunset a.rmLink, .RadMenu_Sunset .rmText
+    {
+        background-image: none !important;
+    }
+    .RadPicker td a 
+    {
+        z-index:0 !Important;
+    }
+    .nav-bar .rmSlide
+    {
+        width: 98% !important;
+    }
+    .nav-bar .rmSlide ul
+    {
+        padding-right: 2% !important;
+    }
+    .review
+    {
+        width:auto !important;overflow-x:auto;
+    }
+    .wizard-div
+    {
+        width:auto !important;overflow-x:auto;
+    }
+    .gridview-table
+    {
+        width:auto !important;overflow-x:auto;
+    }
+
+    .generic-login-div
+    {
+        width:100%;
+    }
+.calendar-div
+{
+    width:auto !important;overflow:auto;
+}
+
+    /*---------------- For RadWindow Popup Starts----------------------------*/
+   .popup-win-adminedit-personalInfo
+    {
+        width:240px!Important;
+        height:250px!Important;z-index:8008 !important;
+    }
+    .popup-win-adminedit-Contactinfo
+    {
+        height:300px!Important;
+        width:250px!Important;z-index:8008 !important;
+    }
+    .popup-win-adminedit-topicinterest
+    {
+        width:240px!Important;
+        height:300px!Important;z-index:8008 !important;
+    }
+    .popup-win-adminedit-ProfileImage
+    {
+        width:300px!Important;
+        height:300px! Important;z-index:8008 !important;
+    }
+    
+    .popup-win-profile-changepassword
+    {
+        width:280px!Important;
+        height:250px!Important;z-index:8008 !important;
+    }
+     .popup-win-profile-DuplicateUser
+    {
+        Width:240px!Important;
+         Height:120px!Important;z-index:8008 !important;
+    }
+    .popup-win-profile-profileImage
+    {
+         Width:240px!Important;
+         Height:350px!Important;z-index:8008 !important;
+    }
+    .popup-win-profile-imageEditor
+    {
+        width :300px!Important;
+         height:350px!Important;z-index:8008 !important;
+    }
+     .RadImageEditor_Sunset .rieContentArea 
+    {
+        width:300px!Important;
+        height:350px!Important;z-index:8008 !important;
+    }
+   
+    
+    .popup-rad-confirm
+    {
+        width:240px !important;
+        height:120px !important;
+        background-color:#f4f3f1 !important;z-index:8008 !important;
+    }
+    .payment-information-popup
+    {
+        width:240px!important;
+        height:300px!important;z-index:8008 !important;
+    }
+    .popup-win-meeting-conflicts
+    {
+        width:240px!important;
+        height:175px!important;
+        background-color:#f4f3f1!important;z-index:8008 !important;
+    }
+    .popup-meeting-session-count-info
+    {
+        width:240px!important;
+        height:100px!important;
+        background-color:#f4f3f1!important;z-index:8008 !important;
+    }
+    .popup-edit-list-session 
+    { 
+      width :240px!important; 
+      height:300px!important; 
+      background-color :#f4f3f1!important; z-index:8008 !important;
+    }
+    .alert-popup
+    {
+         width:240px !important;height:120px !important;background-color:#f4f3f1;z-index:8008 !important;
+    }
+    .edit-attendee-popup
+    {
+         width:300px !important;
+         height:320px !important;background-color:#f4f3f1;z-index:8008 !important;
+    }
+    .edit-attendee-popup fieldset { 
+        margin-right: 0px; 
+    }
+    .popup-adminOrder-paymentmsg
+     {
+         Width:240px!Important;
+         Height:120px!Important;z-index:8008 !important;
+     }
+     .popup-company-address
+{
+    width:300px !important; height:200px !important;z-index:8008 !important;border:green solid 1px;
+}
+.popup-company-topic
+{
+    width:300px!important;
+    height:300px!important;z-index:8008 !important;
+    
+}
+.popup-validate-grd-rec 
+{ 
+    width:300px!important; 
+    height:120px!important; 
+    background-color:#f4f3f1!important; z-index:8008 !important;
+} 
+/*** Issue 18138 Added by Sachin */
+.popup-win-profile-VerifyAddress
+{
+Width:200px !important;
+ /*Height:250px !important;*/
+Color:#BDA797!important;
+background-color:#DADADA!important;
+}
+.rwContentRow div[id="ctl00_MainContentAreaPlaceHolder_Profile1_radAddressMessage_C"]{     
+      height:auto!important;
+      width: 200px !important;
+     
+ }
+/*** Issue 18138 End */
+
+/*.popup-company-address,.edit-attendee-popup,.alert-popup,.popup-edit-list-session,.popup-adminOrder-paymentmsg,
+.popup-meeting-session-count-info,.popup-win-meeting-conflicts,.payment-information-popup,.popup-customerservice-savepaymentmethod,
+.popup-rad-confirm,.popup-win-profile-imageEditor,.popup-win-adminedit-personalInfo,.popup-win-adminedit-Contactinfo,
+.popup-win-adminedit-topicinterest,.popup-win-adminedit-ProfileImage,.popup-win-profile-changepassword,.popup-company-topic
+.popup-win-profile-DuplicateUser,.popup-review-comments
+{
+    width:100% !important;height:auto !important;z-index:8008 !important;
+}*/
+    input[type="submit"]
+    {
+       margin:auto; margin:5px 0px 5px 0px;
+    }
+    .chart-container-div
+    {
+        width:100%;
+    }
+    .chart-data-div .RadChart
+    {
+        width:100% !important;
+        height:auto !important;
+    }
+        .chart-data-div .RadChart img
+    {
+        width:100% !important;
+        height:auto !important;
+    }
+    .popup-review-comments
+    {
+        width:300px!important;
+         height:280px!important;z-index:8008 !important;
+   
+    }
+     .popup-customerservice-savepaymentmethod
+    {
+        width:280px !important;
+        height:280px!important;
+    }
+  
+/*---------------- For RadWindow Popup Ends----------------------------*/
+}
+
+.RadTreeView {
+    white-space: normal;
+    display: inline-block;
+    word-break: break-all;
+}
+/*.RadGrid .rgArrPart2 {
+    padding-left: 9px;
+}*/
+.chaptermain-div .editchapter input[type="text"]
+{
+    width: 16%;
+}
+.chaptermain-div .editchapter select
+{
+    width: 17.4%;
+}
+.chapter-proximity-search-div .textboxsize input[type="text"]
+{
+    width: 7%;
+}
+
+.mymeeting-main-div .meetingdropdown select
+{
+    width: 96.3%;    
+}
+.mymeeting-main-div .RadPicker
+{
+    width:80% !important;
+}
+/*---------------- Browse button help image Start----------------------------*/
+.ruFileWrap .ruFileInput{
+    width: 73px;
+    font: initial !important;
+    height: 25px;
+    margin: 0 0 0 0!important;
+    z-index:100 !important;
+    top:0!important;
+    border:none !important;
+    padding:0 0 0 0 !important; 
+}
+
+#ctl00_MainContentAreaPlaceHolder_CEUSubmission_radCEUDocumentUpload ul{
+    width:167px!important;
+}
+#MainContentAreaPlaceHolder_CEUSubmission_tooptip
+{
+    padding-top:2px;
+}
+/*---------------- Browse button help image Ends----------------------------*/
+
+.purchasemembership-main-div .rcbReadOnly input[type="text"] {
+ width: 100% !important; 
+}
+.rcbSlide
+{
+    z-index:0 !important;
+}
+.purchasemembership-main-div .RadComboBox_Sunset .rcbReadOnly .rcbArrowCellRight {
+background-position: -157px -176px  !important;
+}
+
+.purchasemembership-main-div .rgPager .RadComboBox_Sunset .rcbReadOnly .rcbArrowCellRight {
+background-position: -162px -176px !important;
+}

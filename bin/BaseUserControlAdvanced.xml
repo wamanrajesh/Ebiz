@@ -1,0 +1,215 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BaseUserControlAdvanced
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.TopLevelElementCSSClass">
+	<summary>
+ Property sets the style for top level HTML element within the user control. This is done by using the Attributes collection that is part of the base WebControl class
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">
+	<summary>
+ This property is used to set the page to redirect after successful save of record or an onclick event
+ of the form. If it is left blank the page will just refresh. This is the base url without the record id
+ in the query string. If you want to use the record id in the query string use the properties: 
+ 
+ AppendRecordIDToRedirectURL,
+ 
+ EncryptQueryStringValue,
+ 
+ RedirectIDParameterName
+ </summary>
+	<value></value>
+	<returns>String</returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.AppendRecordIDToRedirectURL">
+	<summary>
+ This property is used to indicate if you want the record id appended in the query string on
+ a page redirect.
+ </summary>
+	<value></value>
+	<returns>Boolean</returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.EncryptQueryStringValue">
+	<summary>
+ This is a public property that should be set outside from a CMS or outside of this class. 
+ This property indicates whether the appended query string should be encrypted. 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectIDParameterName">
+	<summary>
+ This property should be set from a CMS or outside of this class.
+ This property indicates what the redirect query string name should be
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.IsQueryStringEncrypted">
+	<summary>
+ Property that is used to determine if the query string is encrypted. This is used for loading a new
+ record in the control from a query string value.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.SetControlRecordIDFromQueryString">
+	<summary>
+ Property to indicate whether to set control record id from querty string. This is used for loading a
+ record from a query string value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.QueryStringRecordIDParameter">
+	<summary> 
+ Property to indicated what the name of the query string parameter is. This is used for loading a
+ record from a query string value
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.ApplyStyles">
+	<summary>
+ This routine is responsible for applying any necessary styling to the user control. The default functionality will apply the TopLevelElementCSSClass
+ property to the CssClass property of the first WebControl (ASP.NET Server Control) found in its Controls collection.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.SetControlRecordIDFromParam">
+	<summary>
+ This method is responsible for setting the RecordID for the control based on parameters set in the query string. This method uses the <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.QueryStringRecordIDParameter">QueryStringRecordIDParameter</see> property
+ to determine which query string attribute holds the record ID. This method automatically decrypts the value if <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.IsQueryStringEncrypted">IsQueryStringEncrypted</see> is True, or if the value of the parameter
+ provided for RecordID is non-numeric.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.GetRedirectURLFromProperties(System.Int64)">
+	<summary>
+ Provides the RedirectURL. This string is the concatenation of <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">RedirectURL</see> + 
+ "?" + <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectIDParameterName">RedirectIDParameterName</see> + "=" + <para>lRecordID</para>.
+ <para>lRecordID</para> will be encrypted if <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.EncryptQueryStringValue">EncryptQueryStringValue</see> 
+ is set to true.
+ </summary>
+	<param name="lRecordID">QueryString value to be included in <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">RedirectURL</see>.</param>
+	<returns>Returns the entire redirect URL to be used inside a Request.Redirect() statement.</returns>
+	<remarks>
+ This Function will only work if <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">RedirectURL</see> is set; 
+ <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.AppendRecordIDToRedirectURL">AppendRecordIDToRedirectURL</see> = True; and 
+ <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectIDParameterName">RedirectIDParameterName</see> is set.
+ </remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectUsingPropertyValues(System.Int64)">
+	<summary>
+ Response.Redirect(Me.RedirectURL) will be executed. 
+ The RedirectURL will be the concatenation of <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">RedirectURL</see> + 
+ "?" + <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectIDParameterName">RedirectIDParameterName</see> + "=" + <para>lRecordID</para>.
+ </summary>
+	<param name="lRecordID">QueryString value to be included in the RedirectURL.</param>
+	<remarks>
+ This Function will only work if <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectURL">RedirectURL</see> is set; 
+ <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.AppendRecordIDToRedirectURL">AppendRecordIDToRedirectURL</see> = True; and 
+ <see cref="P:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.RedirectIDParameterName">RedirectIDParameterName</see> is set.
+ </remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.FixTemplateSourceDirectoryPath(System.String)">
+	<summary>
+ Removes "/UserControls/" from the URL.
+ </summary>
+	<param name="sPath"></param>
+	<returns>Returns the sPath parameter with "/UserControls/" removed.</returns>
+	<remarks>This Function is only relevant for SiteFinity CMS.</remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.IsPageInAdmin">
+	<summary>
+ This evaluates the RawURL to determine if the page is being accessed by SiteFinity in 
+ admin or edit mode.
+ </summary>
+	<returns>Returns True if URL contains "cmspagemode=preview" or "cmspagemode=edit".</returns>
+	<remarks>This Function is only relevant for SiteFinity CMS.</remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.SetProperties">
+	<summary>
+ This method will be called from individual UC's to set inherited properties. If the property has a 
+ value equal to its 'default' then a check is made to the external XML file for a possible custom setting.
+ </summary>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.ReloadAptifyUserControlXmlDocument">
+	<summary>
+ For development conveneince a new T/F entry, 'NavConfigAutoLoad', is made in the web.config file to let the system know to load the 
+ Aptify_UC_Navigation.config file when it has been modified instead of requiring an IIS restart to reload the file on App_Start.
+ Note: this feature should only be set to 'True' during development since the cost of a file system check on each control load 
+       could hamper the site's performance.
+ </summary>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.LoadDataFromGE(System.Web.UI.Control,Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This method will load data into a set of controls from the GE object passed in. This is done by looking for an attribute in the HTML element called AptifyDataField. If AptifyDataField
+ is specified on a given ASP.NET Server control, this routine will attempt to load data into the control based on the value of the field specified in AptifyDataField, from the provided
+ GE object. 
+ 
+ This method calls SetControlValue in order to actually set the value of each control found with this attribute. The base class supports TextBox, ListControl Derivations(DropDownList, ListBox, etc), and CheckBox
+ controls, to add additional controls, sub-class this class and override the functionality of the SetControlValue and GetControlValue methods.
+ </summary>
+	<param name="TopLevelControl"></param>
+	<param name="GE"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.LoadDataFromGE(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This overload of the method uses the current UserControl itself to call the other overload for the TopLevelControl parameter and is provided for convenience
+ </summary>
+	<param name="GE"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.LoadListControlAndSetValue(System.Web.UI.WebControls.ListControl,System.Object)">
+	<summary>
+ This method loads a list of possible values into a ListControl derived class(DropDownList, ListBox, etc) control and then sets the selected value to the current value. 
+ </summary>
+	<param name="Control"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.SetControlValue(System.Web.UI.Control,System.Object)">
+	<summary>
+ This method sets the value of the specified Control with Value. The base class supports TextBox, Label, ListControl Derivations(DropDownList, ListBox, etc) and CheckBox classes, to add more control
+ support, sub-class and override this method.
+ </summary>
+	<param name="Control"></param>
+	<param name="Value"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.TransferDataToGE(System.Web.UI.Control,Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This method will set the values of fields in the provided GE object from the values found in controls in the control hierarchy under the TopLevelControl control.
+ This method uses the optional AptifyDataField attribute of each HTML element to determine if it should be bound to an Aptify GE field. The method internally calls 
+ GetControlValue to retrieve the value of the control. See <see cref="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.GetControlValue(System.Web.UI.Control)">GetControlValue()</see> for more information.
+ </summary>
+	<param name="TopLevelControl"></param>
+	<param name="GE"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.TransferDataToGE(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This overload of the method uses the current UserControl itself to call the other overload for the TopLevelControl parameter and is provided for convenience
+ </summary>
+	<param name="GE"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.BaseUserControlAdvanced.GetControlValue(System.Web.UI.Control)">
+	<summary>
+ This method returns the internal value of the specified Control parameter. Override this method to add additional control support beyond TextBox, Label, ListControl Derived Classes(DropDownList, ListBox, etc) and CheckBox
+ </summary>
+	<param name="Control"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

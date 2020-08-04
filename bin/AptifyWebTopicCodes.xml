@@ -1,0 +1,108 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebTopicCodes
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.TopicCodeHandler.UserCredentials">
+	<summary>
+ If calling the ProcessRequest method from the IHttpHandler interface, this
+ UserCredentials property must be set BEFORE the ProcessRequest method is called
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TopicCodeHandler.ProcessRequest(System.Web.HttpContext)">
+	<summary>
+ This method supports the following assumed Request parameters: EntityID, EntityName and ParentID. 
+ Either EntityID or EntityName should be specified, EntityID takes precedence if both are specified. Lastly,
+ ParentID specifies the Parent Topic Code ID to use for filtering, if not specified, assumed to be top level topic
+ codes only
+ </summary>
+	<param name="context"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TopicCodeHandler.WriteParentParentInfo(System.Web.HttpContext,Aptify.Framework.DataServices.DataAction,System.Int64)">
+	<summary>
+ Writes the Parent Topic Code information attributes (ParentParentID, ParentParentName) for a given topic code
+ </summary>
+	<param name="TopicCodeID"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TopicCodeHandler">
+	<summary>
+ This class provides base functionality for returning XML to the client for a set of topic codes that are possible for a given
+ EntityID and ParentID. This functionality is used by the client-side JavaScript XML in the Web Topic Codes control to dynamically
+ retrieve the possible topic codes for the entity at any specific level in the hierarchy.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.WebTopicCodes.DataAction">
+	<summary>
+ Returns an instance of the Aptify <see cref="P:Aptify.Framework.Web.Common.WebTopicCodes.DataAction">DataAction</see> class.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebTopicCodes.Application">
+	<summary>
+ Returns an instance of the AptifyApplication object, only available after FormComponentConfig()
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTopicCodes.OnRefreshTopicCodes(System.Boolean)">
+	<summary>
+ This method is invoked whenever topic codes are loaded or refreshed
+ </summary>
+	<param name="RefreshDatabase"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebTopicCodes.TopicCodeXML">
+	<summary>
+ This property returns an XML string that is intended to be passed to the client for
+ JavaScript to process as the user manipulates the control on the client.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebTopicCodes.CreateTopicCodeLinks(System.Int64)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Populates the control with all possible topic code links for this record
+ </summary>
+	<history>
+ 	[joshuag]	3/23/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:Aptify.Framework.Web.Common.WebTopicCodes">
+	<summary>
+ Aptify ASP.NET Web Server Control for displaying/editing Topic Codes
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.TopicCodeControl.SetupComboItems">
+	<summary>
+ This method is called internally within the control whenever type of multiple choice is selected
+ as the type for a topic code.  
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TopicCodeControl">
+	<summary>
+ ASP.NET Server Control that encapsulates the functionality for a single topic code being displayed within the topic codes control
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

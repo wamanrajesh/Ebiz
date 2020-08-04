@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebFolderList
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.AWA.WebFolderList.OnDashboardClicked">
+	<summary>
+ Client side URL or event handler for dashboard node selection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebFolderList.OnViewClicked">
+	<summary>
+ Client side URL or event handler for view node selection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebFolderList.OnEntityClicked">
+	<summary>
+ Client side URL or event handler for entity level selection
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebFolderList.RootNodeId">
+	<summary>
+ This method returns the client side root Node ID string
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.AWA.WebFolderList.GetNodeIDFromTag(System.String)">
+	<summary>
+ This method returns the client-side node ID string based on the provided tag
+ value.
+ </summary>
+	<param name="Tag"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.AWA.WebFolderList.OnTreeDemandLoad(System.Object,Infragistics.WebUI.UltraWebNavigator.WebTreeNodeEventArgs)">
+	<summary>
+ This method handles the process of loading nodes on demand
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.AWA.WebFolderList">
+	<summary>
+ Aptify Web Access (AWA) Main Tree Control
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

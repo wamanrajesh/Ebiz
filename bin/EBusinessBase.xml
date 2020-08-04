@@ -1,0 +1,166 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EBusinessBase
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.SecurityKey">
+	<summary>
+ Returns a reference to an instance of the AptifySecurityKey object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.EBusinessGlobal">
+	<summary>
+ Returns a reference to an instance of the Aptify e-Business Global Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.AptifyApplication">
+	<summary>
+ Returns a reference to an instance of the Aptify Application Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.DataAction">
+	<summary>
+ Returns a reference to an instance of the Aptify DataAction object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.Database">
+	<summary>
+ Returns the name of the base database for the Web Users entity (representative of database location typically used for other data as well, if configuration has different databases in use, use the AptifyApplication object to determine database location for each individual entity).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseUserControl.EntitiesDatabase">
+	<summary>
+ Returns the name of the base database for the Entities entity.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.BaseUserControl">
+	<summary>
+ Base Page for Aptify e-Business, used for inheriting all other pages to gain basic Aptify e-Business Functionality
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.SecurityKey">
+	<summary>
+ Returns a reference to an instance of the AptifySecurityKey object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.EBusinessGlobal">
+	<summary>
+ Returns a reference to an instance of the Aptify e-Business Global Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.AptifyApplication">
+	<summary>
+ Returns a reference to an instance of the Aptify Application Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.DataAction">
+	<summary>
+ Returns a reference to an instance of the Aptify DataAction object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.Database">
+	<summary>
+ Returns the name of the base database for the Web Users entity (representative of database location typically used for other data as well, if configuration has different databases in use, use the AptifyApplication object to determine database location for each individual entity).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BaseWebService.EntitiesDatabase">
+	<summary>
+ Returns the name of the base database for the Entities entity.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.BaseWebService">
+	<summary>
+ Base Web Service for Aptify e-Business, used for inheriting all other web services to 
+ gain basic Aptify e-Business Functionality
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.SecurityKey">
+	<summary>
+ Returns a reference to an instance of the AptifySecurityKey object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.EBusinessGlobal">
+	<summary>
+ Returns a reference to an instance of the Aptify e-Business Global Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.AptifyApplication">
+	<summary>
+ Returns a reference to an instance of the Aptify Application Object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.DataAction">
+	<summary>
+ Returns a reference to an instance of the Aptify DataAction object
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.Database">
+	<summary>
+ Returns the name of the base database for the Web Users entity (representative of database location typically used for other data as well, if configuration has different databases in use, use the AptifyApplication object to determine database location for each individual entity).
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.BasePage.EntitiesDatabase">
+	<summary>
+ Returns the name of the base database for the Entities entity.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.BasePage">
+	<summary>
+ Base Page for Aptify e-Business, used for inheriting all other pages to gain basic Aptify e-Business Functionality
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

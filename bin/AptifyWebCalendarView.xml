@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebCalendarView
+</name>
+</assembly>
+<members>
+<member name="T:Aptify.Framework.Web.Common.WebCalendarViewDataProvider">
+	<summary>
+ Web Calendar View Data Provider to work with Infragistics Data Provider model for Web Calendar Views
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebCalendarView.InitializeToolbar">
+	<summary>
+ This method is called when the toolbar's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebCalendarView.SetupCalendar">
+	<summary>
+ This method sets up the calendar based on the properties in the view definition
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebCalendarView">
+	<summary>
+ Aptify Web-based Calendar View implementation for ASP.NET 2+
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.WebChartView.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.WebChartView.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.WebChartView">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

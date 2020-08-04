@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+IAptifyWebBoundControls
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.AptifyFormTemplateContext.GEChangedEventHandler">
+	<summary>
+ Defines the Event that will be raised when a GE value is changed.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.AptifyFormTemplateContext.GEChangedArgs">
+	<summary>
+ Holds information about the changed GE values.
+ </summary>
+	<remarks></remarks>
+</member><member name="E:Aptify.Framework.Web.Common.AptifyFormTemplateContext.GEChanged">
+	<summary>
+ This event is raised when the formtemplate context has its GE value changed.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.AptifyFormTemplateContext.GE">
+	<summary>
+ Gets/Sets the current value of the GE for this context.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>If the GE value changes, then the GEChanged event will be fired.</remarks>
+</member><member name="M:Aptify.Framework.Web.Common.AptifyFormTemplateContext.OnGEChanged(Aptify.Framework.Web.Common.AptifyFormTemplateContext.GEChangedArgs)">
+	<summary>
+ Raises the GEChanged event.
+ </summary>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.AptifyFormTemplateContext">
+	<summary>
+ Web Version of Aptify Form Template Context
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

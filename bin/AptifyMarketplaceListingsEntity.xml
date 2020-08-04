@@ -1,0 +1,81 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyMarketplaceListingsEntity
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Applications.Marketplace.MarketplaceListingsEntity.Save(System.Boolean,System.String@,System.String)">
+	<summary>
+ Saves the Marketplace Listing and, if the Status is changing to Approved from Requested or a new Marketplace Listing is Approved,
+ an Order will be generated based on the information in the Marketplace Listing record.
+ </summary>
+	<param name="AllowGUI"></param>
+	<param name="ErrorString"></param>
+	<param name="TransactionID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Applications.Marketplace.MarketplaceListingsEntity.ProductPriceObject">
+	<summary>
+ Responsible for retrieving and instantiating the core Product Price object.
+ The core Product Price meta-data is defined as a Product Pricing Entity Plug In
+ in the Products Entity.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Applications.Marketplace.MarketplaceListingsEntity.ProductPricePlugIn">
+	<summary>
+ Retrieves the core Product Price Plug In meta-data.
+ The information is retrieved from the Products Entity Plug In, Product Pricing.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Applications.Marketplace.MarketplaceListingsEntity.DeterminePreferredCurrency(System.Int64,System.Int64)">
+	<summary>
+ The User's Preferred Currency Type is based on either the Preferred Currency Type of the Company linked to the Person.
+ If the Company does not have a Preferred Currency or the Person does not have a linked Company, the Person's Preferred
+ Currency Type will be used.  If the Person does not have a Preferred Currency Type, the system's Functional Currency will
+ be used.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Applications.Marketplace.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Applications.Marketplace.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Applications.Marketplace.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Applications.Marketplace.ListingTypeCache.ListingType(System.Int32,System.Boolean)">
+	<summary>
+ This method will either return a ListingTypeData object from the cache or, 
+ if the cache doesn't contain a ListingTypeData object for the Organization, the information will
+ be retrieved from the database and used to populate a ListingTypeData object
+ which will be added to the cache and returned to the caller.
+ </summary>
+	<param name="ListingTypeID"></param>
+	<param name="ForceRefresh"></param>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Aptify.Applications.Marketplace.ListingTypeCache.Clear">
+	<summary>
+ Clears the Marketplace Listing Types cache.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Applications.Marketplace.ListingTypeCache">
+	<summary>
+ Caches Marketplace Listing Types information.
+ Shared, on-demand cache.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebViewPlugIn
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.WebViewContainer.DeferredLoading">
+	<summary>
+ This property determines if the control will load only upon the first time it is focused upon, as opposed
+ to being pre-loaded on the server. If this property is set to True, instead of rendering any content upon its
+ initial load, it will simply emit a small client side element that when first focused on, will create an
+ inline frame to display the view.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebViewContainer">
+	<summary>
+ Aptify Generic View Container - this ASP.NET Server control will display a view of any type based on the View ID specified. 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.ViewTypeScope">
+	<summary>
+ Determines if the view type is available to all entities or only for a specific entity or
+ set of entities.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.ViewTypeInfo">
+	<summary>
+ ViewTypeInfo provides information about specific view types as well as access to extended
+ GE object creation as needed by the application code using it.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.DeferredLoading">
+	<summary>
+ This property determines if the control will load only upon the first time it is focused upon, as opposed
+ to being pre-loaded on the server. If this property is set to True, instead of rendering any content upon its
+ initial load, it will simply emit a small client side element that when first focused on, will create an
+ inline frame to display the view.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FillWidth">
+	<summary>
+ Determines if the control will fill the parent container's width at run time on the
+ client-side (done via client-side Java Script). Maps to the fillWidth run-time
+ HTML element attribute.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FillHeightMargin">
+	<summary>
+ This property is only used if FillHeight is set to True. If FillHeight is set to True, this property
+ determines the margin to use on the bottom side of the control when filling the container's height. This
+ property specifies the number of pixels of space to be left on the bottom side of the control between
+ the control's edge and the container's edge.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FillWidthMargin">
+	<summary>
+ This property is only used if FillWidth is set to True. If FillWidth is set to True, this property
+ determines the margin to use on the right side of the control when filling the container's width. This
+ property specifies the number of pixels of space to be left on the right side of the control between
+ the control's edge and the container's edge.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FillHeight">
+	<summary>
+ Determines if the control will fill the parent container's height at run time on the
+ client-side (done via client-side Java Script). Maps to the fillHeight run-time
+ HTML element attribute.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FillIgnoreChildren">
+	<summary>
+ Determines if the control's children will be evaluated for resizing or not. The
+ default value for this property is True, which results in the children of the
+ control NOT being evaluated for resizing. Sub-classes can override this as required,
+ as can individual instances of the class being used at run-time or design-time. It
+ is important to leave this property set to True as much as possible as it reduces
+ run-time resizing overhead.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.ErrorLabel">
+	<summary>
+ This label is an internal feature of the base class that can be
+ used by sub-classes to display error messages to the user when 
+ required. Set the ErrorLabel.Visible = True first, and then
+ set the ErrorLabel.Text to the appropriate message for the user.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.ViewSQL">
+	<summary>
+ View SQL
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.FilterSQL">
+	<summary>
+ Additional Filter SQL for the Where Clause - used with ViewID based views
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.ViewID">
+	<summary>
+ Aptify View ID (Record ID in Views entity)
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.EntityName">
+	<summary>
+ Returns the name of the entity specified by the EntityID property
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.EntityID">
+	<summary>
+ Aptify EntityID associated with this view
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebViewPlugInBase.GetUserCredentialsFromSession">
+	<summary>
+ Returns a User Credentials object from the Session State, if available. This is used when ViewState is
+ not yet recreated, or during Callback when ViewState is unavailable
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.ViewInfo">
+	<summary>
+ Returns a ViewInfo class for the currently loaded View
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebViewPlugInBase.DataAction">
+	<summary>
+ Aptify Data Action Class Instance
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebViewPlugInBase.OnValueChanged(System.Object,System.Object,System.Object)">
+	<summary>
+ This method raises the ValueChanged event and can be called by sub-classes as required
+ </summary>
+	<param name="sender"></param>
+	<param name="OldValue"></param>
+	<param name="NewValue"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebViewPlugInBase.FormComponentConfig(Aptify.Framework.Web.Common.AptifyFormTemplateContext)">
+	<summary>
+ Supported Input Properties are:
+ Entity
+ View Type
+ New Record Params
+ SQL
+ ViewID
+ FilterSQL
+ </summary>
+	<param name="FormTemplateContext"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebViewPlugInBase">
+	<summary>
+ Base abstract class that all view types should inherit from.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.IWebViewPlugIn.DeferredLoading">
+	<summary>
+ This property determines if the control will load only upon the first time it is focused upon, as opposed
+ to being pre-loaded on the server. If this property is set to True, instead of rendering any content upon its
+ initial load, it will simply emit a small client side element that when first focused on, will create an
+ inline frame to display the view.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.PromptClass">
+	<summary>
+ Class added to support the promp view. Issue 5447.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

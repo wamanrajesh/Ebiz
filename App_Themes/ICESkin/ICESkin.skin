@@ -1,0 +1,41 @@
+<%--<asp:DataGrid  runat="server" AutoGenerateColumns="False" Width="100%" GridLines="Horizontal" AllowPaging="true"  AlternatingRowStyle-BackColor="White" BorderColor="#CCCCCC"  BorderWidth="1px">
+    <HeaderStyle CssClass="GridViewHeader" Height="28px"  Font-Bold="true"  />        
+    <FooterStyle CssClass="GridFooter" />    
+    <AlternatingItemStyle BackColor="White" Height="28px" />
+    <ItemStyle CssClass="GridItemStyle" />
+    <PagerStyle Mode="NumericPages" Position="Bottom" HorizontalAlign="Right" Height="26px" cssClass="paging-style" />
+</asp:DataGrid>
+
+<asp:GridView runat="server" AllowSorting="True" AutoGenerateColumns="False" Width="100%"  AlternatingRowStyle-BackColor="White" GridLines="Horizontal" AllowPaging="true" BorderColor="#CCCCCC"  BorderWidth="1px" PageSize="10">
+    <HeaderStyle CssClass="GridViewHeader" Height="28px" HorizontalAlign="Center"  Font-Bold="true" />        
+    <FooterStyle CssClass="GridFooter" />
+    <RowStyle CssClass="GridItemStyle" />        
+     <PagerStyle cssClass="paging-style" HorizontalAlign="Right" />      
+</asp:GridView>--%>
+
+<asp:DataList runat="server" CssClass="data-form"  AlternatingRowStyle-BackColor="White">
+   <AlternatingItemStyle CssClass="GridAlternatingRow" />
+   <ItemStyle CssClass="GridRow" />
+   <HeaderStyle CssClass="GridHeader"  Font-Bold="true"  />
+   <FooterStyle CssClass="GridFooter" />
+   <SelectedItemStyle CssClass="GridAlternatingRow" />
+</asp:DataList>
+
+<telerik:RadMenu runat="server" skin="Sunset"></telerik:RadMenu>
+<telerik:RadDatePicker runat="server" skin="Sunset"></telerik:RadDatePicker>
+
+<telerik:RadGrid  runat="server" CssClass="review" PagerStyle-PageSizeLabelText="Records Per Page"  PageSize="10"  SortingSettings-SortedDescToolTip="Sorted Descending" SortingSettings-SortedAscToolTip="Sorted Ascending">
+<MasterTableView  AllowSorting="true" AllowNaturalSort="false" >
+  <ItemStyle CssClass="CustomGridRow" />
+   <HeaderStyle CssClass="CustomHeader" />
+   <FooterStyle CssClass="CustomGridFooter" />    
+</MasterTableView>
+    <GroupingSettings CaseSensitive="false" />   
+    <ClientSettings>
+
+                <Scrolling UseStaticHeaders="True"  ></Scrolling>
+
+            </ClientSettings>
+</telerik:RadGrid>
+
+<telerik:RadWindow runat="server"></telerik:RadWindow>

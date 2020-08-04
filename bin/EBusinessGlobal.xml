@@ -1,0 +1,63 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EBusinessGlobal
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.AptifyApplicationEBusiness.EBusinessGlobal">
+	<summary>
+ Get/Set EBusinessGlobal variable
+ </summary>
+</member><member name="M:Aptify.Framework.Web.eBusiness.AptifyApplicationEBusiness.GetEntityObject(System.String,System.Int64)">
+	<summary>
+ Override parent method to extract EBusiness user information to populate RecordHistoryInfo before calling parent overloaded GetEntityObject method
+ </summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.EBusinessGlobal.WebEmployeeID(System.Web.HttpApplicationState)">
+	<summary>
+ Returns the Employees Entity ID value for the employee id that should be used for e-Business transactions. This is set through the Web.Config file using the
+ AptifyEBusinessWebEmployeeID attribute.
+ </summary>
+	<param name="ApplicationState"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.eBusiness.EBusinessGlobal.GetLoginCredentials(System.Web.HttpApplicationState,System.Security.Principal.IPrincipal)">
+	<summary>
+ Adds the WebEmployeeID to the UserCredentials' UserEntityRelations collection, if a relationship
+ to Employees doesn't already exist.
+ </summary>
+	<param name="ApplicationState"></param>
+	<param name="UserInfo"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.EBusinessGlobal.GetSessionState">
+	<summary>
+ Return the Session object associated with the current HttpContext
+ </summary>
+</member><member name="M:Aptify.Framework.Web.eBusiness.EBusinessGlobal.GetAptifyApplication(System.Web.HttpApplicationState,System.Security.Principal.IPrincipal)">
+	<summary>
+ Return AptifyApplication subclass AptifyApplicationEBusiness
+ </summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.EBusinessGlobal">
+	<summary>
+ Global HttpApplication Sub-Class for Aptify e-Business
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

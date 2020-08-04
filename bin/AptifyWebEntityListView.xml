@@ -1,0 +1,86 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebEntityListView
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Framework.Web.Common.WebEntityListView.SetupClientHandlers">
+	<summary>
+ This method is responsible for setting up the Callback functionality. 
+ Currently, this is being used for deleting entity records. 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.OnGetCallbackResult">
+	<summary>
+ This method is required by ICallbackEventHandler. Result of the Callback 
+ gets sent back to the Client-side function by this method. The JavaScript
+ function can be modified to do whatever is necessary with the results.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.OnRaiseCallbackEvent(System.String)">
+	<summary>
+ This method is required by ICallbackEventHandler. This method is the server-side
+ of the asynchronous callback event. Here is where all the functionality is defined
+ for what to do on a Callback.  
+ </summary>
+	<param name="eventArgument">
+ eventArgument is a string defined on the JavaScript side. This string must be  
+ delimited by the '|' (pipe) character. The first parameter in this string should
+ be the identifier used to determine what action to take. For example, 'DELETE' 
+ is passed in as the first parameter in this string for entity record deletion.
+ </param>
+	<remarks>
+	</remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.OnOKClick(System.Object,System.EventArgs)">
+	<summary>
+ This method is responsible for handling the server-side upload process. The method can be overloaded in sub-classes
+ if desired to alter the standard processing logic. The base class saves the file in a temporary
+ location determined by the System environment TEMP variable and then moves the file into
+ the Aptify Attachments database location, subsequently then deleting the temporary file.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.BuildSQLViewGrid">
+	<summary>
+ This method is responsible for setting up grid properties for the view from the
+ SQL statement. This method is only called for views where the ViewSQL
+ is set, not for ViewID based views.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.BuildViewIDGrid">
+	<summary>
+ This method is responsible for setting up grid properties from the
+ view meta-data. This method is only called for views where the ViewID
+ is set, not for SQL-based views.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.SetupPager(System.Int64,System.Int32)">
+	<summary>
+ This method is responsible for setting up the pager on the client and is called after the grid is loaded.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.InitializeToolbar">
+	<summary>
+ This method is called when the toolbar's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.InitializeGridProperties">
+	<summary>
+ This method is called when the grid's properties need to be initialized
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebEntityListView.GenerateParamString">
+	<summary>
+ Creates the NewParamString that will be used with new records for this view.
+ To solve issue 5403, Maulik Patel, 09/20/2007	
+ </summary>
+</member><member name="T:Aptify.Framework.Web.Common.WebEntityListView">
+	<summary>
+ Aptify Web Entity List View ASP.NET Server Control
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

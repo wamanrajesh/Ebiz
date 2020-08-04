@@ -1,0 +1,2018 @@
+----------------------------------------
+Timestamp: 6/24/2019 6:29:00 AM
+
+Message: HandlingInstanceID: 370f46b9-0639-4aa8-ab7d-db91a5118a96
+An exception of type 'System.Web.HttpParseException' occurred and was caught.
+-----------------------------------------------------------------------------
+06/24/2019 11:59:00
+Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+Source : System.Web
+Help link : 
+FileName : C:\inetpub\wwwroot\ebizcms\UserControls\Aptify_Custom\Join__c.ascx
+VirtualPath : /ebizcms/UserControls/Aptify_Custom/Join__c.ascx
+Line : 4
+ParserErrors : System.Web.ParserErrorCollection
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ParseString(System.String, System.Web.VirtualPath, System.Text.Encoding)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:29:00 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+	Inner Exception
+	---------------
+	Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+	Source : System.Web
+	Help link : 
+	FileName : Access failed
+	VirtualPath : 
+	Line : 0
+	ParserErrors : System.Web.ParserErrorCollection
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ProcessException(System.Exception)
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+	   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+	   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+
+		Inner Exception
+		---------------
+		Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+		Source : System.Web
+		Help link : 
+		WebEventCode : 0
+		ErrorCode : -2147467259
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+		HResult : -2147467259
+		Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+		   at System.Web.UI.TemplateParser.ProcessCodeFile(VirtualPath codeFileVirtualPath)
+		   at System.Web.UI.TemplateParser.ProcessMainDirectiveAttribute(String deviceName, String name, String value, IDictionary parseData)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32832
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:29:50 AM
+
+Message: HandlingInstanceID: 9e23d8dd-4e4d-45ff-9cab-0c47ad99c6b4
+An exception of type 'System.Web.HttpParseException' occurred and was caught.
+-----------------------------------------------------------------------------
+06/24/2019 11:59:50
+Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+Source : System.Web
+Help link : 
+FileName : C:\inetpub\wwwroot\ebizcms\UserControls\Aptify_Custom\Join__c.ascx
+VirtualPath : /ebizcms/UserControls/Aptify_Custom/Join__c.ascx
+Line : 4
+ParserErrors : System.Web.ParserErrorCollection
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ParseString(System.String, System.Web.VirtualPath, System.Text.Encoding)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:29:50 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+	Inner Exception
+	---------------
+	Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+	Source : System.Web
+	Help link : 
+	FileName : Access failed
+	VirtualPath : 
+	Line : 0
+	ParserErrors : System.Web.ParserErrorCollection
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ProcessException(System.Exception)
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+	   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+	   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+
+		Inner Exception
+		---------------
+		Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+		Source : System.Web
+		Help link : 
+		WebEventCode : 0
+		ErrorCode : -2147467259
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+		HResult : -2147467259
+		Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+		   at System.Web.UI.TemplateParser.ProcessCodeFile(VirtualPath codeFileVirtualPath)
+		   at System.Web.UI.TemplateParser.ProcessMainDirectiveAttribute(String deviceName, String name, String value, IDictionary parseData)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32832
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:30:28 AM
+
+Message: HandlingInstanceID: e02fb911-045f-4f25-9133-1b08babfa0f1
+An exception of type 'System.Web.HttpParseException' occurred and was caught.
+-----------------------------------------------------------------------------
+06/24/2019 12:00:28
+Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+Source : System.Web
+Help link : 
+FileName : C:\inetpub\wwwroot\ebizcms\UserControls\Aptify_Custom\Join__c.ascx
+VirtualPath : /ebizcms/UserControls/Aptify_Custom/Join__c.ascx
+Line : 4
+ParserErrors : System.Web.ParserErrorCollection
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ParseString(System.String, System.Web.VirtualPath, System.Text.Encoding)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:30:28 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+	Inner Exception
+	---------------
+	Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+	Source : System.Web
+	Help link : 
+	FileName : Access failed
+	VirtualPath : 
+	Line : 0
+	ParserErrors : System.Web.ParserErrorCollection
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ProcessException(System.Exception)
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+	   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+	   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+
+		Inner Exception
+		---------------
+		Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+		Source : System.Web
+		Help link : 
+		WebEventCode : 0
+		ErrorCode : -2147467259
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+		HResult : -2147467259
+		Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+		   at System.Web.UI.TemplateParser.ProcessCodeFile(VirtualPath codeFileVirtualPath)
+		   at System.Web.UI.TemplateParser.ProcessMainDirectiveAttribute(String deviceName, String name, String value, IDictionary parseData)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32832
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:33:08 AM
+
+Message: HandlingInstanceID: 100a572f-0272-4021-a6cf-2f1004e0491c
+An exception of type 'System.Web.HttpParseException' occurred and was caught.
+-----------------------------------------------------------------------------
+06/24/2019 12:03:08
+Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+Source : System.Web
+Help link : 
+FileName : C:\inetpub\wwwroot\ebizcms\UserControls\Aptify_Custom\Join__c.ascx
+VirtualPath : /ebizcms/UserControls/Aptify_Custom/Join__c.ascx
+Line : 4
+ParserErrors : System.Web.ParserErrorCollection
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ParseString(System.String, System.Web.VirtualPath, System.Text.Encoding)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:33:08 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+	Inner Exception
+	---------------
+	Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+	Source : System.Web
+	Help link : 
+	FileName : Access failed
+	VirtualPath : 
+	Line : 0
+	ParserErrors : System.Web.ParserErrorCollection
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ProcessException(System.Exception)
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+	   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+	   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+
+		Inner Exception
+		---------------
+		Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+		Source : System.Web
+		Help link : 
+		WebEventCode : 0
+		ErrorCode : -2147467259
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+		HResult : -2147467259
+		Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+		   at System.Web.UI.TemplateParser.ProcessCodeFile(VirtualPath codeFileVirtualPath)
+		   at System.Web.UI.TemplateParser.ProcessMainDirectiveAttribute(String deviceName, String name, String value, IDictionary parseData)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32832
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:48:40 AM
+
+Message: HandlingInstanceID: c0a9d2c2-97ed-42dd-ad24-9883d298e139
+An exception of type 'System.Web.HttpParseException' occurred and was caught.
+-----------------------------------------------------------------------------
+06/24/2019 12:18:40
+Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+Source : System.Web
+Help link : 
+FileName : C:\inetpub\wwwroot\ebizcms\UserControls\Aptify_Custom\Join__c.ascx
+VirtualPath : /ebizcms/UserControls/Aptify_Custom/Join__c.ascx
+Line : 4
+ParserErrors : System.Web.ParserErrorCollection
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void ParseString(System.String, System.Web.VirtualPath, System.Text.Encoding)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+   at System.Web.UI.TemplateParser.ParseFile(String physicalPath, VirtualPath virtualPath)
+   at System.Web.UI.TemplateParser.ParseInternal()
+   at System.Web.UI.TemplateParser.Parse()
+   at System.Web.Compilation.BaseTemplateBuildProvider.get_CodeCompilerType()
+   at System.Web.Compilation.BuildProvider.GetCompilerTypeFromBuildProvider(BuildProvider buildProvider)
+   at System.Web.Compilation.BuildProvidersCompiler.ProcessBuildProviders()
+   at System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   at System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   at System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   at System.Web.Compilation.BuildManager.GetCompiledType(VirtualPath virtualPath)
+   at Telerik.Sitefinity.Modules.ControlManager`1.GetControlType(ObjectData controlData)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.CreateNewControl(ZoneEditorWebServiceArgs state, IControlManager manager, Boolean isLayoutControl)
+   at Telerik.Sitefinity.Modules.Pages.Web.Services.ZoneEditorService.UpdateState(ZoneEditorWebServiceArgs state, Boolean isLayoutControl)
+   at SyncInvokeUpdateControlState(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at System.ServiceModel.Dispatcher.DispatchOperationRuntime.InvokeBegin(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage5(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.ImmutableDispatchRuntime.ProcessMessage11(MessageRpc& rpc)
+   at System.ServiceModel.Dispatcher.MessageRpc.Process(Boolean isOperationContextSet)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:48:40 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+	Inner Exception
+	---------------
+	Type : System.Web.HttpParseException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+	Source : System.Web
+	Help link : 
+	FileName : Access failed
+	VirtualPath : 
+	Line : 0
+	ParserErrors : System.Web.ParserErrorCollection
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Void ProcessException(System.Exception)
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.TemplateParser.ProcessException(Exception ex)
+	   at System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+	   at System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)
+
+		Inner Exception
+		---------------
+		Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+		Message : The file '/ebizcms/UserControls/Aptify_Custom/Profile.ascx.vb' does not exist.
+		Source : System.Web
+		Help link : 
+		WebEventCode : 0
+		ErrorCode : -2147467259
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Void CheckVirtualFileExists(System.Web.VirtualPath)
+		HResult : -2147467259
+		Stack Trace :    at System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+		   at System.Web.UI.TemplateParser.ProcessCodeFile(VirtualPath codeFileVirtualPath)
+		   at System.Web.UI.TemplateParser.ProcessMainDirectiveAttribute(String deviceName, String name, String value, IDictionary parseData)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:19580
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:54:46 AM
+
+Message: HandlingInstanceID: 0746583d-9e47-4c8c-ade6-4936dacbb93a
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/24/2019 12:24:46
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:54:46 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5284
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:55:20 AM
+
+Message: HandlingInstanceID: 96dccb04-2d29-4aeb-883a-dbe9a2205409
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/24/2019 12:25:20
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:55:20 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5284
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:55:33 AM
+
+Message: HandlingInstanceID: f5ece896-38d2-442c-9533-ef3dddcd2302
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:25:33
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:55:33 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/f94c3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Conversion from string "" to type 'Boolean' is not valid.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Boolean ToBoolean(System.String)
+	HResult : -2147467262
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+		Inner Exception
+		---------------
+		Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : Input string was not in a correct format.
+		Source : Microsoft.VisualBasic
+		Help link : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+		HResult : -2146233033
+		Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+		   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:18864
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:55:34 AM
+
+Message: HandlingInstanceID: 50c144c2-0518-44c2-a5d5-b944400ad480
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:25:34
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:55:34 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/f94c3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Conversion from string "" to type 'Boolean' is not valid.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Boolean ToBoolean(System.String)
+	HResult : -2147467262
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+		Inner Exception
+		---------------
+		Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : Input string was not in a correct format.
+		Source : Microsoft.VisualBasic
+		Help link : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+		HResult : -2146233033
+		Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+		   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:18864
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:57:50 AM
+
+Message: HandlingInstanceID: 88a2c8e5-7c33-462f-8278-102b44879877
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:27:50
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:57:50 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/join__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+	Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+	Source : System.Web
+	Help link : 
+	WebEventCode : 0
+	ErrorCode : -2147467259
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+	HResult : -2147467259
+	Stack Trace :    at System.Web.UI.Page.get_Session()
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15384
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:57:51 AM
+
+Message: HandlingInstanceID: cabc53b2-6fdc-4a7a-8d7f-7062e891fc1f
+An exception of type 'System.InvalidCastException' occurred and was caught.
+---------------------------------------------------------------------------
+06/24/2019 12:27:51
+Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Conversion from string "" to type 'Boolean' is not valid.
+Source : Microsoft.VisualBasic
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean ToBoolean(System.String)
+HResult : -2147467262
+Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.DesignTimeControl.CreateChildControls()
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:57:51 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/join__c/Action/Edit
+	Inner Exception
+	---------------
+	Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Input string was not in a correct format.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+	HResult : -2146233033
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+	   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15384
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:57:59 AM
+
+Message: HandlingInstanceID: de4e4445-fcc2-438e-8978-5757cef1e199
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 12:27:59
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:57:59 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/join__c/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:26824
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 6:57:59 AM
+
+Message: HandlingInstanceID: c4cad2f3-9166-4f9e-a60d-e9368c7d1232
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:27:59
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 6:57:59 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Page/fc4c3849-b781-60ed-9ead-ff0000bbe4eb/
+	Inner Exception
+	---------------
+	Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Conversion from string "" to type 'Boolean' is not valid.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Boolean ToBoolean(System.String)
+	HResult : -2147467262
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+		Inner Exception
+		---------------
+		Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : Input string was not in a correct format.
+		Source : Microsoft.VisualBasic
+		Help link : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+		HResult : -2146233033
+		Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+		   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:21168
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:14:42 AM
+
+Message: HandlingInstanceID: 29db1644-4ee3-450d-b7c8-76ae9a3f2d12
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/24/2019 12:44:42
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:14:42 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:1164
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:14:55 AM
+
+Message: HandlingInstanceID: 178bf7b5-9a57-4a25-b14f-01834368322e
+An exception of type 'System.Web.HttpException' occurred and was caught.
+------------------------------------------------------------------------
+06/24/2019 12:44:55
+Type : System.Web.HttpException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Session state can only be used when enableSessionState is set to true, either in a configuration file or in the Page directive. Please also make sure that System.Web.SessionStateModule or a custom session state module is included in the <configuration>\<system.web>\<httpModules> section in the application configuration.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.SessionState.HttpSessionState get_Session()
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.get_Session()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.get_ImageUploadUserProfileText()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.SetProperties()
+   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+   at System.Web.UI.Control.OnLoad(EventArgs e)
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Control.LoadRecursive()
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:14:55 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Pages/ZoneEditorService.svc/Control/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:1164
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:14:58 AM
+
+Message: HandlingInstanceID: 8dee4d39-ffef-4390-a8e1-c5a7d2e1ec43
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:44:58
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:14:58 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/5f4d3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Conversion from string "" to type 'Boolean' is not valid.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Boolean ToBoolean(System.String)
+	HResult : -2147467262
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+		Inner Exception
+		---------------
+		Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : Input string was not in a correct format.
+		Source : Microsoft.VisualBasic
+		Help link : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+		HResult : -2146233033
+		Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+		   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:28888
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:14:58 AM
+
+Message: HandlingInstanceID: 1afef8ec-77cd-44a9-b961-f9a017f0bfc6
+An exception of type 'System.Web.HttpUnhandledException' occurred and was caught.
+---------------------------------------------------------------------------------
+06/24/2019 12:44:58
+Type : System.Web.HttpUnhandledException, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+Message : Exception of type 'System.Web.HttpUnhandledException' was thrown.
+Source : System.Web
+Help link : 
+WebEventCode : 0
+ErrorCode : -2147467259
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Boolean HandleError(System.Exception)
+HResult : -2147467259
+Stack Trace :    at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at Telerik.Sitefinity.Web.ResourceCombining.InMemoryPageRender.RenderPageInternal(PageNode pageNode, Boolean isPreview, Boolean isIndexMode)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.RenderPage(PageNode node)
+   at Telerik.Sitefinity.Publishing.Pipes.PageInboundPipe.SetWrapperObjectProperties(WrapperObject wrapperObject, PageNode node)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:14:58 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/Sitefinity/Services/Workflow/WorkflowService.svc/MessageWorkflow/5f4d3849-b781-60ed-9ead-ff0000bbe4eb/?itemType=Telerik.Sitefinity.Pages.Model.PageNode&workflowOperation=Publish
+	Inner Exception
+	---------------
+	Type : System.InvalidCastException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+	Message : Conversion from string "" to type 'Boolean' is not valid.
+	Source : Microsoft.VisualBasic
+	Help link : 
+	Data : System.Collections.ListDictionaryInternal
+	TargetSite : Boolean ToBoolean(System.String)
+	HResult : -2147467262
+	Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+	   at Aptify.Framework.Web.eBusiness.CustomerService.ProfileControl.Page_Load(Object sender, EventArgs e)
+	   at System.Web.UI.Control.OnLoad(EventArgs e)
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Control.LoadRecursive()
+	   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+		Inner Exception
+		---------------
+		Type : System.FormatException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+		Message : Input string was not in a correct format.
+		Source : Microsoft.VisualBasic
+		Help link : 
+		Data : System.Collections.ListDictionaryInternal
+		TargetSite : Double ParseDouble(System.String, System.Globalization.NumberFormatInfo)
+		HResult : -2146233033
+		Stack Trace :    at Microsoft.VisualBasic.CompilerServices.Conversions.ParseDouble(String Value, NumberFormatInfo NumberFormat)
+		   at Microsoft.VisualBasic.CompilerServices.Conversions.ToBoolean(String Value)
+
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:28888
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:15:12 AM
+
+Message: HandlingInstanceID: 7358007c-ee37-446d-90b2-9e2fddacdca5
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 12:45:12
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:15:12 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15384
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:31:52 AM
+
+Message: HandlingInstanceID: a5f01d75-6efc-4ed1-94a8-adaf0b68ae71
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 13:01:52
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:31:52 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:32456
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:31:53 AM
+
+Message: HandlingInstanceID: 8d86371b-b740-462a-98c7-2a4360bbc50e
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 13:01:53
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:31:53 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:26824
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:31:54 AM
+
+Message: HandlingInstanceID: ddfc2c30-368d-4a07-a83b-c40ba2917058
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 13:01:54
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:31:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:24128
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:31:54 AM
+
+Message: HandlingInstanceID: 75aa8e39-7c38-4038-bfe8-02ce0ccbf24c
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 13:01:54
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:31:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:15412
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/24/2019 7:31:54 AM
+
+Message: HandlingInstanceID: af0e98e9-4745-4b80-9986-10c8a093e043
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/24/2019 13:01:54
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/24/2019 7:31:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132058298459129380
+
+ProcessId: 30480
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:2580
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 6/25/2019 5:39:54 AM
+
+Message: HandlingInstanceID: f7b80c25-0288-44a1-9251-05315f082d8f
+An exception of type 'System.InvalidOperationException' occurred and was caught.
+--------------------------------------------------------------------------------
+06/25/2019 11:09:54
+Type : System.InvalidOperationException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : The control with ID 'UpdatePanel3' requires a ScriptManager on the page. The ScriptManager must appear before any controls that need it.
+Source : System.Web.Extensions
+Help link : 
+Data : System.Collections.ListDictionaryInternal
+TargetSite : System.Web.UI.IScriptManagerInternal get_ScriptManager()
+HResult : -2146233079
+Stack Trace :    at System.Web.UI.UpdatePanel.get_ScriptManager()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.RegisterPanel()
+   at System.Web.UI.UpdatePanel.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.AddedControl(Control control, Int32 index)
+   at Telerik.Sitefinity.Web.UI.UserControlWrapper.OnInit(EventArgs e)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Control.InitRecursive(Control namingContainer)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+
+Additional Info:
+
+MachineName : IL013455
+TimeStamp : 6/25/2019 5:39:54 AM
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-1-132059143752825973
+ThreadIdentity : admin
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://il013455/ebizcms/customerservice/profile__c
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90000
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013455
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-1-132059143752825973
+
+ProcessId: 11740
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:5084
+
+Extended Properties: 
+----------------------------------------

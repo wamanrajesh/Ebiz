@@ -1,0 +1,563 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Telerik.Sitefinity.Diagnostics</name>
+    </assembly>
+    <members>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Configuration.DiagnosticsConfig">
+            <summary>
+            Configuration section for Diagnostics module settings
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.DiagnosticsConfig.Tools">
+            <summary>
+            Gets a collection of tools.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings">
+            <summary>
+            Contains data access profiling options.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.#ctor(Telerik.Sitefinity.Configuration.ConfigElement)">
+            <summary>
+            Initializes a new instance of the <see cref="!:DataAccessProfilerSettingsElement"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.Name">
+            <summary>
+            The name of the diagnostic tool.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.Type">
+            <summary>
+            The type of the tool
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.Version">
+            <summary>
+            Gets or sets a version this tool is installed to.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.Enabled">
+            <summary>
+            Gets or sets a value indicating whether the tool is enabled.
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.Parameters">
+            <summary>
+            Gets a collection of user-defined parameters for the tool.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Configuration.ToolSettings.ErrorMessage">
+            <summary>
+            Gets or sets if there is operation error when manipulating module .
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.LoadBalancing.ReloadToolMessageHandler">
+            <summary>
+            A class responsible for handling reset application system message sent to Sitefinity instances at load balanced environment.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.LoadBalancing.ReloadToolMessageHandler.CanProcessSystemMessage(Telerik.Sitefinity.LoadBalancing.SystemMessageBase)">
+            <summary>
+            Determines whether this instance [can process system message] the specified system message.
+            </summary>
+            <param name="message">The message.</param>
+            <returns>
+                <c>true</c> if this instance [can process system message] the specified message; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.LoadBalancing.ReloadToolMessageHandler.ProcessSystemMessage(Telerik.Sitefinity.LoadBalancing.SystemMessageBase)">
+            <summary>
+            Processes the system message.
+            </summary>
+            <param name="message">The message.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.LoadBalancing.ReloadToolMessage">
+            <summary>
+            Data transfer object for sending "reset application" message.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.LoadBalancing.ReloadToolMessage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.LoadBalancing.ResetApplicationMessage"/> class.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessEventSink.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object)">
+            <summary>
+            Writes a trace data entry to the listener
+            </summary>
+            <param name="eventCache">Event cache object</param>
+            <param name="source">Source of the trace event</param>
+            <param name="eventType">Type of the event</param>
+            <param name="id">Id of the event</param>
+            <param name="data">Trace data attached to the event</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessEventSink.TraceData(System.Diagnostics.TraceEventCache,System.String,System.Diagnostics.TraceEventType,System.Int32,System.Object[])">
+            <summary>
+            Writes a trace data entry to the listener
+            </summary>
+            <param name="eventCache">Event cache object</param>
+            <param name="source">Source of the trace event</param>
+            <param name="eventType">Type of the event</param>
+            <param name="id">Id of the event</param>
+            <param name="data">Trace data attached to the event</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfilingFactory">
+            <summary>
+            The factory for profiling DataAccess events using DataAccess to persist them.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory">
+            <summary>
+            Abstract factory for Data Access profiling.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory.Initialize(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the factory using the specified config settings.
+            </summary>
+            <param name="config">The config.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory.GetLogger">
+            <summary>
+            Gets the logger object for profiling.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory.GetReader">
+            <summary>
+            Gets the reader object that can return results from profiling.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory.Uninstall">
+            <summary>
+            Uninstalls this instance.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.IDataAccessProfilingFactory.Install(System.Version)">
+            <summary>
+            Install or upgrade the specified instance from the given version.
+            </summary>
+            <param name="upgradeFrom">The version to upgrade from.</param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfilingFactory.Initialize(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Initializes the factory using the specified configuration settings.
+            </summary>
+            <param name="config">The configuration parameters for initializing the factory.</param>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.DiagnosticsModule">
+            <summary>
+            Sitefinity Diagnostics module providing diagnostic features for identifying potential application problems.
+            Data access profiling, etc.
+            </summary>
+        </member>
+        <member name="F:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.DefaultConnectionStringName">
+            <summary>
+            The name of the connection string used by DiagnosticsModule by default.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Initialize(Telerik.Sitefinity.Services.ModuleSettings)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Load">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Unload">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Install(Telerik.Sitefinity.Abstractions.SiteInitializer)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.GetModuleConfig">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.GetVirtualPaths">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.InstallConnectionString(Telerik.Sitefinity.Services.InstallContext)">
+            <summary>
+            Registers the default database connection string in DataConfig.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.LandingPageId">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Managers">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsModule.Tools">
+            <summary>
+            Gets the diagnostic tools.
+            </summary>
+            <value>The tools.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels">
+            <summary>
+            Localizable strings for the Diagnostics module
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels"/> class with the default <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.#ctor(Telerik.Sitefinity.Localization.Data.ResourceDataProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels"/> class with the provided <see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/>.
+            </summary>
+            <param name="dataProvider">The data provider of type<see cref="T:Telerik.Sitefinity.Localization.Data.ResourceDataProvider"/></param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.LabelsTitle">
+            <summary>
+            Gets the title of this class
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.LabelsDescription">
+            <summary>
+            Gets localizable resources for help information such as UI elements descriptions, usage explanations, FAQ and etc.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.HomePageTitle">
+            <summary>
+            Sitefinity Diagnostics
+            </summary>
+            <value>Diagnostics</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DiagnosticsErrorPage">
+            <summary>
+            Sitefinity Diagnostics error page
+            </summary>
+            <value>Database diagnostics</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DiagnosticsHomeUrlName">
+            <summary>
+            diagnostics
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DiagnosticsHomeDescription">
+            <summary>
+            Sitefinity diagnostics page
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DiagnosticsHomeHtmlTitle">
+            <summary>
+            Sitefinity Diagnostics
+            </summary>
+            <value>Diagnostics</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ClearReports">
+            <summary>
+            Clear diagnostics reports
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.StartDatabaseProfiling">
+            <summary>
+            Start Database Profiling
+            </summary>
+            <value>Start database profiling</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.StopDatabaseProfiling">
+            <summary>
+            Stop Database Profiling
+            </summary>
+            <value>Stop database profiling</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DatabaseProfilingDisabled">
+            <summary>
+            Confirmation message: Database profiling is disabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DatabaseProfilingEnabled">
+            <summary>
+            Confirmation message: Database profiling is enabled.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ReportsTitle">
+            <summary>
+            Reports
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsTitle">
+            <summary>
+            Gets the title of the Diagnostics.DataAccessProfilerSettings configuration element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsDescription">
+            <summary>
+            Gets the description of the Diagnostics.DataAccessProfilerSettings configuration element.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsVersionTitle">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsVersionDescription">
+            <summary>
+            The version of the diagnostic tool.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsEnabledTitle">
+            <summary>
+            Enabled
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.ToolSettingsEnabledDescription">
+            <summary>
+            If the diagnostic tool is active.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.CustomReports">
+            <summary>
+            The heading title for the stored procedure view.
+            </summary>
+            <value>Custom report</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.RunReport">
+            <summary>
+            The text of the button that executes the custom report
+            </summary>
+            <value>Generate report</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Results">
+            <summary>
+            The results heading in the custom reports view.
+            </summary>
+            <value>Results</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Operations">
+            <summary>
+            The heading of the Operations View.
+            </summary>
+            <value>Operations</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Filter">
+            <summary>
+            The text for the button that filteres the operations on start and end date.
+            </summary>
+            <value>Filter</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.NPlusOneViewTitle">
+            <summary>
+            The title for the N+1 query problems view
+            </summary>
+            <value>N+1 Query Problems</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DatabaseQueries">
+            <summary>
+            The title of the details window for each operation in the listed in the Operations view
+            </summary>
+            <value>Database queries</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.BackToReport">
+            <summary>
+            The label of the hyperlink that closes the detail window.
+            </summary>
+            <value>Back to Report</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.NoRecords">
+            <summary>
+            The text to show when there are no results for the specified view.
+            </summary>
+            <value>No recrods to display.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.UtcDates">
+            <summary>
+            The clarification text for dates.
+            </summary>
+            <value>All dates are in UTC format.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.SelectReport">
+            <summary>
+            The label of the dropdown when selecting a custom report.
+            </summary>
+            <value>Select report</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.RequiredField">
+            <summary>
+            The text shown when a field is required and has no input.
+            </summary>
+            <value>Required field</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.RequiredNumericField">
+            <summary>
+            The text shown when a field is numeric and required.
+            </summary>
+            <value>Required numeric field</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.RequiredBooleanField">
+            <summary>
+            The text shown when a field is boolean and required.
+            </summary>
+            <value>Required boolean field</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Miliseconds">
+            <summary>
+            The symbol for miliseconds
+            </summary>
+            <value>ms</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.NoReports">
+            <summary>
+            The message show when there are no stored procedure with the prefix in the database.
+            </summary>
+            <value>No reports are available. To create a report in the database use the prefix <b>{0}</b>yourname.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Period">
+            <summary>
+            Period
+            </summary>
+            <value>Period</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.AlertThreshold">
+            <summary>
+            Period
+            </summary>
+            <value>Period</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.DiagnosticsDisabled">
+            <summary>
+            The description when there is a problem with the data access diagnostics tool.
+            </summary>
+            <value><b>Database diagnostics tool is disabled</b> Enable this tool in {0}</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.DiagnosticsLabels.Error">
+            <summary>
+            The error displayed when there is a problem with the data access tool.
+            </summary>
+            <value><b>Error</b><p>{0}</p> <p>For more details look at the error log</p></value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Initialize(System.Collections.Specialized.NameValueCollection)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Load">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Unload">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Reload(System.Collections.Specialized.NameValueCollection)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Install(System.Version)">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Uninstall">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.Dispose">
+            <inheritdoc />
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.GetReader">
+            <summary>
+            Gets the result reader.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.LoadProfilingFactory(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Gets configured or default IDataAccessProfilingFactory instance.
+            </summary>
+            <param name="config">The config.</param>
+            <returns>The profiling factory based on the configuration or the default one.</returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.EnableBackendProfiling">
+            <summary>
+            Gets or sets the if the enable backend profiling.
+            </summary>
+            <value>The enable backend profiling.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessProfiler.LogOperationsWithNoEvents">
+            <summary>
+            Gets or sets a flag whether to log or not the operations with no data events.
+            </summary>
+            <value>The log operations with no events.</value>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.QueryLog.StatementId">
+            <summary>
+            Non-persistent property!
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessDataAccessEventLogger">
+            <summary>
+            Logger for Data Access activity events that uses Data Access for persistence.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.DataAccessDataAccessEventReader">
+            <summary>
+            Reader that has a source Data Access and returns events for Data Access activity.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DiagnosticsToolError">
+            <summary>
+            Displays report information for DataAccess activities.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DiagnosticsToolError.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DiagnosticsToolError"/> class.
+            </summary>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DataAccessReportView">
+            <summary>
+            Displays report information for DataAccess activities.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DataAccessReportView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DataAccessReportView"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Tools.DataAccess.Web.UI.DataAccessReportView.EventReader">
+            <summary>
+            Gets or sets the event reader.
+            </summary>
+            <value>The event reader.</value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModuleCommands">
+            <summary>
+            The sidebar that contains the links for switching between different views (reports) in the DiagnosticsModulePanel.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModuleCommands.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModuleCommands"/> class.
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModuleCommands.ControlPanel">
+            <summary>
+            Reference to the control panel tied to the command panel instance.
+            </summary>
+            <remarks>
+            This property is used for communication between the command panel and its control
+            panel.
+            </remarks>
+            <example>
+            You can refer to <see cref="T:Telerik.Sitefinity.Web.UI.Backend.ICommandPanel">ICommandPanel</see> interface for more
+            complicated example implementing the whole
+            <see cref="T:Telerik.Sitefinity.Web.UI.Backend.ICommandPanel">ICommandPanel</see> interface.
+            </example>
+            <value></value>
+        </member>
+        <member name="T:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModulePanel">
+            <summary>
+            The diagnostics module basic view.
+            </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModulePanel.CreateCustomCommandPanels(System.String,System.Collections.Generic.IList{Telerik.Sitefinity.Web.UI.Backend.ICommandPanel})">
+            <inheritdoc />
+        </member>
+        <member name="P:Telerik.Sitefinity.Diagnostics.Web.UI.DiagnosticsModulePanel.LayoutTemplatePath">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

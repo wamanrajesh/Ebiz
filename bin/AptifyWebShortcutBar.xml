@@ -1,0 +1,139 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebShortcutBar
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.NavBar">
+	<summary>
+ Returns the internal NavBar instance
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.Application">
+	<summary>
+ Aptify Application Instance
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.FolderList">
+	<summary>
+ This is a required property that must be set before calling Config()
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.RepositoryServiceURL">
+	<summary>
+ This property must be set to the HttpHandler url for retrieving repository objects
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.ItemSize">
+	<summary>
+ Size of the items in the group bar
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.ItemSizeResolved">
+	<summary>
+ This property is only available after setting the Application property or calling Config()
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.AWA.WebShortcutBar.Config(Aptify.Framework.Application.AptifyApplication,System.Boolean)">
+	<summary>
+ Configures and loads the shortcut bar. Uses the shortcuts for the user specified within the
+ UserCredentials inside the Application parameter. Set the FolderList property first if
+ the shortcut bar will be connected to the folder list
+ </summary>
+	<param name="Application"></param>
+	<param name="Refresh"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.AWA.WebShortcutBar.Config(Aptify.Framework.Application.AptifyApplication,System.Int64,System.Boolean)">
+	<summary>
+ Configures and loads the shortcut bar. Loads shortcuts for the specified User in the AptifyUserID property. 
+ Set the FolderList property first if
+ the shortcut bar will be connected to the folder list
+ </summary>
+	<param name="Application"></param>
+	<param name="AptifyUserID"></param>
+	<param name="Refresh"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.AptifyIcon32URL">
+	<summary>
+ Returns a URL for an Aptify Icon, 32x32 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.AptifyIcon16URL">
+	<summary>
+ Returns a URL for an Aptify Icon, 16x16 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.ApplicationIcon32URL">
+	<summary>
+ Returns a URL for an Aptify Application Icon, 32x32 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.ApplicationIcon16URL">
+	<summary>
+ Returns a URL for an Aptify Application Icon, 16x16 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.EntityIcon32URL">
+	<summary>
+ Returns a URL for an Aptify Entity Icon, 32x32 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.EntityIcon16URL">
+	<summary>
+ Returns a URL for an Aptify Entity Icon, 16x16 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.WebShortcutBar.FileFolder32URL">
+	<summary>
+ Returns a URL for an Aptify Folder Icon, 32x32 pixel
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.AWA.WebShortcutBar">
+	<summary>
+ Aptify Shortcut Bar ASP.NET Server Control
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.AWA.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.AWA.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.AWA.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

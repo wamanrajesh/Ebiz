@@ -1,0 +1,82 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebPhoneControls
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.WebPhone.GEDataField">
+	<summary>
+ Optional property - set this to the DataField object in the GE that this
+ control is bound to so that it will receive events automatically.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebPhone.OnPhoneIDValueChanged(Aptify.Framework.BusinessLogic.GenericEntity.AptifyDataFieldBase,Aptify.Framework.BusinessLogic.GenericEntity.AfterValueChangedEventArgs)">
+	<summary>
+ This method handles the GE event for ValueChanged for the field that carries
+ the Phones.ID link (foreign key). This method will automatically update 
+ the information in the display based on this.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebPhone">
+	<summary>
+ This control is for displaying a single Phone in a culture-aware layout format.
+ If using this control directly (e.g. not using it via the Phones Control), the
+ DataField property must be provided.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebPhones.SelectPhoneByFieldName(System.String)">
+	<summary>
+ Allows a developer to programatically select an Phone based on a field name or a displayname.
+ </summary>
+	<param name="Name"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebPhones.DefaultComboWidth">
+	<summary>
+ Default width for the combo/drop-down box that shows the list of phone numbers. Default value is 140 pixels
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebPhones.FindNameField(Aptify.Framework.BusinessLogic.GenericEntity.AptifyGenericEntityBase)">
+	<summary>
+ This method is responsible for returning the field that has the IsNameField attribute
+ set on it. If more than one such field is set in a given GE, the first one is returned.
+ Lastly, if no fields have this attribute set, but there is a field that is called "Name"
+ in the field list, that is returned. If none of the above matches are found, Nothing is returned.
+ </summary>
+	<param name="GE"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebPhones.OnDefaultSettings">
+	<summary>
+ This method is used to invoke the Default settings dialog
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebPhones">
+	<summary>
+ Web Phones Control - ASP.NET 2.x+ Server Control. Automatically displays all phones within 
+ a given entity.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

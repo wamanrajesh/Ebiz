@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ProductCategoryLinkString
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.eBusiness.ProductCatalog.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.ProductCatalog.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.eBusiness.ProductCatalog.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.eBusiness.ProductCatalog.ProductCategoryLinkString.HyperlinkRootCategory">
+	<summary>
+ Set to True to create a hyperlink for the Root Category
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.ProductCatalog.ProductCategoryLinkString.RootCategoryURL">
+	<summary>
+ URL to hyperlink to if the Root Category is selected. Only applicable if HyperlinkRootCategory=True
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.eBusiness.ProductCatalog.ProductCategoryLinkString.RootCategoryText">
+	<summary>
+ Display Text For Root Category. Only applicable if HyperlinkRootCategory=True
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.eBusiness.ProductCatalog.ProductCategoryLinkString">
+	<summary>
+ Product Category Link String displays "breadcrumbs" that show the user the path taken to a particular product category and can navigate back up to any higher level category.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

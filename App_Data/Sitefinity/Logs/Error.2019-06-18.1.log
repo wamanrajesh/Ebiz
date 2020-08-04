@@ -1,0 +1,116 @@
+----------------------------------------
+Timestamp: 21-11-2018 09:58:58
+
+Message: HandlingInstanceID: ac703514-96be-4dba-ae05-33102e117b1e
+An exception of type 'System.IO.FileLoadException' occurred and was caught.
+---------------------------------------------------------------------------
+11/21/2018 15:28:58
+Type : System.IO.FileLoadException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not load file or assembly 'Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+Source : Unity_ILEmit_DynamicClasses
+Help link : 
+FileName : Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+FusionLog : WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Initialize(System.String, System.Collections.Specialized.NameValueCollection, System.Type)
+HResult : -2146234304
+Stack Trace :    at DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_b34aeb6c9a99486688172f1753eb007c.Initialize(String providerName, NameValueCollection config, Type managerType)
+   at Telerik.Sitefinity.Data.ManagerBase`1.InstantiateProvider(IDataProviderSettings providerSettings, Type providerType, ExceptionPolicyName policy, ManagerBase`1 manager)
+
+Additional Info:
+
+MachineName : IL013472
+TimeStamp : 21-11-2018 09:58:58
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-3-131872679092262375
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://127.0.0.1/ebizcms/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 9010
+
+Severity: Warning
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013472
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-3-131872679092262375
+
+ProcessId: 10716
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6924
+
+Extended Properties: 
+----------------------------------------
+----------------------------------------
+Timestamp: 21-11-2018 09:58:58
+
+Message: HandlingInstanceID: c717f3b0-aa41-4d55-9e4c-1eac09e7fa33
+An exception of type 'System.IO.FileLoadException' occurred and was caught.
+---------------------------------------------------------------------------
+11/21/2018 15:28:58
+Type : System.IO.FileLoadException, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+Message : Could not load file or assembly 'Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+Source : Unity_ILEmit_DynamicClasses
+Help link : 
+FileName : Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+FusionLog : WRN: Assembly binding logging is turned OFF.
+To enable assembly bind failure logging, set the registry value [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) to 1.
+Note: There is some performance penalty associated with assembly bind failure logging.
+To turn this feature off, remove the registry value [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Data : System.Collections.ListDictionaryInternal
+TargetSite : Void Initialize(System.String, System.Collections.Specialized.NameValueCollection, System.Type)
+HResult : -2146234304
+Stack Trace :    at DynamicModule.ns.Wrapped_OpenAccessMetaDataProvider_b34aeb6c9a99486688172f1753eb007c.Initialize(String providerName, NameValueCollection config, Type managerType)
+   at Telerik.Sitefinity.Data.ManagerBase`1.InstantiateProvider(IDataProviderSettings providerSettings, Type providerType, ExceptionPolicyName policy, ManagerBase`1 manager)
+
+Additional Info:
+
+MachineName : IL013472
+TimeStamp : 21-11-2018 09:58:58
+FullName : Telerik.Sitefinity.Utilities, Version=8.1.5800.0, Culture=neutral, PublicKeyToken=b28c218413bdf563
+AppDomainName : /LM/W3SVC/1/ROOT/ebizcms-3-131872679092262375
+ThreadIdentity : 
+WindowsIdentity : APTIFY\Installation.User
+Requested URL : http://127.0.0.1/ebizcms/
+
+
+Category: ErrorLog
+
+Priority: 0
+
+EventId: 90030
+
+Severity: Error
+
+Title:Enterprise Library Exception Handling
+
+Machine: IL013472
+
+App Domain: /LM/W3SVC/1/ROOT/ebizcms-3-131872679092262375
+
+ProcessId: 10716
+
+Process Name: c:\windows\system32\inetsrv\w3wp.exe
+
+Thread Name: 
+
+Win32 ThreadId:6924
+
+Extended Properties: 
+----------------------------------------

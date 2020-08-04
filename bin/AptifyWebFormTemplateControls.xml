@@ -1,0 +1,353 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebFormTemplateControls
+</name>
+</assembly>
+<members>
+<member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.ParsePartID(System.String)">
+	<summary>
+ This method will parse the Part ID assigned to a component and return the
+ Form Template Part ID Number within the Part ID
+ </summary>
+	<param name="PartID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.LoadControls(System.Web.UI.WebControls.WebControl,System.Int64,System.Boolean,Aptify.Framework.DataServices.DataAction,Aptify.Framework.Application.AptifyApplication,Aptify.Framework.Web.Common.AptifyFormTemplateContext,System.Int32,System.Int32,System.Collections.ArrayList,Aptify.Framework.Web.Common.ClientScript@,System.Boolean)">
+	<summary>
+ This method will load the controls for the specified parent control based on the
+ form template information provided in the parameters.
+ </summary>
+	<param name="ParentControl"></param>
+	<param name="FormTemplateID"></param>
+	<param name="Refresh"></param>
+	<param name="DataAction"></param>
+	<param name="Application"></param>
+	<param name="FormTemplateContext"></param>
+	<param name="LeftOffset"></param>
+	<param name="TopOffset"></param>
+	<param name="oComponents"></param>
+	<param name="ResizeScript"></param>
+	<param name="FillDocumentWindow"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.LoadTabControl(System.Web.UI.ControlCollection,Aptify.Framework.FormTemplate.FormTemplatePartMetadata,System.Int32,System.Boolean,Aptify.Framework.Web.Common.AptifyFormTemplateContext,System.Int32,System.Int32)">
+	<summary>
+ This method loads up a tab control based on the part meta-data provided in the Part parameter.
+ </summary>
+	<param name="Controls"></param>
+	<param name="Part"></param>
+	<param name="PartSequence"></param>
+	<param name="Refresh"></param>
+	<param name="oFTC"></param>
+	<param name="LeftOffset"></param>
+	<param name="TopOffset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.GetFormTemplateLayoutInfo(Aptify.Framework.Application.AptifyApplication,System.Int64,System.String@,System.String@,System.String@)">
+	<summary>
+ Returns Web Layout information for a given form template ID, also can be obtained by using the 
+ Form Template Meta-Data Cache.
+ </summary>
+	<param name="Application"></param>
+	<param name="FormTemplateID"></param>
+	<param name="WebLayoutControlAssembly"></param>
+	<param name="WebLayoutControlObject"></param>
+	<param name="WebLayoutControlClass"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.LoadFormTemplateLayoutObject(Aptify.Framework.Application.AptifyApplication,System.Int64,System.Boolean)">
+	<summary>
+ This method will instantiate an instance of WebFormTemplateLayout, or a sub-class, and return
+ it. If the WebLayoutControlAssembly and WebLayoutControlClass fields of the Form Templates entity
+ for the provided FormTemplateID are provided, then the method will attempt to instantiate the
+ class based on the provided meta-data, otherwise the base WebFormTemplateLayout class will be 
+ returned.
+ </summary>
+	<param name="Application"></param>
+	<param name="FormTemplateID"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.LoadFormTemplateLayoutObject(System.String,System.String)">
+	<summary>
+ This method will instantiate an instance of WebFormTemplateLayout, or a sub-class, and return
+ it. If the WebLayoutControlAssembly and WebLayoutControlClass fields of the Form Templates entity
+ for the provided AssemblyName and ClassName are provided, then the method will attempt to instantiate the
+ class based on the provided meta-data, otherwise the base WebFormTemplateLayout class will be 
+ returned.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateGlobals.LoadSubTemplate(System.Web.UI.ControlCollection,Aptify.Framework.FormTemplate.FormTemplatePartMetadata,System.Int32,Aptify.Framework.Web.Common.AptifyFormTemplateContext,System.Int32,System.Int32)">
+	<summary>
+ This method will load up a sub-template from the meta-data provided
+ </summary>
+	<param name="oControls"></param>
+	<param name="Part"></param>
+	<param name="PartSequence"></param>
+	<param name="FormTemplateContext"></param>
+	<param name="LeftOffset"></param>
+	<param name="TopOffset"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebFormTemplateGlobals">
+	<summary>
+ Aptify Form Template Shared Utility Class
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.ftCommon.GetContextTemplateID(Aptify.Framework.DataServices.IAptifyDataAction,System.String,System.Int64,System.Int64,System.Int32@,System.Int32@)">
+	<summary>
+ Provides a Form Template ID for the current context (User and Group versus Global level).
+ </summary>
+	<param name="DataAction"></param>
+	<param name="ftDatabase"></param>
+	<param name="AptifyUserID"></param>
+	<param name="TemplateID"></param>
+	<param name="DefaultWidth"></param>
+	<param name="DefaultHeight"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.ftCommon">
+	<summary>
+ This class is designed to provide support/utility operations to other
+ Form Template classes. This is publicly exposed for use outside of the
+ FormTemplateControls assembly, however, it is not designed for use outside
+ of the standard Aptify controls, so its future compatibility is NOT guaranteed
+ as is the case with other Aptify public classes.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateTab.TabControl">
+	<summary>
+ Reference to the internal AptifyWebTab control within the form template tab control
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateTab.RefreshDatabase">
+	<summary>
+ If set to true the database is always refreshed when form template tabs are being loaded, if set to False then the cache is used when available
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebFormTemplateTab">
+	<summary>
+ Aptify Web Form Template Tab Class - ASP.NET 2.0+ Server Control
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.TabInfo">
+	<summary>
+ Tab Form Template Meta-Data Class for Internal Storage Purposes Only
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.AptifyFormTemplateHost.UseCache">
+	<summary>
+ Determines the Caching behavior for the form template host.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks>If this is False then the Form Template Host does not Cache Form Templates. If it is true, then it does cache form Templates. The Form Template Metadata is cached regardless.</remarks>
+</member><member name="M:Aptify.Framework.Web.Common.AptifyFormTemplateHost.GetEntityFormTemplateID(System.String,System.Boolean)">
+	<summary>
+ Get the Form Template ID from Cache, unless refresh cache is set to true.
+ </summary>
+	<param name="EntityName">Entity name for the Form Template</param>
+	<param name="RefreshCache">Refresh cache if you want the newest value.</param>
+	<returns>The Value of the Form Template ID as Long/ -1 if a Form Templated DNE.</returns>
+	<remarks>The Form Template ID may be a stale value for it comes from cache.  Only the 
+ cached item for the entity is reset if the bRefreshedCache value is set to true.  All
+ other cached items will not be affected. </remarks>
+</member><member name="T:Aptify.Framework.Web.Common.AptifyFormTemplateHost">
+	<summary>
+ Web version of Aptify Form Template Host
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.Globals.GetFormTemplateCacheItem(Aptify.Framework.Application.AptifyApplication,System.String)">
+	<summary>
+ This method returns a FormTemplateCache object for the provided entity name. If no entry
+ previously existed in the cache, a new entry is created automatically, added to the cache
+ and returned by this method. This method internally uses the FormTemplateCacheSingleton
+ to handle the process specified.
+ </summary>
+	<param name="Application"></param>
+	<param name="EntityName"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.Globals.RemoveFromCache(Aptify.Framework.Application.AptifyApplication,System.String)">
+	<summary>
+ Removes the item from cach using the entities name. This method internally uses the 
+ FormTemplateCacheSingleton to handle the process specified.
+ </summary>
+	<param name="Application">Current Aptify Application.</param>
+	<param name="entityName">Name of Entity used as the key.</param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.FormTemplateCacheSingleton.Items">
+	<summary>
+ Collection of all cache items - do not edit this directly, used for read only access to current
+ cache entries
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.FormTemplateCacheSingleton.RemoveFromCash(System.String)">
+	<summary>
+ Removes a cached Item from the cache by name.
+ </summary>
+	<param name="Entityname">Name of Entity, used as the key.</param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.FormTemplateCacheSingleton.Item(System.String)">
+	<summary>
+ This method returns a FormTemplateCache object for the provided entity name. If no entry
+ previously existed in the cache, a new entry is created automatically, added to the cache
+ and returned by this method.
+ </summary>
+	<param name="EntityName"></param>
+	<value></value>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.FormTemplateCacheSingleton.Shutdown">
+	<summary>
+ This method is called to dispose of all entries in the cache and to call the Dispose() method
+ on each loaded form that exists within the cache and subsequently reset the internal cache
+ singleton.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.FormTemplateCacheSingleton">
+	<summary>
+ This class is used to access the memory singleton instance of the template cache. The class
+ is accessible publicly but only can be created from within the assembly.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.FormTemplateCacheEntry">
+	<summary>
+ This class is used to cache entries in the Form Template Cache
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.FormTemplateCache">
+	<summary>
+ This class is used to register and retrieve cache entries for the form template
+ caching system. It is setup as a sub-class of a the generic List collection class
+ and caches form templates for a given entity. This class is available publicly
+ but can only be instantiated from within the AptifyFormTemplateHost assembly.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.FillWidth">
+	<summary>
+ This property determines if this element will automatically fill the width
+ of the document window in the browser. The default value is False. Set this
+ value to True in order to ensure proper sizing of the Form Template Layout control
+ and its child controls
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.FillHeight">
+	<summary>
+ This property determines if this element will automatically fill the height
+ of the document window in the browser. The default value is False. Set this
+ value to True in order to ensure proper sizing of the Form Template Layout control
+ and its child controls
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.FillHeightMargin">
+	<summary>
+ Only used if FillHeight=True, Specifies the number of pixels of space to between the bottom of the control and its parent's bottom edge
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.FillWidthMargin">
+	<summary>
+ Only used if FillWidth=True, Specifies the number of pixles of space to leave at the right of the control between its right side and the right of its parent control
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.ApplicationObject">
+	<summary>
+ Returns an instance of the AptifyApplication class
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.RefreshDatabase">
+	<summary> 
+ Determines if the Form Template Cache will be reloaded or not, Defaults to False
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.ReconstituteComponentCollection">
+	<summary>
+ This method will rebuild the internal Form Component collection from the ASP.NET control hierarchy.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebFormTemplateLayout.FormTemplateMetaData">
+	<summary>
+ Returns the meta-data for the currently loaded form template. This property
+ is only available after FormComponentConfig() has been called.
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.DoControlLoading(System.Boolean)">
+	<summary>
+ This method loads controls from the Form Template Layout meta-data
+ definition
+ </summary>
+	<param name="ForceReload"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.GetFormComponent(System.Web.UI.Control,System.String)">
+	<summary>
+ Recursively finds the first instance of a control that has a specific name.
+ </summary>
+	<param name="ParentControl">The first control to be checked.</param>
+	<param name="Name">The name of the control or a name of a datafield contained by an <see cref="T:Aptify.Framework.Web.Common.WebDataFieldFormComponentBase"/>.</param>
+	<returns>The matching control if a match is found or nothing if a matching control is not found.</returns>
+	<remarks>
+ It will also look for datafield controls and attempt to match the datafield to the name.
+ It will also look for SubType controls and attempt to match the SubTypeName to the name.
+ </remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.IsFormComponent(System.Web.UI.Control)">
+	<summary>
+ This method determines if the provided component is a valid Aptify Form Component, which is determined by checking
+ to see if any of the following conditions is True:
+ 1) Derived from <see cref="T:Aptify.Framework.Web.Common.WebFormComponentBase">WebFormCompnentBase</see>
+ 2) Implements <see cref="T:Aptify.Framework.Web.Common.IWebFormComponent">IWebFormComponent</see>
+ 3) Derived from <see cref="T:Aptify.Framework.Web.Common.WebFormTemplateLayout">WebFormTemplateLayout</see>
+ 4) Derived from <see cref="T:Aptify.Framework.Web.Common.WebFormTemplateTab">WebFormTemplateTab</see>
+	</summary>
+	<param name="Component"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.EnableFormComponent(System.String,System.Boolean)">
+	<summary>
+ This method is responsible for enabling or disabling the specified control based on the name of the component
+ or the data field. Internally implemented by calling <see cref="M:Aptify.Framework.Web.Common.WebFormTemplateLayout.GetFormComponent(System.Web.UI.Control,System.String)">GetFormComponent()</see>
+	</summary>
+	<param name="ComponentName">Name of the Control, or Data Field Name</param>
+	<param name="Enabled"></param>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebFormTemplateLayout">
+	<summary>
+ Aptify Web Form Template Layout Class ASP.NET Server Control for displaying a form template
+ </summary>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

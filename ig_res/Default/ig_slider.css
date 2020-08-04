@@ -1,0 +1,329 @@
+.igsli_Control
+{
+	overflow:hidden;
+}
+.igsli_TicksHolderT
+{
+	position:relative;
+	width:100%;
+	font-size:1px;
+	height:5px;
+	border-bottom:0px solid blue;
+	margin-bottom:8px;
+}
+.igsli_TicksHolderB
+{
+	position:relative;
+	width:100%;
+	font-size:1px;
+	height:5px;
+	border-top:0px solid blue;
+	margin-top:8px;
+	
+}
+.igsli_TickMinorT
+{
+	position:absolute;
+	font-size:1px;
+	margin-top:2px;
+	border-left:1px solid #A9A9A9;
+	height:3px;
+}
+.igsli_TickMajorT
+{
+	position:absolute;
+	font-size:1px;
+	border-left:1px solid black;
+	height:5px;
+}
+.igsli_TickLastT
+{
+	width:1px;
+	margin-left:-1px;
+}
+.igsli_TickMinorB
+{
+	position:absolute;
+	font-size:1px;
+	border-left:1px solid #A9A9A9;
+	height:3px;
+}
+.igsli_TickMajorB
+{
+	position:absolute;
+	font-size:1px;
+	border-left:1px solid black;
+	height:5px;
+}
+.igsli_TickLastB
+{
+	width:1px;
+	margin-left:-1px;
+}
+.igsli_MarginH
+{
+	width:10px;
+	font-size:1px;
+	height:100%;
+}
+.igsli_LabelsHolderH
+{
+	position:relative;
+	width:100%;
+	color:#666666;
+	font-family:verdana;
+	font-size:10px;
+}
+/* it should be after margin */
+/* if labels are on edges, then position and margin are disabled by inline style */
+.igsli_LabelH
+{
+	position:absolute;
+	overflow:hidden;
+	text-align:center;
+	margin-left:-13px;
+	width:26px;
+	height:14px;
+	white-space:nowrap;
+	font-family:verdana;
+	font-size:10px;
+}
+.igsli_TrackH
+{
+	position:relative;
+	overflow:hidden;
+	text-align:left;
+	margin-left:-1px;
+	border:1px solid #D2D2D2;
+	background:#F7F7F7;
+	width:100%;
+	font-size:1px;
+	height:5px;
+}
+.igsli_TrackValue1H
+{
+	position:absolute;
+	background:#DFDFDF;
+	font-size:1px;
+	height:5px;
+}
+.igsli_TrackValue2H
+{
+	position:absolute;
+	background:#900000;
+	font-size:1px;
+	height:5px;
+}
+.igsli_Button
+{
+	margin:2px;
+	cursor:pointer;
+}
+.igsli_ThumbsHolderH
+{
+	position:relative;
+	z-index:1;
+	font-size:1px;
+	width:100%;
+}
+.igsli_ThumbH
+{
+	position:absolute;
+	margin-left:-5px;
+	margin-top:-10px;
+}
+.igsli_ValueLabel
+{
+	white-space:nowrap;
+	font-family:verdana;
+	font-size:10px;
+	text-align:center;
+	width:46px;
+}
+.igsli_ValueLabelFloatT
+{
+	position:absolute;
+	background:white;
+	border:1px solid #999999;
+	filter:alpha(opacity:0);
+	opacity:0;
+	height:13px;
+	overflow:hidden;
+	margin-left:-15px;
+	margin-top:-26px;
+}
+.igsli_ValueLabelFloatB
+{
+	position:absolute;
+	overflow:hidden;
+	background:white;
+	border:1px solid #999999;
+	filter:alpha(opacity:0);
+	opacity:0;
+	height:13px;
+	margin-left:-15px;
+	margin-top:7px;
+}
+
+.igsli_TicksHolderL
+{
+	position:relative;
+	height:100%;
+	font-size:1px;
+	width:5px;
+	border-right:0px solid blue;
+	text-align:left;
+	margin-right:8px;
+}
+.igsli_TicksHolderR
+{
+	position:relative;
+	height:100%;
+	font-size:1px;
+	width:5px;
+	border-left:0px solid blue;
+	text-align:left;
+	margin-left:8px;
+}
+.igsli_TickMinorL
+{
+	position:absolute;
+	font-size:1px;
+	border-top:1px solid #A9A9A9;
+	margin-left:2px;
+	width:3px;
+}
+.igsli_TickMajorL
+{
+	position:absolute;
+	font-size:1px;
+	border-top:1px solid black;
+	width:5px;
+}
+.igsli_TickLastL
+{
+	height:1px;
+	margin-top:-1px;
+}
+.igsli_TickMinorR
+{
+	position:absolute;
+	font-size:1px;
+	border-top:1px solid #A9A9A9;
+	width:3px;
+}
+.igsli_TickMajorR
+{
+	position:absolute;
+	font-size:1px;
+	border-top:1px solid black;
+	width:5px;
+}
+.igsli_TickLastR
+{
+	height:1px;
+	margin-top:-1px;
+}
+.igsli_MarginV
+{
+	height:10px;
+	font-size:1px;
+}
+/* it should be after margin */
+/* if labels are on edges, then position and margin are disabled by inline style */
+.igsli_LabelV
+{
+	position:absolute;
+	overflow:hidden;
+	white-space:nowrap;
+	width:30px;
+	height:14px;
+	margin-top:-7px;
+	font-family:verdana;
+	font-size:10px;
+	
+	text-align:center;
+}
+.igsli_LabelsHolderV
+{
+	position:relative;
+	text-align:left;
+	height:100%;
+	color:#666666;
+	font-family:verdana;
+	font-size:10px;
+	width:30px;
+}
+.igsli_TrackV
+{
+	position:relative;
+	overflow:hidden;
+	text-align:left;
+	margin-top:-1px;
+	border:1px solid #D2D2D2;
+	background:#F7F7F7;
+	height:100%;
+	font-size:1px;
+	width:5px;
+}
+.igsli_TrackValue1V
+{
+	position:absolute;
+	background:#DFDFDF;
+	font-size:1px;
+	width:5px;
+}
+.igsli_TrackValue2V
+{
+	position:absolute;
+	background:#900000;
+	font-size:1px;
+	width:5px;
+}
+.igsli_ThumbsHolderV
+{
+	position:relative;
+	z-index:1;
+	font-size:1px;
+	height:100%;
+}
+.igsli_ThumbV
+{
+	position:absolute;
+	margin-left:-10px;
+	margin-top:-6px;
+}
+.igsli_ValueLabelFloatL
+{
+	position:absolute;
+	overflow:hidden;
+	background:white;
+	border:1px solid #999999;
+	filter:alpha(opacity:0);
+	opacity:0;
+	height:13px;
+	text-align:right;
+	width:40px;
+	margin-left:-65px;
+	margin-top:-1px;
+}
+.igsli_ValueLabelFloatR
+{
+	position:absolute;
+	overflow:hidden;
+	background:white;
+	color: #666666;
+	border:1px solid #999999;
+	filter:alpha(opacity:0);
+	opacity:0;
+	height:13px;
+	text-align:left;
+	width:40px;
+	margin-left:15px;
+	margin-top:-1px;
+}
+.igsli_ValueLabelFloatHover
+{
+	filter:alpha(opacity:80);
+	opacity:.80;
+}

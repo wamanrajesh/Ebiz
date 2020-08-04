@@ -1,0 +1,194 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AptifyWebClientResources
+</name>
+</assembly>
+<members>
+<member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aptify.Framework.Web.Common.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:Aptify.Framework.Web.Common.WebClientResources.Scripts.RegisterEventScriptURL(System.Web.UI.Page)">
+	<summary>
+ This property will return a URL that contains the resource containing
+ the JavaScript file for the Register Event Functionality. This method
+ is provided as a utility, however it is usually best to call the <see cref="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddRegisterEventScriptToPage(System.Web.UI.Page)">AddRegisterEventScriptToPage</see>
+ method to add this script URL to a page with a SCRIPT include block since
+ that method will check to make sure that the script has not already been
+ added to the page in question.
+ </summary>
+	<param name="Page"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddRegisterEventScriptToPage(System.Web.UI.Page)">
+	<summary>
+ This method will add a script include tag to the page specified for
+ the RegisterEvent.js script file, which includes functionality that will
+ allow for cross-browser multi-listener event processing from the web browser
+ side. The functionality will add to the page only once regardless of how
+ many times it is called for a given page. 
+ </summary>
+	<param name="Page"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebClientResources.Scripts.XMLScriptURL(System.Web.UI.Page)">
+	<summary>
+ This property will return a URL that contains the resource containing
+ the JavaScript file for the cross-browser XML DOM Functionality. This method
+ is provided as a utility, however it is usually best to call the <see cref="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddXMLScriptToPage(System.Web.UI.Page)">AddXMLScriptToPage</see>
+ method to add this script URL to a page with a SCRIPT include block since
+ that method will check to make sure that the script has not already been
+ added to the page in question.
+ </summary>
+	<param name="Page"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddXMLScriptToPage(System.Web.UI.Page)">
+	<summary>
+ This method will add a script include tag to the page specified for
+ the AptifyXML.js script file, which includes functionality that will
+ allow for cross-browser XML DOM processing from the web browser
+ side. The functionality will add to the page only once regardless of how
+ many times it is called for a given page. 
+ </summary>
+	<param name="Page"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebClientResources.Scripts.ResizeControlsScriptURL(System.Web.UI.Page)">
+	<summary>
+ This property will return a URL that contains the resource containing
+ the JavaScript file for the Resize Controls Functionality. This method
+ is provided as a utility, however it is usually best to call the <see cref="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddResizeControlsScriptToPage(System.Web.UI.Page)">AddResizeControlsScriptToPage</see>
+ method to add this script URL to a page with a SCRIPT include block since
+ that method will check to make sure that the script has not already been
+ added to the page in question.
+ </summary>
+	<param name="Page"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddResizeControlsScriptToPage(System.Web.UI.Page)">
+	<summary>
+ This method will add a script include tag to the page specified for
+ the ResizeControls.js script file, which includes functionality that will
+ allow for cross-browser element resizing from the web browser
+ side. This functionality works along with the custom attributes described below. 
+ The functionality will add to the page only once regardless of how
+ many times it is called for a given page. 
+ <list>
+			<item>fillWidth - if this attribute is set to "true" (case sensitive), the control will be automatically sized to fill its container's width.</item>
+			<item>fillHeight - if this attribute is set to "true" (case sensitive), the control will be automatically sized to fill its container's height.</item>
+		</list>
+	</summary>
+	<param name="Page"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.IsResizeControlsScriptRegistered(System.Web.UI.Page)">
+	<summary>
+ This method returns True if the ResizeControls.js script file has already been
+ registered for the provided Page parameter, and False if not.
+ </summary>
+	<param name="Page"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddResizeTopLevelControlScript(System.Web.UI.Control)">
+	<summary>
+ This method will add a new function to the Page content that will resize
+ the provided control and its sub-controls recursively when the page resizes,
+ and, optionally, upon load as well if the ResizeOnLoad parameter is set to True.
+ It is NOT necessary to call this method for any child controls of a control that has
+ this method established on it as any control that has been linked to the resizing functionality
+ will automatically have its entire child control hierarchy/tree recursively scanned and resized
+ where the fillWidth and fillHeight custom attributes are set to "true", as described in the
+ <see cref="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddResizeControlsScriptToPage(System.Web.UI.Page)">AddResizeControlsScriptToPage</see>
+ method.
+ </summary>
+	<param name="Control"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebClientResources.Scripts.FormTemplateScriptURL(System.Web.UI.Page)">
+	<summary>
+ This property will return a URL that contains the resource containing
+ the JavaScript file for the Form Template Client-Side Functionality. This method
+ is provided as a utility.
+ </summary>
+	<param name="Page"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.AddFormTemplateScriptToPage(System.Web.UI.Page)">
+	<summary>
+ This method will add a script include tag to the page specified for
+ the FormTemplate.js script file, which includes functionality that will
+ allow for Form Template client-side functionality.
+ </summary>
+	<param name="Page"></param>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Scripts.IsFormTemplateScriptRegistered(System.Web.UI.Page)">
+	<summary>
+ This method returns True if the FormTemplate.js script file has already been
+ registered for the provided Page parameter, and False if not.
+ </summary>
+	<param name="Page"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebClientResources.Scripts">
+	<summary>
+ Access class for shared scripts that can be used throughout applications
+ </summary>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.AddStyleSheetToPageHeader(System.Web.UI.Page,System.String,System.String)">
+	<summary>
+ This method will add a new LINK to the page header for the specified style sheet. However,
+ this method will only add the style sheet once to a given page by checking to see if the page
+ header has a control within it that matches the provided StyleSheetKey, as long as the StyleSheetKey
+ is a non-empty string. If the StyleSheetKey is not provided then the link will always be added to the
+ page. Page must be instantiated and have its Page.Header attribute not-null as well.
+ </summary>
+	<param name="Page"></param>
+	<param name="StyleSheetKey"></param>
+	<param name="StyleSheetURL"></param>
+	<remarks></remarks>
+</member><member name="P:Aptify.Framework.Web.Common.WebClientResources.Images.BrowserSupportsIcons(System.Web.HttpBrowserCapabilities)">
+	<summary>
+ This method returns true if the current browser supports icons, determined as only being supported
+ by IE on Win32.
+ </summary>
+	<param name="Browser"></param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:Aptify.Framework.Web.Common.WebClientResources.Images.AppendRetainFormatString(System.Boolean,System.Web.HttpBrowserCapabilities)">
+	<summary>
+ This method returns the RetainFormat string from the <see cref="P:Aptify.Framework.Web.Common.WebClientResources.Images.GetRetainFormatString">GetRetainFormatString()</see>
+ property. If the OnlyIfSupportsIcons is set to true, this only happens if the BrowserSupportsIcons property is true.
+ </summary>
+	<param name="OnlyIfSupportsIcons"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebClientResources.Images">
+	<summary>
+ Access class for shared images that can be used throughout applications
+ </summary>
+	<remarks></remarks>
+</member><member name="T:Aptify.Framework.Web.Common.WebClientResources">
+	<summary>
+ This class is used to provide a set of standardized resources to all
+ web applications and provides utility functions to ensure that resources
+ are only registered once per page where appropriate (such as with scripts
+ that are used to register new functionality on the window object or in the case
+ of singleton design patterns).
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>
