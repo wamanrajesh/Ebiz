@@ -8,7 +8,7 @@ plugins:
 
 nav:
   - Overview:
-      - What is Ebiz?: ''README.md'
+      - What is Ebiz?: 'README.md'
   - Getting Started:
       - Getting Started: 'README.md'
   - Glossary: 'docs/README.md'
