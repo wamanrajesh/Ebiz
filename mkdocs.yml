@@ -11,5 +11,5 @@ nav:
       - What is Ebiz?: ''README.md'
   - Getting Started:
       - Getting Started: 'README.md'
-  - Glossary: glossary.md
-  - FAQ: FAQ.md
+  - Glossary: 'docs/README.md'
+  - FAQ: 'docs/index.md'
