@@ -4,7 +4,7 @@ metadata:
   name: Ebiz
   annotations:
     github.com/project-slug: wamanrajesh/Ebiz
-     backstage.io/techdocs-ref: dir:.
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: experimental
