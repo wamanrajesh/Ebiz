@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Ebiz
+  annotations:
+    github.com/project-slug: wamanrajesh/Ebiz
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guests
