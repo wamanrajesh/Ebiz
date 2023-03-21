@@ -1,0 +1,15 @@
+site_name: 'Ebiz'
+site_description: 'Main documentation for Ebiz features and platform APIs'
+repo_url: https://github.com/wamanrajesh/Ebiz
+edit_uri: edit/master/docs
+
+plugins:
+  - techdocs-core
+
+nav:
+  - Overview:
+      - What is Ebiz?: ''README.md'
+  - Getting Started:
+      - Getting Started: 'README.md'
+  - Glossary: glossary.md
+  - FAQ: FAQ.md
